@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rakodástervező 3D — 0.5 LDM és ajánlat-előkészítés</title>
+  <style>
+    :root { color-scheme: dark; --ink:#e7ecff; --muted:#9aabca; --purple:#7755f4; --border:#283655; --bg:#0d1425; }
+    * { box-sizing: border-box; }
+    html,body { margin:0; min-height:100%; font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif; background:var(--bg);color:var(--ink); }
+    button,input { font:inherit; }
+    button { cursor:pointer; }
+    .app { min-height:100vh; display:flex; flex-direction:column; }
+    header { min-height:75px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;background:linear-gradient(110deg,#1d2542 0%,#18223c 65%,#151f37);border-bottom:1px solid #364269;gap:18px; }
+    .brand { display:flex;align-items:center;gap:13px;white-space:nowrap; }
+    .logo { display:grid;place-items:center;height:42px;width:42px;border-radius:12px;background:linear-gradient(150deg,#8466ff,#4232aa);box-shadow:0 4px 22px #7154f444;font-size:25px; }
+    .brand-name { font-size:23px;font-weight:760;letter-spacing:-0.5px; }
+    .brand-name span { font-size:12px;color:#bbaafa;font-weight:550;margin-left:8px;letter-spacing:0; }
+    .header-pill { padding:10px 14px;border:1px solid #425176;border-radius:11px;color:#bfcbed;font-size:13px;background:#192741; }
+    .layout { display:grid;grid-template-columns:320px minmax(0,1fr);gap:0; flex:1;height:calc(100vh - 75px);min-height:600px; }
+    aside { background:linear-gradient(165deg,#17213b,#111a31);border-right:1px solid #35415e;padding:24px 19px;display:flex;flex-direction:column;gap:17px;min-height:0;overflow-y:auto; }
+    .section-title { display:flex;align-items:center;gap:10px;font-size:19px;font-weight:730;margin-bottom:6px; }
+    .section-icon { width:34px;height:34px;display:grid;place-items:center;background:#4033a2;border:1px solid #7e6bee;border-radius:9px; }
+    .subtitle { color:var(--muted);font-size:13px;line-height:1.55;margin:0; }
+    .panel { padding:17px 15px;background:#202c48;border:1px solid #344160;border-radius:15px; }
+    .panel h3 { margin:0 0 17px;font-size:14px;letter-spacing:0.1px;display:flex;align-items:center;justify-content:space-between; }
+    .control { margin:0 0 23px; }
+    .control:last-child { margin-bottom:0; }
+    .control-head { display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:11px; }
+    .control-head label { font-size:13px;font-weight:600; }
+    .number-wrap { display:flex;align-items:center;gap:4px;border:1px solid #49587c;background:#13213c;border-radius:8px;padding:6px 8px; }
+    .number-wrap:focus-within { outline:2px solid #795fff;outline-offset:2px; }
+    .number-wrap input { width:52px;border:0;background:none;color:#edf2ff;text-align:right;font-size:14px;font-weight:750;outline:none;appearance:textfield; }
+    .number-wrap input::-webkit-outer-spin-button,.number-wrap input::-webkit-inner-spin-button {-webkit-appearance:none;margin:0;}
+    .number-wrap span { color:#9cb0ce;font-size:12px; }
+    input[type="range"] { width:100%;accent-color:#8e70ff;cursor:pointer;height:8px;margin:0; }
+    .range-labels { display:flex;justify-content:space-between;font-size:11px;color:#8395b6;margin-top:5px; }
+    .stack-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    .stack-grid label{display:block;font-size:12px;font-weight:650;color:#cddaf3;margin-bottom:6px}
+    .stack-grid input{width:100%;min-width:0;border:1px solid #4c6083;border-radius:8px;background:#13213c;padding:9px;color:#f2f5ff;font-size:14px}
+    .stack-check{display:flex;gap:9px;align-items:center;margin-top:5px;font-weight:660;font-size:13px;color:#e4ecfe;cursor:pointer}
+    .stack-check input{width:18px;height:18px;accent-color:#8d70ff}
+    .stack-help{font-size:11px;line-height:1.6;color:#a9bbd8;margin:9px 0 0}
+    .stack-info{padding:10px;border:1px solid #465574;border-radius:10px;background:#13213b;font-size:12px;line-height:1.6;color:#cddcf5;margin-top:10px}
+    .preview-box { display:flex;align-items:center;gap:13px;border-radius:12px;background:#15233e;border:1px solid #374767;padding:13px; }
+    .preview-icon { background:linear-gradient(145deg,#b3a0ff,#6552d0);height:48px;width:48px;border-radius:9px;display:grid;place-items:center;font-size:27px;color:white;box-shadow:3px 5px 12px #0a0c2e; }
+    .preview-info { font-size:13px;line-height:1.65; }
+    .preview-info strong {font-size:14px;}
+    .preview-info small { color:#9aadd2;display:block; }
+    .status { display:flex;align-items:center;gap:8px;color:#8de4b0;font-size:12px;background:#16362960;border:1px solid #30744c;border-radius:10px;padding:11px; }
+    .tip { color:#9eacc9;font-size:12px;line-height:1.65;padding:0 4px; }
+    .tip strong {color:#d0dcfb;}
+    .main { display:flex;flex-direction:column;min-width:0;min-height:0;background:#0d162a; }
+    .workspace{display:flex;flex:1;min-height:0;min-width:0;}
+    .waiting-area{width:236px;flex:0 0 236px;padding:17px 12px;background:linear-gradient(165deg,#17243d,#111d32);border-left:1px solid #344563;display:flex;flex-direction:column;gap:10px;min-height:0;}
+    .wait-head{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px;}
+    .wait-count{font-size:11px;color:#b8f5d5;background:#214a39;padding:4px 7px;border-radius:9px;white-space:nowrap;}
+    .wait-help,.wait-foot{margin:0;font-size:11px;line-height:1.6;color:#aabbd7;}
+    .wait-foot{margin-top:auto;padding-top:10px;border-top:1px solid #384760;}
+    .waiting-list{overflow:auto;display:flex;flex-direction:column;gap:9px;padding:3px 4px 5px 2px;min-height:72px;}
+    .wait-card{width:100%;min-height:68px;display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #506486;border-radius:12px;background:#253653;color:#e9f0ff;text-align:left;cursor:grab;user-select:none;touch-action:manipulation;}
+    .wait-card:active{cursor:grabbing}.wait-card:hover{background:#32456a;border-color:#a38cfc;}.wait-card.active{border-color:#a48bff;outline:2px solid #7857e5;background:#383365;}
+    .wait-card .cube{width:28px;height:28px;flex:0 0 28px;display:grid;place-items:center;border-radius:7px;font-size:16px;color:#0d1425;}
+    .wait-card span{min-width:0;display:block}.wait-card strong{display:block;font-size:12px}.wait-card small{display:block;font-size:10px;color:#b6c7df;margin-top:4px;line-height:1.5}.waiting-empty{font-size:12px;line-height:1.5;color:#91a5c2;border:1px dashed #485b7a;border-radius:10px;padding:14px;text-align:center;}
+    .visual.dragover{outline:3px solid #38d5a1;outline-offset:-4px;}
+    .main:fullscreen{height:100vh;min-height:0;width:100vw;position:relative;top:0;background:#0d162a;}
+    .main:fullscreen .visual{min-height:0;}
+    @media(max-width:1100px){.waiting-area{width:196px;flex-basis:196px}.wait-card{padding:7px;gap:6px}}
+    @media(max-width:800px){.workspace{flex-direction:column;}.waiting-area{width:auto;flex:0 0 auto;min-height:125px;max-height:240px;border-left:0;border-top:1px solid #344563;padding:10px;}.waiting-list{flex-direction:row;overflow-x:auto;overflow-y:hidden;max-height:110px;}.wait-card{min-width:155px;max-width:180px;}.wait-help,.wait-foot{display:none}.main:fullscreen .waiting-area{max-height:145px;}.main:fullscreen .visual{min-height:200px}}
+    .toolbar { display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;padding:14px 20px;border-bottom:1px solid #2b3859;background:#151f37; }
+    .toolbar-title { font-size:14px;font-weight:700;display:flex;align-items:center;gap:9px; }
+    .toolbar-title .led {width:8px;height:8px;border-radius:50%;background:#76e3a7;box-shadow:0 0 12px #63eba0;}
+    .actions { display:flex;gap:8px;flex-wrap:wrap; }
+    .iconbtn { background:#22304d;border:1px solid #475676;border-radius:9px;padding:8px 12px;color:#dbe3fc;display:flex;align-items:center;gap:7px;font-size:12px;white-space:nowrap; }
+    .iconbtn:hover,.iconbtn:focus-visible { background:#35446b;outline:none;border-color:#9d89f9; }
+    .iconbtn.primary { background:linear-gradient(120deg,#6547dc,#8a63fb);border-color:#9982f4;color:#fff;font-weight:720; }
+    .visual { position:relative;flex:1;min-width:0;min-height:0;overflow:hidden;background:radial-gradient(ellipse at 38% 35%,#253b5e 0%,#15243f 37%,#0c1425 84%); }
+    canvas { display:block;width:100%;height:100%;touch-action:none;cursor:grab; }
+    canvas.dragging {cursor:grabbing;}
+    .top-left-info { position:absolute;top:20px;left:22px;pointer-events:none; }
+    .eyebrow {font-size:11px;text-transform:uppercase;letter-spacing:1.9px;color:#a7bbed;font-weight:700;}
+    .biglabel { font-weight:750;font-size:20px;margin-top:5px; }
+    .top-left-info p { color:#a4b8d8;font-size:13px;margin:6px 0; }
+    .view-info { position:absolute;right:22px;top:20px;display:grid;gap:9px;pointer-events:none; }
+    .glasspill { background:#121d31d9;border:1px solid #45607a;border-radius:9px;padding:9px 12px;font-size:12px;color:#d1dff3;backdrop-filter:blur(12px); }
+    .glasspill b {color:#98efbe;}
+    .view-bottom { position:absolute;bottom:20px;left:20px;right:20px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;pointer-events:none; }
+    .help-panel {background:#1b2942;border-bottom:1px solid #4e6084;padding:12px 21px;color:#cbd8f0;font-size:12px;line-height:1.7;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;}
+    .help-panel[hidden] {display:none;}
+    .help-panel strong {color:#f0f3ff;}
+    .help-panel .help-item {white-space:normal;}
+    #help-toggle[aria-expanded="true"] {border-color:#a690ff;background:#413877;color:#fff;}
+
+    .axis { font-size:12px;font-weight:850;border-radius:8px;background:#17253dbe;border:1px solid #374f76;padding:11px 13px; }
+    .axis .x { color:#fb7676; }.axis .y { color:#72e8ba; }.axis .z { color:#86aaff; }
+    .bottom-strip { background:#111b32;border-top:1px solid #33425f;min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:15px 22px;color:#afc0e1;font-size:12px; }
+    .metrics {display:flex;flex-wrap:wrap;gap:20px;align-items:center;}
+    .metric b { color:#eff2ff;font-size:14px;display:block;margin-top:4px; }
+    .footer-note { font-size:11px;max-width:240px;line-height:1.5;color:#96a9cf; }
+    .visual:fullscreen { width:100vw;height:100vh;background:radial-gradient(ellipse at center,#273b62,#0c1425 80%); }
+    .visual:fullscreen .view-bottom { bottom:28px; }
+    @media(max-width:960px) { .layout {grid-template-columns:280px minmax(0,1fr);} .brand-name {font-size:19px;}header{padding:0 18px;} }
+    @media(max-width:720px) {header{min-height:67px;}.header-pill{display:none;}.layout{display:flex;flex-direction:column;}aside{order:2;padding:16px;}.main{order:1;}.visual{min-height:390px;height:55vh;flex:none;}.biglabel{font-size:16px;}.view-info{right:11px;top:13px;}.top-left-info{left:12px;top:12px;}.glasspill{font-size:11px;padding:7px;}.toolbar{padding:11px}.view-bottom{left:10px;right:10px;bottom:10px;}.bottom-strip{padding:12px 15px;} }
+
+    @media(min-width:721px){.main{height:calc(100vh - 75px);min-height:620px;align-self:start;position:sticky;top:0}.visual{min-height:400px}}
+    .primary-wide{background:linear-gradient(115deg,#6550e9,#8c6bff);color:white;border:1px solid #9784ff;padding:12px;border-radius:10px;font-weight:750;text-align:center;width:100%}
+    .primary-wide:hover{filter:brightness(1.1)}
+    .quantity-row{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+    .quantity-row label{font-size:13px;font-weight:700;flex:1}
+    .quantity-row input{background:#14223d;border:1px solid #506189;border-radius:9px;padding:9px;color:#fff;width:75px;text-align:center}
+    .cargo-list{display:flex;flex-direction:column;gap:7px;max-height:235px;overflow:auto;margin-top:12px;padding-right:3px}
+    .cargo-row{display:flex;align-items:center;gap:9px;padding:9px 10px;background:#14213a;border:1px solid #3b4b6b;border-radius:10px;width:100%;color:#e5edfc;text-align:left}
+    .cargo-row:hover{background:#243453}
+    .cargo-row.active{outline:2px solid #a28bff;outline-offset:-2px;background:#342b65}
+    .cargo-row .color{width:13px;height:13px;border-radius:4px;flex-shrink:0}
+    .cargo-row .item-details{min-width:0;flex:1}
+    .cargo-row .item-title{font-size:13px;font-weight:750;display:block}
+    .cargo-row .item-sub{font-size:11px;color:#a5b6d7;display:block;margin-top:3px}
+    .cargo-row .item-badge{font-size:11px;font-weight:700;color:#a6f1c1;white-space:nowrap}
+    .cargo-row .item-badge.pending{color:#ffd99b}
+    .mini-actions{display:flex;gap:8px;margin-top:11px}
+    .mini-actions button{flex:1;justify-content:center}
+    .message{font-size:12px;line-height:1.55;border-radius:10px;padding:10px 12px;background:#202e4b;border:1px solid #485b7b;color:#cfdcf2;min-height:47px}
+    .message.bad{border-color:#c45d72;color:#ffbbc5;background:#462638}
+    .message.good{border-color:#408963;color:#b0f6ca;background:#183d33}
+    .view-info{pointer-events:none}
+    canvas.placement{cursor:crosshair}
+    canvas.move-box{cursor:move}
+    .selected-label{color:#dbcfff;font-size:12px;font-weight:650;}
+    .status-chip{background:#233853;color:#d0dcf5;border:1px solid #455e7a;border-radius:9px;padding:8px 10px;font-size:12px}
+    @media(max-width:720px){.cargo-list{max-height:180px}.header-pill{display:none}}
+      @media(max-width:720px){.layout{height:auto;display:block;min-height:0}.layout aside{overflow:visible}.main{min-height:650px}.visual{min-height:430px}.workspace{min-height:430px}}
+    /* --- 0.5: pótkocsi, rakománytípus, LDM-elemzés, tervek --- */
+    .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .field-grid label,.fld label{display:block;font-size:12px;font-weight:650;color:#cddaf3;margin-bottom:6px}
+    .field-grid input,.field-grid select,.fld input,.fld select{width:100%;min-width:0;border:1px solid #4c6083;border-radius:8px;background:#13213c;padding:8px;color:#f2f5ff;font-size:13px}
+    .field-grid input[type=color]{padding:2px;height:36px}
+    .full{grid-column:1 / -1}
+    .metric.ldm b{color:#c9b8ff}
+    .metric .bad-txt{color:#ff9fb0}.metric .ok-txt{color:#98efbe}
+    .analysis{padding:22px 24px 40px;border-top:1px solid #35415e;background:#0f182c;display:flex;flex-direction:column;gap:18px}
+    .analysis h2{font-size:18px;margin:0;display:flex;gap:10px;align-items:center}
+    .analysis h3{font-size:14px;margin:0 0 10px}
+    .analysis .lead{color:var(--muted);font-size:13px;margin:4px 0 0;line-height:1.55;max-width:980px}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .card{background:#1a2640;border:1px solid #344160;border-radius:14px;padding:15px;display:flex;flex-direction:column;gap:6px;min-width:0}
+    .card .k{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a7bbed;font-weight:750}
+    .card .v{font-size:28px;font-weight:800;letter-spacing:-0.5px}
+    .card .v small{font-size:13px;color:var(--muted);font-weight:600;margin-left:4px}
+    .card .sub{font-size:12px;color:#c3d0ea;line-height:1.6}
+    .card details{font-size:12px;color:#aebfdc;line-height:1.6}
+    .card summary{cursor:pointer;color:#cbbcff}
+    .card ul{margin:6px 0 0;padding-left:18px}
+    .card .fld{margin-top:4px}
+    .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+    .box{background:#1a2640;border:1px solid #344160;border-radius:14px;padding:15px;min-width:0}
+    .issues{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5}
+    .issues li{padding:7px 10px;border-radius:8px;background:#13213b;border:1px solid #3b4b6b}
+    .issues li.err{border-color:#c45d72;background:#3a2133;color:#ffc4cd}
+    .issues li.warn{border-color:#b08a3c;background:#33291a;color:#ffe2a8}
+    .issues li.ok{border-color:#408963;background:#183d33;color:#b0f6ca}
+    .issues li.info{color:#cddcf5}
+    .plan-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .plan-bar input{background:#14223d;border:1px solid #506189;border-radius:9px;padding:8px 10px;color:#fff;min-width:220px;flex:1;max-width:360px}
+    .tbl-wrap{overflow-x:auto;border:1px solid #344160;border-radius:12px}
+    table.cmp{border-collapse:collapse;width:100%;font-size:12px;min-width:980px}
+    table.cmp th,table.cmp td{padding:9px 10px;border-bottom:1px solid #2c3a57;text-align:left;vertical-align:top}
+    table.cmp th{background:#18233c;color:#cfdaf3;font-weight:700;position:sticky;top:0}
+    table.cmp td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+    table.cmp tr.sel td{background:#2a2754}
+    table.cmp tr:hover td{background:#1d2a47}
+    table.cmp .warn-list{margin:0;padding-left:16px;max-width:380px}
+    table.cmp td:last-child{min-width:300px}
+    .tag{display:inline-block;padding:2px 7px;border-radius:7px;font-size:11px;font-weight:700}
+    .tag.ok{background:#1d4a37;color:#a8f3c8}.tag.bad{background:#4f2335;color:#ffb6c3}.tag.warn{background:#4a3a1a;color:#ffdc9a}
+    pre.pkg{max-height:320px;overflow:auto;background:#0b1222;border:1px solid #344160;border-radius:10px;padding:12px;font-size:11px;color:#cfe0ff;margin:8px 0 0}
+    @media(max-width:1000px){.cards{grid-template-columns:1fr}.two{grid-template-columns:1fr}.analysis{padding:16px}}
+  </style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="brand"><span class="logo">⬡</span><div class="brand-name">Rakodástervező 3D <span>PROTOTÍPUS 0.5 · LDM</span></div></div>
+  <div class="header-pill">Önálló tesztalkalmazás · FuvarDíj 4.0 változatlan · adatcsomag-export</div>
+</header>
+<div class="layout">
+  <aside>
+    <div>
+      <div class="section-title"><span class="section-icon">▣</span> Rakományok kezelése</div>
+      <p class="subtitle">Add meg a darabszámot és a méreteket, majd húzd be a várakozó dobozokat a pótkocsiba.</p>
+    </div>
+    <div class="panel">
+      <h3>⓪ Pótkocsi belső méretei</h3>
+      <div class="field-grid">
+        <div class="full"><label for="trailer-type">Típus</label><select id="trailer-type"><option>Normál</option><option>Semi-mega</option><option>Mega</option><option>Egyedi méret</option></select></div>
+        <div><label for="trailer-length">Hossz (cm)</label><input id="trailer-length" type="number" min="200" max="2000" step="1" value="1360"></div>
+        <div><label for="trailer-width">Szélesség (cm)</label><input id="trailer-width" type="number" min="100" max="300" step="1" value="245"></div>
+        <div><label for="trailer-height">Magasság (cm)</label><input id="trailer-height" type="number" min="100" max="400" step="1" value="270"></div>
+        <div><label for="trailer-payload">Teherbírás (kg)</label><input id="trailer-payload" type="number" min="1" max="60000" step="1" value="24000"></div>
+      </div>
+      <p class="stack-help">A típusok méretei a FuvarDíj 4.0 trailer_config.py értékei. Ha a ténylegesen szabad tér kisebb (kerékdob, sín), azt adja meg egyedi méretként. A dobozok a homlokfaltól mért helyükön maradnak.</p>
+    </div>
+    <div class="panel">
+      <h3>① Rakománytételek</h3>
+      <div class="quantity-row"><label for="count-input">Darabszám</label><input type="number" id="count-input" min="1" max="50" step="1" value="3" aria-label="Létrehozandó dobozok száma" /></div>
+      <button class="primary-wide" id="create-boxes">＋ Dobozok a várakozóba</button>
+      <div class="cargo-list" id="cargo-list" aria-label="Kijelölhető dobozok listája"></div>
+      <div class="mini-actions"><button class="iconbtn" id="remove-box" title="Kijelölt doboz törlése">🗑 Kijelölt törlése</button><button class="iconbtn" id="clear-boxes" title="Minden doboz törlése">↺ Összes törlése</button></div><div class="mini-actions"><button class="iconbtn" id="return-box" title="Kijelölt doboz visszavitele a várakozóba">⇤ Kijelölt vissza a várakozóba</button></div>
+    </div>
+    <div class="panel">
+      <h3><span>② Kijelölt rakomány méretei</span><span class="selected-label" id="selected-id">Nincs kijelölve</span></h3>
+      <div class="control" data-key="length">
+        <div class="control-head"><label for="length-range">Hosszúság</label><div class="number-wrap"><input id="length-input" aria-label="Hosszúság centiméterben" type="number" min="20" max="600" step="1" value="120"><span>cm</span></div></div>
+        <input id="length-range" type="range" min="20" max="600" step="1" value="120"><div class="range-labels"><span>20 cm</span><span>600 cm</span></div>
+      </div>
+      <div class="control" data-key="width">
+        <div class="control-head"><label for="width-range">Szélesség</label><div class="number-wrap"><input id="width-input" aria-label="Szélesség centiméterben" type="number" min="20" max="245" step="1" value="80"><span>cm</span></div></div>
+        <input id="width-range" type="range" min="20" max="245" step="1" value="80"><div class="range-labels"><span>20 cm</span><span>245 cm</span></div>
+      </div>
+      <div class="control" data-key="height">
+        <div class="control-head"><label for="height-range">Magasság</label><div class="number-wrap"><input id="height-input" aria-label="Magasság centiméterben" type="number" min="20" max="270" step="1" value="60"><span>cm</span></div></div>
+        <input id="height-range" type="range" min="20" max="270" step="1" value="60"><div class="range-labels"><span>20 cm</span><span id="height-max-label">270 cm</span></div>
+      </div>
+      <div class="field-grid">
+        <div class="full"><label for="label-input">Rakományazonosító / megnevezés</label><input id="label-input" type="text" maxlength="40" placeholder="pl. RAK-001 (üresen: D001)"></div>
+        <div><label for="type-input">Rakománytípus</label><select id="type-input"><option>EUR-raklap</option><option>Ipari raklap</option><option>Félraklap</option><option>Doboz</option><option>Láda</option><option>Gitterbox</option><option>Hordó</option><option>Big bag</option><option>Gép / egyedi</option><option>Egyéb</option></select></div>
+        <div><label for="color-input">Szín</label><input id="color-input" type="color" value="#8d78fc"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>③ Halmozhatóság és terhelés</h3>
+      <label class="stack-check" for="stackable-input"><input id="stackable-input" type="checkbox" checked> Másik doboz ráhelyezhető</label>
+      <div class="stack-grid">
+        <div><label for="weight-input">Doboz súlya (kg)</label><input id="weight-input" type="number" min="1" max="50000" step="1" value="100"></div>
+        <div><label for="layers-input">Max. teljes rétegszám</label><input id="layers-input" type="number" min="1" max="8" step="1" value="3"></div>
+        <div style="grid-column:1 / -1"><label for="maxload-input">Maximális ráhelyezhető össztömeg (kg)</label><input id="maxload-input" type="number" min="0" max="50000" step="1" value="500" placeholder="üres = ismeretlen"></div>
+      </div>
+      <p class="stack-help">A rétegszám a dobozzal együtt értendő. A felső doboznak teljes alapterületével egyetlen alsó dobozon kell állnia. A terhelhetőség a fölötte lévő dobozok össztömege. Üresen hagyva „ismeretlen”: a halmozás megengedett, de „nem igazolt” figyelmeztetést kap, és az elméleti LDM nem feltételez halmozást.</p>
+      <div class="stack-info" id="stack-status">A kiválasztott rakomány adatai jelennek meg itt.</div>
+    </div>
+    <div class="preview-box"><div class="preview-icon">▣</div><div class="preview-info"><strong id="size-label">120 × 80 × 60 cm</strong><small id="volume-label">Térfogat: 0,576 m³</small></div></div>
+    <div id="message" class="message" role="status" aria-live="polite">Először hozz létre dobozokat!</div>
+    <div class="tip">A jobb oldali <strong>Várakozó rakományok</strong> listából a <strong>pótkocsi padlójára</strong> vagy egy <strong>már elhelyezett dobozra</strong> húzhatsz egy másik dobozt. A súgó a nézet feletti gomb mögött található.</div>
+  </aside>
+  <main class="main">
+    <div class="toolbar">
+      <div class="toolbar-title"><span class="led"></span> <span>3D rakodótér — kézi rakodás · halmozás · 1 cm-es illesztés</span></div>
+      <div class="actions">
+        <button class="iconbtn" id="help-toggle" type="button" title="Egérvezérlés útmutató megnyitása" aria-controls="help-panel" aria-expanded="false">ⓘ Egérvezérlés</button>
+        <button class="iconbtn" id="view-reset" title="Eredeti kameranézet">⌂ Alapnézet</button>
+        <button class="iconbtn" id="view-top" title="Felülnézet">▤ Felülnézet</button>
+        <button class="iconbtn" id="save-plan" title="Terv mentése fájlba">⇩ Terv mentése</button><button class="iconbtn" id="load-plan" title="Mentett terv betöltése">⇧ Betöltés</button><input id="plan-file" type="file" accept=".json,application/json" hidden><button class="iconbtn primary" id="fullscreen" title="Teljes képernyő">⛶ Teljes képernyő</button>
+      </div>
+    </div>
+    <div class="help-panel" id="help-panel" hidden role="region" aria-label="Egérvezérlés útmutató">
+      <span class="help-item">📦 <strong>Várakozóból húzás:</strong> doboz a padlóra vagy egy másik doboz tetejére</span><span class="help-item"><strong>Bal kattintás:</strong> kint lévő doboz elhelyezése; bent lévő kijelölése</span>
+      <span class="help-item"><strong>Bal húzás:</strong> doboz áthelyezése / egymásra helyezése</span>
+      <span class="help-item">🔄 <strong>R vagy görgő:</strong> kijelölt doboz 90°-os forgatása</span><span class="help-item"><strong>Nyílbillentyűk:</strong> 1 cm-es mozgatás; Shift: 10 cm</span>
+      <span class="help-item"><strong>Shift + görgő:</strong> nagyítás</span>
+      <span class="help-item">🖱 <strong>Jobb húzás:</strong> kamera forgatása</span>
+    </div>
+    <div class="workspace" id="workspace"><section class="visual" id="visual">
+      <canvas id="scene" aria-label="Interaktív háromdimenziós rakodótér: az egér húzásával forgatható, a görgővel nagyítható">A böngésződ nem támogatja a vászon megjelenítését.</canvas>
+      <div class="top-left-info"><div class="eyebrow">Szállítóeszköz</div><div class="biglabel" id="trailer-title">Normál félpótkocsi</div><p id="trailer-sub">1360 × 245 × 270 cm · belső méret</p></div>
+      <div class="view-info"><div class="glasspill" id="placement-label">Válassz ki egy dobozt</div><div class="glasspill" id="zoom-label">Nagyítás: 100%</div></div>
+      <div class="view-bottom" style="justify-content:flex-end"><div class="axis"><span class="x">X</span> · <span class="y">Y</span> · <span class="z">Z</span></div></div>
+    </section>
+    <section class="waiting-area" aria-label="Várakozó rakományok"><div class="wait-head"><strong>📦 Várakozó rakományok</strong><span id="wait-count" class="wait-count">0 db</span></div><p class="wait-help">Fogj meg egy dobozt <b>bal egérgombbal</b>, és húzd a pótkocsi <b>padlójára</b> vagy <b>egy másik doboz tetejére</b>. Zöld = megengedett; piros = nem megfelelő.</p><div id="waiting-list" class="waiting-list" aria-label="Behúzható rakományok"></div><div class="wait-foot">↳ Alternatíva: válassz dobozt a listából, majd kattints a padlóra vagy egy halmozható dobozra.</div></section></div>
+    <div class="bottom-strip"><div class="metrics"><div class="metric">Pótkocsi belső méret<b id="trailer-bottom">13,60 × 2,45 × 2,70 m</b></div><div class="metric">Elhelyezve<b id="count-label">0 / 0 db</b></div><div class="metric">Összes térfogat<b id="volume-bottom">0,000 m³</b></div><div class="metric">Elhelyezett tömeg<b id="weight-bottom">0 kg</b></div><div class="metric">Legmagasabb pont<b id="height-bottom">0 cm</b></div><div class="metric ldm">Fizikai LDM<b id="ldm-phys-bottom">0,00</b></div><div class="metric ldm">Díjszámítási LDM<b id="ldm-bill-bottom">0,00</b></div><div class="metric">Terv állapota<b id="plan-state-bottom">–</b></div></div><div class="footer-note">0.5: LDM-elemzés és tervösszehasonlítás lent. Szállításbiztonsági jóváhagyást nem helyettesít.</div></div>
+  </main>
+</div>
+<section class="analysis" id="analysis" aria-label="LDM-elemzés">
+  <div>
+    <h2>📏 Rakodóméter (LDM) – három külön mutató</h2>
+    <p class="lead">Az elméleti, a fizikai és a díjszámítási LDM más-más kérdésre felel, ezért <b>nem azonosak automatikusan</b>. Minden számítás egész centiméteres belső adatokkal fut (külön modul: <code>ldm_modul.js</code>). A díjszámítási LDM a FuvarDíj 4.0 meglévő szabályát tükrözi; az árat kizárólag a FuvarDíj 4.0 számolja.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="k">A · Elméleti LDM</span>
+      <span class="v" id="ldm-theo">0,00<small>LDM</small></span>
+      <div class="sub" id="ldm-theo-sub"></div>
+      <details><summary>Feltételezések</summary><ul id="ldm-theo-assume"></ul></details>
+    </div>
+    <div class="card">
+      <span class="k">B · Fizikai elrendezés szerinti LDM</span>
+      <span class="v" id="ldm-phys">0,00<small>LDM</small></span>
+      <div class="sub" id="ldm-phys-sub"></div>
+      <details><summary>Meghatározás</summary><p id="ldm-phys-def" style="margin:6px 0 0"></p></details>
+    </div>
+    <div class="card">
+      <span class="k">C · Díjszámítási LDM</span>
+      <span class="v" id="ldm-bill">0,00<small>LDM</small></span>
+      <div class="sub" id="ldm-bill-sub"></div>
+      <div class="field-grid">
+        <div><label for="bill-kg">kg / LDM index</label><input id="bill-kg" type="number" min="1" step="any" value="1750"></div>
+        <div><label for="bill-rule">Szabály</label><select id="bill-rule"><option value="maximum">maximum (fizikai, tömeg)</option><option value="fizikai">fizikai</option><option value="tömeg">tömeg</option></select></div>
+        <div class="full"><label for="bill-round">Kerekítés</label><select id="bill-round"></select></div>
+      </div>
+      <div class="sub" style="font-size:11px;color:#9fb1d2">Alapértékek és választható szabályok: FuvarDíj 4.0 <code>billing_config.py</code>. Fuvarozói megerősítés: <b>nincs</b> – a tényleges díjszabást a FuvarDíj 4.0-ban kell rögzíteni.</div>
+    </div>
+  </div>
+  <div class="two">
+    <div class="box"><h3>Ellenőrzés: geometria, ütközés, halmozás, terhelés</h3><ul class="issues" id="issues"></ul><h3 style="margin-top:14px">Miért tér el a három mutató?</h3><ul class="issues" id="diffs"></ul></div>
+    <div class="box"><h3>⚠ Nem ellenőrzött szállításbiztonsági feltételek</h3><p class="lead" style="margin:0 0 8px;font-size:12px">Ezeket a program nem vizsgálja; a terv megfelelése csak a fenti geometriai és megadott halmozási szabályokra vonatkozik.</p><ul class="issues" id="unverified"></ul></div>
+  </div>
+  <div class="box">
+    <h3>🗂 Rakodási tervek összehasonlítása</h3>
+    <div class="plan-bar">
+      <input id="plan-name" type="text" maxlength="60" placeholder="Terv neve, pl. A – hosszanti" aria-label="Terv neve">
+      <button class="iconbtn primary" id="plan-save-new">＋ Mentés új tervként</button>
+      <button class="iconbtn" id="plan-overwrite">✎ Kijelölt felülírása</button>
+      <button class="iconbtn" id="plan-open">⇧ Kijelölt megnyitása a 3D-ben</button>
+      <button class="iconbtn" id="plan-delete">🗑 Kijelölt törlése</button>
+      <button class="iconbtn" id="plans-export">⇩ Tervek exportálása</button>
+      <button class="iconbtn" id="plans-import">⇧ Tervek importálása</button>
+    </div>
+    <p class="lead" style="font-size:12px">A tervek ebben a böngészőben is megmaradnak, de tartós mentéshez használja az exportálást. Az első sor a még nem mentett, aktuális 3D-munkaterület.</p>
+    <div class="tbl-wrap"><table class="cmp" id="cmp-table"><thead><tr><th></th><th>Rakodási terv neve</th><th>Fizikailag szükséges LDM</th><th>Díjszámítási LDM</th><th>Elméleti LDM</th><th>Teljes rakománytömeg</th><th>Kihasznált alapterület</th><th>Szabad rakodóterület</th><th>Állapot</th><th>Korlátozások, figyelmeztetések</th></tr></thead><tbody id="cmp-body"></tbody></table></div>
+  </div>
+  <div class="box">
+    <h3>📦 Árajánlat-előkészítés – FuvarDíj 4.0 adatcsomag</h3>
+    <p class="lead" style="font-size:12px;margin:0 0 10px">A táblázatban kijelölt tervből strukturált JSON készül (azonosítók, méretek, tömegek, pozíciók, fizikai és díjszámítási LDM, ellenőrzési eredmény). Díjat és tarifát <b>nem</b> tartalmaz. A <code>fuvardij_kapcsolat/fuvardij4_adapter.py</code> a FuvarDíj 4.0 eredeti függvényeivel újraszámolja az LDM-et, és csak egyezés esetén enged árat számolni.</p>
+    <div class="plan-bar"><button class="iconbtn primary" id="pkg-download">⇩ Adatcsomag letöltése</button><span class="status-chip" id="pkg-status">–</span></div>
+    <details><summary style="cursor:pointer;color:#cbbcff;font-size:12px;margin-top:10px">Adatcsomag előnézete</summary><pre class="pkg" id="pkg-preview"></pre></details>
+  </div>
+</section>
+</div>
+<script src="ldm_modul.js"></script>
+<script>
+(() => {
+ 'use strict';
+ const LDM=window.LDMModul;
+ const trailer={length:13.60,width:2.45,height:2.70}; // méterben, a 3D-nézethez (a belső LDM-számítás egész cm)
+ const trailerCm={type:'Normál',length:1360,width:245,height:270,payloadKg:LDM.ALAP_TEHERBIRAS_KG};
+ let billing={...LDM.ALAP_ELSZAMOLAS},lastAnalysis=null,selectedPlanKey='current';
+ const state={yaw:-0.52,elev:0.57,zoom:1,boxes:[],selectedId:null,nextId:1,hover:null};
+ const defaults={length:120,width:80,height:60,weight:100,stackable:true,maxLayers:3,maxLoadKg:500,yaw:-0.52,elev:0.57};
+ const palette=['#8d78fc','#32bda9','#f59f54','#5da9f5','#ec78ac','#c7b26a','#8ade80','#b28df2'];
+ const visual=document.getElementById('visual'),canvas=document.getElementById('scene'),ctx=canvas.getContext('2d');
+ const list=document.getElementById('cargo-list'),waitingList=document.getElementById('waiting-list'),msg=document.getElementById('message');
+ let draggedWaitingId=null,externalHover=null;
+ const clamp=(n,a,b)=>Math.min(b,Math.max(a,n));
+ const fmt=(n,d=2)=>n.toLocaleString('hu-HU',{minimumFractionDigits:d,maximumFractionDigits:d});
+ const snap=(v)=>Math.round(v*100)/100; // 1 cm placement grid (függőleges irányban: padlótól)
+ // 0.5: vízszintesen a rács a homlokfalhoz / bal falhoz igazodik (páratlan cm-es belméretnél a középpont félcentis).
+ const snapX=(v)=>Math.round((v+trailer.length/2)*100)/100-trailer.length/2;
+ const snapY=(v)=>Math.round((v+trailer.width/2)*100)/100-trailer.width/2;
+ const p3=(x,y,z)=>({x,y,z});
+ let drag=null,raf=0,hitRegions=[],lastRenderer=null;
+ function sel(){return state.boxes.find(b=>b.id===state.selectedId)||null;}
+ function footprint(b){return {length:(b.rot%2?b.width:b.length)/100,width:(b.rot%2?b.length:b.width)/100,height:b.height/100};}
+ function bounds(b){const d=footprint(b);return {x0:b.x,x1:b.x+d.length,y0:b.y,y1:b.y+d.width,z0:b.z||0,z1:(b.z||0)+d.height};}
+ function overlap(a,b){const e=.00001;return a.x0<b.x1-e&&a.x1>b.x0+e&&a.y0<b.y1-e&&a.y1>b.y0+e&&a.z0<b.z1-e&&a.z1>b.z0+e;}
+ function covered(top,bottom){const e=.00001;return top.x0>=bottom.x0-e&&top.x1<=bottom.x1+e&&top.y0>=bottom.y0-e&&top.y1<=bottom.y1+e;}
+ function sceneCheck(boxes){
+   const occupied=boxes.filter(b=>b.placed), supports=new Map(),eps=.00001;
+   for(const b of occupied){
+     const v=bounds(b);
+     if(v.x0 < -trailer.length/2-eps||v.x1>trailer.length/2+eps||v.y0 < -trailer.width/2-eps||v.y1>trailer.width/2+eps||v.z0 < -eps||v.z1>trailer.height+eps)
+       return {ok:false,reason:`${b.id}. doboz kilóg a pótkocsiból (magassági korlát is).`};
+   }
+   for(let i=0;i<occupied.length;i++)for(let j=i+1;j<occupied.length;j++)if(overlap(bounds(occupied[i]),bounds(occupied[j])))
+     return {ok:false,reason:`Ütközés: ${occupied[i].id}. és ${occupied[j].id}. doboz.`};
+   for(const b of occupied){
+     const v=bounds(b);
+     if(v.z0<=eps)continue;
+     const below=occupied.find(o=>o.id!==b.id&&Math.abs(bounds(o).z1-v.z0)<eps&&covered(v,bounds(o)));
+     if(!below)return {ok:false,reason:`${b.id}. doboz alatt nincs teljes alátámasztás.`};
+     if(!below.stackable)return {ok:false,reason:`${below.id}. doboz nem halmozható.`};
+     supports.set(b.id,below.id);
+   }
+   // A fölé helyezett dobozok súlya és a rétegszám minden alátámasztó elemnél ellenőrzendő.
+   const loads=new Map(),maxDepth=new Map();
+   for(const b of occupied){
+     let current=b,depth=0,visited=new Set([b.id]);
+     while(supports.has(current.id)){
+       const id=supports.get(current.id);
+       if(visited.has(id))return {ok:false,reason:'Érvénytelen körkörös alátámasztás.'};
+       visited.add(id);depth++;
+       const under=occupied.find(o=>o.id===id);
+       loads.set(id,(loads.get(id)||0)+b.weight);
+       maxDepth.set(id,Math.max(maxDepth.get(id)||0,depth+1));
+       current=under;
+     }
+   }
+   for(const b of occupied){
+     if((maxDepth.get(b.id)||1)>b.maxLayers)return {ok:false,reason:`${b.id}. doboz: túllépted a maximális ${b.maxLayers} réteget.`};
+     if(b.maxLoadKg!=null&&(loads.get(b.id)||0)>b.maxLoadKg+eps)return {ok:false,reason:`${b.id}. doboz: a ráhelyezett tömeg meghaladja a ${b.maxLoadKg} kg-ot.`};
+   }
+   return {ok:true,reason:'Az elrendezés megfelel az itt beállított geometriai és halmozási korlátoknak.',supports,loads,maxDepth};
+ }
+ function testPlacement(b,position){
+   const boxes=state.boxes.map(q=>q.id===b.id?{...q,...position,placed:true}:q);
+   return sceneCheck(boxes);
+ }
+ function commitPlacement(b,pos){b.x=pos.x;b.y=pos.y;b.z=pos.z;b.placed=true;}
+ function hasUpperBox(b){const check=sceneCheck(state.boxes);if(!check.ok)return false;return [...check.supports.values()].includes(b.id);}
+ function showMessage(text,type=''){
+   msg.textContent=text;msg.className='message'+(type?' '+type:'');
+ }
+ function selectBox(id){
+   state.selectedId=id;
+   const b=sel();
+   if(b){
+     showMessage(b.placed?`${b.id}. doboz kijelölve. Bal egérgombbal húzva áthelyezheted.`:`${b.id}. doboz kiválasztva. Állítsd be a méretét, majd kattints a pótkocsi padlójára.`, 'good');
+   }else showMessage('Hozz létre és jelölj ki egy dobozt a listában.');
+   state.hover=null; updateUI();
+ }
+ function createBoxes(){
+   const field=document.getElementById('count-input');
+   const n=Number(field.value);
+   if(!Number.isInteger(n)||n<1||n>50){showMessage('A darabszám egész szám legyen 1 és 50 között.','bad');return;}
+   if(state.boxes.length+n>100){showMessage('A prototípus legfeljebb 100 dobozt kezel.','bad');return;}
+   const seedBox=sel(),seed=seedBox||defaults;
+   let first=null;
+   for(let i=0;i<n;i++){
+     const id=state.nextId++;if(first===null)first=id;
+     state.boxes.push({id,label:'',type:seed.type||'Doboz',length:seed.length,width:Math.min(seed.width,trailerCm.width),height:Math.min(seed.height,trailerCm.height),weight:seed.weight??100,stackable:seed.stackable??true,maxLayers:seed.maxLayers??3,maxLoadKg:('maxLoadKg' in seed)?seed.maxLoadKg:500,x:0,y:0,z:0,rot:0,placed:false,color:seedBox?seedBox.color:palette[(id-1)%palette.length]});
+   }
+   selectBox(first);showMessage(`${n} doboz létrehozva. A listában kiválaszthatod, melyiket helyezed el.`,'good');
+ }
+ function updateList(){
+   list.replaceChildren();
+   for(const b of state.boxes){
+     const bt=document.createElement('button');bt.type='button';bt.className='cargo-row'+(b.id===state.selectedId?' active':'');
+     const dot=document.createElement('span');dot.className='color';dot.style.background=b.color;
+     const details=document.createElement('span');details.className='item-details';
+     const title=document.createElement('span');title.className='item-title';title.textContent=`${b.id}. ${b.label?b.label+' · ':''}${b.type||'doboz'}`;
+     const sub=document.createElement('span');sub.className='item-sub';sub.textContent=`${b.length} × ${b.width} × ${b.height} cm · ${b.weight} kg${b.stackable?'':' · ⊘ nem halmozható'}${b.placed&&b.z>0?' · ↑ '+Math.round(b.z*100)+' cm':''}${b.rot?' · 90°':''}`;
+     details.append(title,sub);
+     const status=document.createElement('span');status.className='item-badge'+(b.placed?'':' pending');status.textContent=b.placed?'✓ Bent':'Kint';
+     bt.append(dot,details,status);bt.addEventListener('click',()=>selectBox(b.id));list.append(bt);
+   }
+   waitingList.replaceChildren();
+   const pending=state.boxes.filter(b=>!b.placed);
+   document.getElementById('wait-count').textContent=pending.length+' db';
+   if(!pending.length){const empty=document.createElement('div');empty.className='waiting-empty';empty.textContent='Minden doboz a pótkocsiban van. Adj hozzá újat, vagy tegyél vissza egy már elhelyezettet.';waitingList.append(empty);}
+   for(const b of pending){
+     const card=document.createElement('button');card.type='button';card.className='wait-card'+(b.id===state.selectedId?' active':'');card.draggable=true;card.dataset.id=String(b.id);
+     const cube=document.createElement('span');cube.className='cube';cube.style.background=b.color;cube.textContent='▣';
+     const label=document.createElement('span');const title=document.createElement('strong');title.textContent=b.id+'. '+(b.label||b.type||'doboz');const sub=document.createElement('small');sub.textContent=b.length+' × '+b.width+' × '+b.height+' cm · '+b.weight+' kg';label.append(title,sub);card.append(cube,label);
+     card.addEventListener('click',()=>selectBox(b.id));
+     card.addEventListener('dragstart',e=>{draggedWaitingId=b.id;state.selectedId=b.id;requestRender();e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',String(b.id));});
+     card.addEventListener('dragend',()=>{draggedWaitingId=null;externalHover=null;visual.classList.remove('dragover');requestRender();});
+     waitingList.append(card);
+   }
+ }
+ function getCam(){
+   const sy=Math.sin(state.yaw),cy=Math.cos(state.yaw),se=Math.sin(state.elev),ce=Math.cos(state.elev);
+   return {sy,cy,se,ce,
+     project(p){return {x:cy*p.x-sy*p.y,y:se*(sy*p.x+cy*p.y)-ce*p.z};},
+     depth(p){return sy*ce*p.x+cy*ce*p.y+se*p.z;}
+   };
+ }
+ function buildRenderer(w,h){
+   const cam=getCam(),L=trailer.length/2,W=trailer.width/2;
+   const corners=[];
+   for(const x of [-L,L])for(const y of [-W,W])for(const z of [0,trailer.height])corners.push(cam.project(p3(x,y,z)));
+   const minx=Math.min(...corners.map(p=>p.x)),maxx=Math.max(...corners.map(p=>p.x));
+   const miny=Math.min(...corners.map(p=>p.y)),maxy=Math.max(...corners.map(p=>p.y));
+   const sc=Math.max(1,Math.min((w-110)/(maxx-minx),(h-145)/(maxy-miny))*state.zoom);
+   const centerx=(minx+maxx)/2,centery=(miny+maxy)/2;
+   const toScreen=p=>{const v=cam.project(p);return {x:w/2+(v.x-centerx)*sc,y:h/2+(v.y-centery)*sc+29};};
+   const planeFromScreen=(sx,sy,z=0)=>{
+     const O=toScreen(p3(0,0,z));
+     const a=(sx-O.x)/sc,b=(sy-O.y)/(sc*Math.max(cam.se,.05));
+     return {x:cam.cy*a+cam.sy*b,y:-cam.sy*a+cam.cy*b};
+   };
+   return {cam,toScreen,planeFromScreen,floorFromScreen:(sx,sy)=>planeFromScreen(sx,sy,0),scale:sc};
+ }
+ function polyPath(points,r){
+   const q=points.map(r.toScreen);ctx.beginPath();ctx.moveTo(q[0].x,q[0].y);q.slice(1).forEach(p=>ctx.lineTo(p.x,p.y));ctx.closePath();return q;
+ }
+ function polygon(points,r,fill,stroke,width=1,alpha=1){
+   const q=polyPath(points,r);
+   if(fill){ctx.globalAlpha=alpha;ctx.fillStyle=fill;ctx.fill();ctx.globalAlpha=1;}
+   if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}
+   return q;
+ }
+ function line(a,b,r,color,width=1,dash=[]){
+   const p=r.toScreen(a),q=r.toScreen(b);ctx.beginPath();ctx.setLineDash(dash);ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke();ctx.setLineDash([]);
+ }
+ function facesOfBox(v){
+   const {x0,x1,y0,y1,z0,z1}=v;
+   return [
+     {normal:[-1,0,0],pts:[p3(x0,y0,z0),p3(x0,y1,z0),p3(x0,y1,z1),p3(x0,y0,z1)],shade:.76},
+     {normal:[1,0,0],pts:[p3(x1,y0,z0),p3(x1,y1,z0),p3(x1,y1,z1),p3(x1,y0,z1)],shade:.86},
+     {normal:[0,-1,0],pts:[p3(x0,y0,z0),p3(x1,y0,z0),p3(x1,y0,z1),p3(x0,y0,z1)],shade:.66},
+     {normal:[0,1,0],pts:[p3(x0,y1,z0),p3(x1,y1,z0),p3(x1,y1,z1),p3(x0,y1,z1)],shade:.91},
+     {normal:[0,0,1],pts:[p3(x0,y0,z1),p3(x1,y0,z1),p3(x1,y1,z1),p3(x0,y1,z1)],shade:1.15},
+   ];
+ }
+ function mixColor(hex,mul){
+   const c=hex.replace('#','');return '#'+[0,2,4].map(i=>Math.min(255,Math.round(parseInt(c.slice(i,i+2),16)*mul)).toString(16).padStart(2,'0')).join('');
+ }
+ function drawBox(b,r,preview=false,valid=true){
+   const v=bounds(b);const cam=r.cam,eye=[cam.sy*cam.ce,cam.cy*cam.ce,cam.se];
+   const faces=facesOfBox(v).filter(f=>f.normal[0]*eye[0]+f.normal[1]*eye[1]+f.normal[2]*eye[2]>.001);
+   faces.sort((a,b)=>a.pts.reduce((s,p)=>s+cam.depth(p),0)-b.pts.reduce((s,p)=>s+cam.depth(p),0));
+   for(const f of faces){
+     const color=preview?(valid?'#42d59e':'#ff5e82'):mixColor(b.color,f.shade);
+     const q=polygon(f.pts,r,color,preview?(valid?'#81ffc6':'#ff8a9e'):(b.id===state.selectedId?'#f4e7ff':'#272b58'),preview?2.4:(b.id===state.selectedId?2:1),preview?.30:.92);
+     if(!preview)hitRegions.push({id:b.id,points:q});
+   }
+   if(preview){
+     const {x0,x1,y0,y1,z1}=v;
+     [[p3(x0,y0,z1),p3(x1,y0,z1)],[p3(x1,y0,z1),p3(x1,y1,z1)],[p3(x1,y1,z1),p3(x0,y1,z1)],[p3(x0,y1,z1),p3(x0,y0,z1)]].forEach(pair=>line(pair[0],pair[1],r,valid?'#8fffd0':'#ff8b98',2));
+   }
+   if(!preview){
+     const q=r.toScreen(p3((v.x0+v.x1)/2,(v.y0+v.y1)/2,v.z1));
+     ctx.font='bold 12px system-ui';ctx.textAlign='center';ctx.fillStyle='#ffffff';ctx.fillText(String(b.id),q.x,q.y+5);
+   }
+ }
+ function pointInside(pt,vertices){
+   let inside=false;for(let i=0,j=vertices.length-1;i<vertices.length;j=i++){
+     const a=vertices[i],b=vertices[j];if(((a.y>pt.y)!==(b.y>pt.y)) && pt.x<(b.x-a.x)*(pt.y-a.y)/(b.y-a.y)+a.x)inside=!inside;
+   }return inside;
+ }
+ function hitTest(x,y,excludeId=null){for(let i=hitRegions.length-1;i>=0;i--)if(hitRegions[i].id!==excludeId&&pointInside({x,y},hitRegions[i].points))return state.boxes.find(b=>b.id===hitRegions[i].id)||null;return null;}
+ function render(){
+   raf=0;const w=visual.clientWidth,h=visual.clientHeight;if(!ctx||w<1||h<1)return;
+   const ratio=Math.min(window.devicePixelRatio||1,2),bw=Math.round(w*ratio),bh=Math.round(h*ratio);
+   if(canvas.width!==bw||canvas.height!==bh){canvas.width=bw;canvas.height=bh;}
+   ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,w,h);
+   const r=buildRenderer(w,h);lastRenderer=r;
+   const L=trailer.length/2,W=trailer.width/2,H=trailer.height;
+   polygon([p3(-L,-W,-.12),p3(L,-W,-.12),p3(L,W,-.12),p3(-L,W,-.12)],r,'#050d19',null,1,.54);
+   polygon([p3(-L,-W,0),p3(L,-W,0),p3(L,W,0),p3(-L,W,0)],r,'#344760','#7587a2',1.4);
+   for(let x=-L+.5;x<L;x+=.5)line(p3(x,-W,.005),p3(x,W,.005),r,'#556b85',.55);
+   for(let y=-W+.5;y<W;y+=.5)line(p3(-L,y,.005),p3(L,y,.005),r,'#556b85',.55);
+   polygon([p3(-L,-W,0),p3(L,-W,0),p3(L,-W,H),p3(-L,-W,H)],r,'#91b6e8',null,0,.06);
+   hitRegions=[];
+   state.boxes.filter(b=>b.placed).sort((a,b)=>{
+     const A=bounds(a),B=bounds(b);
+     return r.cam.depth(p3((A.x0+A.x1)/2,(A.y0+A.y1)/2,A.z1/2))-r.cam.depth(p3((B.x0+B.x1)/2,(B.y0+B.y1)/2,B.z1/2));
+   }).forEach(b=>drawBox(b,r));
+   // Fizikai LDM jelölése: a homlokfaltól a legtávolabbi rakományélig lefoglalt hossz.
+   {
+     const front=r.toScreen(p3(-L,0,H+.08));ctx.font='bold 11px system-ui';ctx.textAlign='center';ctx.fillStyle='#ffd27a';ctx.fillText('ELEJE (homlokfal)',front.x,front.y);
+     const used=lastAnalysis?.fizikai?.hasznaltHosszCm||0;
+     if(used>0){
+       const xu=-L+used/100;
+       line(p3(xu,-W,.01),p3(xu,W,.01),r,'#ffd27a',2.2,[7,5]);line(p3(xu,-W,.01),p3(xu,-W,H*.35),r,'#ffd27a',1.4,[4,4]);line(p3(xu,W,.01),p3(xu,W,H*.35),r,'#ffd27a',1.4,[4,4]);
+       const q=r.toScreen(p3(xu,-W,H*.38));ctx.fillStyle='#ffd27a';ctx.fillText('Fizikai LDM '+fmt(used/100),q.x,q.y);
+     }
+   }
+   const selected=sel();
+   if(selected&&!selected.placed&&(externalHover||state.hover)){
+     const pos=externalHover||state.hover;
+     const q={...selected,x:pos.x,y:pos.y,z:pos.z};
+     const result=testPlacement(selected,pos);drawBox(q,r,true,!pos.offFloor&&result.ok);
+     document.getElementById('placement-label').textContent=(!pos.offFloor&&result.ok?'🟢 ':'🔴 ')+(pos.offFloor?'A pótkocsin belül helyezd el.':result.reason);
+   }else if(selected&&selected.placed&&drag?.mode==='box'&&drag.preview){
+     const p={...selected,x:drag.preview.x,y:drag.preview.y,z:drag.preview.z};drawBox(p,r,true,drag.preview.valid);
+     document.getElementById('placement-label').textContent=(drag.preview.valid?'🟢 ':'🔴 ')+(drag.preview.reason||'Elhelyezési próba');
+   }else document.getElementById('placement-label').textContent=selected?(selected.placed?'📦 Kijelölt: '+selected.id+'. doboz':'📦 Helyezd el: '+selected.id+'. doboz'):'Válassz ki egy dobozt';
+   polygon([p3(-L,W,0),p3(L,W,0),p3(L,W,H),p3(-L,W,H)],r,'#b5d5ff',null,0,.025);
+   const C={a:p3(-L,-W,0),b:p3(L,-W,0),c:p3(L,W,0),d:p3(-L,W,0),A:p3(-L,-W,H),B:p3(L,-W,H),C:p3(L,W,H),D:p3(-L,W,H)};
+   [['a','b'],['b','c'],['c','d'],['d','a'],['A','B'],['B','C'],['C','D'],['D','A'],['a','A'],['b','B'],['c','C'],['d','D']].forEach(([a,b])=>line(C[a],C[b],r,'#afc8ed',1.6));
+   document.getElementById('zoom-label').textContent='Nagyítás: '+Math.round(state.zoom*100)+'%';
+ }
+ function requestRender(){if(!raf)raf=requestAnimationFrame(render);}
+ function updateUI(){
+   const b=sel();
+   for(const key of ['length','width','height']){
+     const range=document.getElementById(key+'-range'),input=document.getElementById(key+'-input');
+     range.disabled=input.disabled=!b;
+     if(b){range.value=b[key];input.value=b[key];}
+   }
+   document.getElementById('selected-id').textContent=b?`${b.id}. doboz`:'Nincs kijelölve';
+   document.getElementById('size-label').textContent=b?`${b.length} × ${b.width} × ${b.height} cm`:'Nincs doboz';
+   document.getElementById('volume-label').textContent=b?'Térfogat: '+fmt(b.length*b.width*b.height/1e6,3)+' m³':'Előbb hozz létre dobozokat';
+   for(const [key,def] of [['weight',100],['maxLayers',3],['maxLoadKg',500]]){
+     const el=document.getElementById(key==='maxLoadKg'?'maxload-input':key==='maxLayers'?'layers-input':'weight-input');
+     el.disabled=!b;el.value=b?(b[key]??''):def;
+   }
+   for(const [id,key,def] of [['label-input','label',''],['type-input','type','Doboz'],['color-input','color','#8d78fc']]){
+     const el=document.getElementById(id);el.disabled=!b;if(document.activeElement!==el)el.value=b?(b[key]||def):def;
+   }
+   document.getElementById('stackable-input').disabled=!b;
+   document.getElementById('stackable-input').checked=b?b.stackable:true;
+   document.getElementById('maxload-input').disabled=!b||!b.stackable;
+   document.getElementById('layers-input').disabled=!b||!b.stackable;
+   const report=sceneCheck(state.boxes),loads=report.loads||new Map();
+   document.getElementById('stack-status').textContent=b?(b.placed?`Elhelyezve: ${Math.round(b.z*100)} cm padlószint felett. `:'Várakozik. ')+`Fölötte: ${loads.get(b.id)||0} / ${b.maxLoadKg??'ismeretlen'} kg. ${(report.maxDepth?.get(b.id)||1)} / ${b.maxLayers} réteg.`:'Válassz dobozt a listából.';
+   const count=state.boxes.filter(b=>b.placed).length;
+   document.getElementById('count-label').textContent=`${count} / ${state.boxes.length} db`;
+   document.getElementById('volume-bottom').textContent=fmt(state.boxes.filter(b=>b.placed).reduce((s,b)=>s+b.length*b.width*b.height/1e6,0),3)+' m³';
+   document.getElementById('weight-bottom').textContent=fmt(state.boxes.filter(b=>b.placed).reduce((s,b)=>s+b.weight,0),0)+' kg';
+   document.getElementById('height-bottom').textContent=Math.round(state.boxes.filter(b=>b.placed).reduce((m,b)=>Math.max(m,bounds(b).z1),0)*100)+' cm';
+   document.getElementById('remove-box').disabled=!b;
+   document.getElementById('clear-boxes').disabled=!state.boxes.length;
+   document.getElementById('return-box').disabled=!b||!b.placed;
+   updateAnalysis();updateList();requestRender();
+ }
+ ['length','width','height'].forEach(key=>{
+   const range=document.getElementById(key+'-range'),input=document.getElementById(key+'-input');
+   const apply=value=>{
+     const b=sel(),n=Number(value);if(!b||value===''||!Number.isFinite(n))return;
+     const old=b[key];b[key]=Math.round(clamp(n,Number(range.min),Number(range.max)));
+     if(key!=='length'&&b[key]>trailerCm[key]){b[key]=old;showMessage(`A ${key==='width'?'szélesség':'magasság'} nem lehet nagyobb a pótkocsi belső méreténél (${trailerCm[key]} cm).`,'bad');updateUI();return;}
+     if(b.placed&&!sceneCheck(state.boxes).ok){b[key]=old;showMessage('Ez a méretmódosítás ütközést, alátámasztási vagy magassági hibát okozna.','bad');}
+     else showMessage(`${b.id}. doboz mérete frissítve.`, 'good');
+     updateUI();
+   };
+   range.addEventListener('input',()=>apply(range.value));input.addEventListener('change',()=>apply(input.value));input.addEventListener('blur',()=>updateUI());
+ });
+ for(const [id,key] of [['weight-input','weight'],['layers-input','maxLayers'],['maxload-input','maxLoadKg']]){
+   document.getElementById(id).addEventListener('change',e=>{
+     const b=sel(),n=Number(e.target.value);if(!b)return;
+     if(key==='maxLoadKg'&&e.target.value===''){b.maxLoadKg=null;showMessage(`${b.id}. doboz: ráterhelés ismeretlen – a halmozás „nem igazolt” lesz.`,'');updateUI();return;}
+     if(e.target.value===''||!Number.isInteger(n)||n<(key==='weight'?1:key==='maxLayers'?1:0)||n>(key==='maxLayers'?8:50000)){showMessage('Érvénytelen érték.','bad');updateUI();return;}
+     const old=b[key];b[key]=n;const check=sceneCheck(state.boxes);
+     if(!check.ok){b[key]=old;showMessage(check.reason,'bad');}else showMessage(`${b.id}. doboz beállítása frissítve.`,'good');
+     updateUI();
+   });
+ }
+ document.getElementById('stackable-input').addEventListener('change',e=>{
+   const b=sel();if(!b)return;const old=b.stackable;b.stackable=e.target.checked;
+   const check=sceneCheck(state.boxes);
+   if(!check.ok){b.stackable=old;showMessage(check.reason,'bad');}else showMessage(`Halmozhatóság módosítva: ${b.id}. doboz.`,'good');
+   updateUI();
+ });
+ document.getElementById('create-boxes').addEventListener('click',createBoxes);
+ document.getElementById('remove-box').addEventListener('click',()=>{
+   const b=sel();if(!b)return;if(b.placed&&hasUpperBox(b)){showMessage('Előbb vedd le a doboz tetején lévő rakományt.','bad');return;}state.boxes=state.boxes.filter(v=>v.id!==b.id);state.selectedId=state.boxes[0]?.id??null;state.hover=null;showMessage(`${b.id}. doboz törölve.`);updateUI();
+ });
+ document.getElementById('clear-boxes').addEventListener('click',()=>{
+   state.boxes=[];state.selectedId=null;state.hover=null;showMessage('Az összes doboz törölve.');updateUI();
+ });
+ document.getElementById('return-box').addEventListener('click',()=>{
+   const b=sel();if(!b||!b.placed)return;if(hasUpperBox(b)){showMessage('Előbb vedd le a doboz tetején lévő rakományt.','bad');return;}b.placed=false;b.z=0;state.hover=null;showMessage(b.id+'. doboz visszakerült a várakozóba.','good');updateUI();
+ });
+ function local(e){const rect=canvas.getBoundingClientRect();return {x:e.clientX-rect.left,y:e.clientY-rect.top};}
+ function floorAt(e){const pt=local(e);return (lastRenderer||buildRenderer(visual.clientWidth,visual.clientHeight)).floorFromScreen(pt.x,pt.y);}
+ function targetPos(b,p){
+   const d=footprint(b),L=trailer.length/2,W=trailer.width/2;
+   let x=snapX(p.x-d.length/2),y=snapY(p.y-d.width/2);
+   const others=state.boxes.filter(o=>o.placed&&o.id!==b.id);
+   // 10 cm-en belül mágneses illesztés a pótkocsi falához vagy a másik doboz éléhez.
+   const xs=[-L,L-d.length],ys=[-W,W-d.width];
+   for(const o of others){const q=footprint(o);xs.push(o.x+q.length,o.x-d.length);ys.push(o.y+q.width,o.y-d.width);}
+   const magnet=(v,positions)=>{let best=v,delta=.101;for(const a of positions){const d=Math.abs(v-a);if(d<delta){delta=d;best=a;}}return best;};
+   x=magnet(x,xs);y=magnet(y,ys);
+   return {x,y};
+ }
+ function validPoint(p){return p.x>=-trailer.length/2&&p.x<=trailer.length/2&&p.y>=-trailer.width/2&&p.y<=trailer.width/2;}
+ function targetPlacement(b,e){
+   const pt=local(e),renderer=lastRenderer||buildRenderer(visual.clientWidth,visual.clientHeight);
+   const hit=hitTest(pt.x,pt.y,b.id);
+   if(hit){
+     const base=bounds(hit),d=footprint(b),z=base.z1;
+     const p=renderer.planeFromScreen(pt.x,pt.y,z);
+     if(d.length>base.x1-base.x0+.00001||d.width>base.y1-base.y0+.00001){
+       return {x:snapX(base.x0),y:snapY(base.y0),z:snap(z),supportId:hit.id};
+     }
+     const x=snapX(clamp(p.x-d.length/2,base.x0,base.x1-d.length));
+     const y=snapY(clamp(p.y-d.width/2,base.y0,base.y1-d.width));
+     return {x,y,z:snap(z),supportId:hit.id};
+   }
+   const f=renderer.floorFromScreen(pt.x,pt.y),pos=targetPos(b,f);
+   return {...pos,z:0,supportId:null,offFloor:!validPoint(f)};
+ }
+ canvas.addEventListener('contextmenu',e=>e.preventDefault());
+ // HTML5 drag-and-drop: behúzás a külön várakozóterületről.
+ canvas.addEventListener('dragover',e=>{
+   if(!draggedWaitingId)return;
+   e.preventDefault();e.dataTransfer.dropEffect='move';visual.classList.add('dragover');
+   const b=state.boxes.find(q=>q.id===draggedWaitingId);
+   if(!b)return;
+   externalHover=targetPlacement(b,e);state.selectedId=b.id;
+   requestRender();
+ });
+ canvas.addEventListener('dragleave',e=>{if(!canvas.contains(e.relatedTarget)){externalHover=null;visual.classList.remove('dragover');requestRender();}});
+ canvas.addEventListener('drop',e=>{
+   e.preventDefault();visual.classList.remove('dragover');
+   const id=draggedWaitingId??Number(e.dataTransfer.getData('text/plain'));
+   const b=state.boxes.find(q=>q.id===id&&!q.placed);
+   if(!b){externalHover=null;return;}
+   const pos=targetPlacement(b,e),check=testPlacement(b,pos);
+   if(!pos.offFloor&&check.ok){commitPlacement(b,pos);showMessage(`${b.id}. doboz elhelyezve ${pos.z>0?Math.round(pos.z*100)+' cm magasra':'a padlóra'}.`,'good');}
+   else showMessage(pos.offFloor?'A rakományt a pótkocsiba húzd.':check.reason,'bad');
+   state.selectedId=b.id;externalHover=null;draggedWaitingId=null;state.hover=null;updateUI();
+ });
+ canvas.addEventListener('pointerdown',e=>{
+   if(e.button!==0&&e.button!==2)return;
+   const pt=local(e),hit=hitTest(pt.x,pt.y),selected=sel();
+   if(e.button===2||e.shiftKey){
+     drag={mode:'camera',x:e.clientX,y:e.clientY,yaw:state.yaw,elev:state.elev,pointerId:e.pointerId};canvas.classList.add('dragging');
+   }else if(selected&&!selected.placed){
+     const pos=targetPlacement(selected,e),check=testPlacement(selected,pos);
+     if(!pos.offFloor&&check.ok){commitPlacement(selected,pos);state.hover=null;showMessage(`${selected.id}. doboz elhelyezve ${pos.z>0?Math.round(pos.z*100)+' cm magasra':'a padlóra'}.`,'good');updateUI();}
+     else showMessage(pos.offFloor?'Kattints a pótkocsi padlójára vagy egy dobozra.':check.reason,'bad');
+   }else if(hit){
+     if(hit.id!==state.selectedId)selectBox(hit.id);
+     if(hasUpperBox(hit)){showMessage('Ezen a dobozon másik rakomány áll. Előbb mozgasd a felső elemet.','bad');}
+     else{drag={mode:'box',id:hit.id,x:e.clientX,y:e.clientY,original:{x:hit.x,y:hit.y,z:hit.z},preview:null,moved:false,pointerId:e.pointerId};canvas.classList.add('move-box');}
+   }
+   if(drag)canvas.setPointerCapture(e.pointerId);
+   requestRender();
+ });
+ canvas.addEventListener('pointermove',e=>{
+   if(drag){
+     if(drag.mode==='camera'){
+       state.yaw=drag.yaw+(e.clientX-drag.x)*.007;state.elev=clamp(drag.elev+(e.clientY-drag.y)*.006,.14,1.49);
+     }else if(drag.mode==='box'){
+       const b=state.boxes.find(q=>q.id===drag.id);
+       if(b&&Math.hypot(e.clientX-drag.x,e.clientY-drag.y)>4){
+         drag.moved=true;
+         const pos=targetPlacement(b,e),check=testPlacement(b,pos);
+         drag.preview={...pos,valid:!pos.offFloor&&check.ok,reason:pos.offFloor?'A pótkocsin belül mozgasd.':check.reason};
+       }
+     }
+   }else if(sel()&&!sel().placed){
+     state.hover=targetPlacement(sel(),e);
+   }
+   requestRender();
+ });
+ function finishDrag(){
+   if(drag?.mode==='box'&&drag.moved&&drag.preview){
+     const b=state.boxes.find(q=>q.id===drag.id);
+     if(b&&drag.preview.valid){commitPlacement(b,drag.preview);showMessage(`${b.id}. doboz áthelyezve ${Math.round(b.z*100)} cm padlószintre.`,'good');}
+     else showMessage(drag.preview.reason||'A doboz ide nem helyezhető.','bad');
+     updateUI();
+   }
+   drag=null;canvas.classList.remove('dragging','move-box');requestRender();
+ }
+ canvas.addEventListener('pointerup',finishDrag);canvas.addEventListener('pointercancel',finishDrag);
+ canvas.addEventListener('pointerleave',()=>{if(!drag){state.hover=null;requestRender();}});
+ canvas.addEventListener('wheel',e=>{
+   e.preventDefault();
+   if(e.shiftKey||!sel()){
+     state.zoom=clamp(state.zoom*(e.deltaY<0?1.09:.92),.45,3.5);requestRender();return;
+   }
+   const b=sel(),previous=b.rot;
+   b.rot=(b.rot+1)%2;
+   if(b.placed&&!sceneCheck(state.boxes).ok){b.rot=previous;showMessage('A forgatás ütközést vagy alátámasztási hibát okozna.','bad');}
+   else showMessage(`${b.id}. doboz ${b.rot?'90°':'0°'}-os helyzetben.`, 'good');
+   updateUI();
+ },{passive:false});
+ document.addEventListener('keydown',e=>{
+   if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;
+   const b=sel();if(!b)return;
+   if(e.key.toLowerCase()==='r'&&!e.ctrlKey&&!e.metaKey){
+     e.preventDefault();const old=b.rot;b.rot=(b.rot+1)%2;
+     if(b.placed&&!sceneCheck(state.boxes).ok){b.rot=old;showMessage('A forgatás ütközést vagy alátámasztási hibát okozna.','bad');}else showMessage('Doboz elforgatva.','good');
+     updateUI();return;
+   }
+   const step=e.shiftKey?0.10:0.01;
+   let dx=0,dy=0;
+   if(e.key==='ArrowLeft')dx=-step;
+   else if(e.key==='ArrowRight')dx=step;
+   else if(e.key==='ArrowUp')dy=-step;
+   else if(e.key==='ArrowDown')dy=step;
+   else return;
+   if(!b.placed)return;e.preventDefault();
+   const x=snapX(b.x+dx),y=snapY(b.y+dy),v=testPlacement(b,{x,y,z:b.z});
+   if(v.ok){b.x=x;b.y=y;showMessage('Pontos elhelyezés: '+Math.round((b.x+trailer.length/2)*100)+' cm hosszában, '+Math.round((b.y+trailer.width/2)*100)+' cm széltében.','good');}
+   else showMessage(v.reason,'bad');
+   updateUI();
+ });
+ document.getElementById('save-plan').addEventListener('click',()=>{
+   const doc={format:'rakodastervezo-3d',version:5,units:'cm',trailer:{...trailerCm},billing:{...billing},boxes:state.boxes.map(b=>({...b,x:Math.round(b.x*100),y:Math.round(b.y*100),z:Math.round((b.z||0)*100)}))};
+   downloadJson(doc,'rakodasi-terv-v05.json');showMessage('A 0.5-ös rakodási terv mentve (pótkocsi, díjszámítási beállítás, rétegek és terhelések is).','good');
+ });
+ function downloadJson(obj,name){
+   const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+   a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
+ }
+ document.getElementById('load-plan').addEventListener('click',()=>document.getElementById('plan-file').click());
+ document.getElementById('plan-file').addEventListener('change',async e=>{
+   const file=e.target.files[0];if(!file)return;
+   try{
+     const doc=JSON.parse(await file.text());
+     if(doc.format==='rakodastervezo-3d-tervgyujtemeny'){importPlans(doc);return;}
+     if(doc.format!=='rakodastervezo-3d'||![3,4,5].includes(doc.version)||!Array.isArray(doc.boxes)||doc.boxes.length>100)throw Error('Nem megfelelő tervfájl.');
+     const tr=doc.version===5?readTrailer(doc.trailer):{type:'Normál',length:1360,width:245,height:270,payloadKg:LDM.ALAP_TEHERBIRAS_KG};
+     if(doc.version<5&&(doc.trailer?.length!==1360||doc.trailer?.width!==245||doc.trailer?.height!==270))throw Error('Nem megfelelő pótkocsi-méret.');
+     const v4=doc.version>=4;
+     const loaded=doc.boxes.map(b=>{
+       const id=Number(b.id),length=Number(b.length),width=Number(b.width),height=Number(b.height),x=Number(b.x),y=Number(b.y),z=v4?Number(b.z):0,rot=Number(b.rot),placed=b.placed===true;
+       const weight=v4?Number(b.weight):100,stackable=v4?b.stackable:true;
+       const maxLayers=v4?Number(b.maxLayers):3,maxLoadKg=v4?(b.maxLoadKg===null&&doc.version===5?null:Number(b.maxLoadKg)):500;
+       if(![id,length,width,height,x,y,z,rot,weight,maxLayers].every(Number.isFinite)||![id,length,width,height,x,y,z].every(Number.isInteger)||id<1||length<20||length>600||width<20||width>tr.width||height<20||height>tr.height||![0,1].includes(rot)||!Number.isInteger(weight)||weight<1||weight>50000||!Number.isInteger(maxLayers)||maxLayers<1||maxLayers>8||(maxLoadKg!==null&&(!Number.isInteger(maxLoadKg)||maxLoadKg<0||maxLoadKg>50000))||typeof stackable!=='boolean')throw Error('Hibás dobozadat.');
+       return {id,label:typeof b.label==='string'?b.label.slice(0,40):'',type:typeof b.type==='string'?b.type.slice(0,30):'Doboz',length,width,height,x,y,z,rot,placed,weight,stackable,maxLayers,maxLoadKg,color:/^#[0-9a-f]{6}$/i.test(b.color||'')?b.color:palette[(id-1)%palette.length]};
+     });
+     if(new Set(loaded.map(b=>b.id)).size!==loaded.length)throw Error('Ismétlődő dobozazonosító.');
+     // A fájlban a koordináták a pótkocsi közepéhez képest cm-ben vannak (0.4-gyel kompatibilis).
+     const ok=applyTrailerAndBoxes(tr,loaded.map(b=>({...b,x:b.x/100,y:b.y/100,z:b.z/100})));
+     if(!ok.ok)throw Error(ok.reason);
+     if(doc.version===5&&doc.billing)setBilling(doc.billing);
+     showMessage('Terv sikeresen betöltve ('+({3:'régi 0.3-as',4:'0.4-es',5:'0.5-ös'}[doc.version])+' formátum).','good');updateUI();
+   }catch(err){showMessage('Nem sikerült betölteni: '+err.message,'bad');}
+   finally{e.target.value='';}
+ });
+ // ======================= 0.5: pótkocsi, rakománytípus, LDM-elemzés, tervek, adatcsomag =======================
+ const $=id=>document.getElementById(id);
+ function el(tag,props={},...kids){const e=document.createElement(tag);for(const[k,v]of Object.entries(props)){if(k==='class')e.className=v;else if(k==='text')e.textContent=v;else if(k.startsWith('on'))e.addEventListener(k.slice(2),v);else e.setAttribute(k,v);}for(const c of kids)if(c!=null)e.append(c);return e;}
+ function readTrailer(t){
+   const tr={type:typeof t?.type==='string'?t.type:'Egyedi méret',length:Number(t?.length),width:Number(t?.width),height:Number(t?.height),payloadKg:Number(t?.payloadKg??LDM.ALAP_TEHERBIRAS_KG)};
+   if(![tr.length,tr.width,tr.height].every(Number.isInteger)||tr.length<200||tr.length>2000||tr.width<100||tr.width>300||tr.height<100||tr.height>400||!(tr.payloadKg>0&&tr.payloadKg<=60000))throw Error('Érvénytelen pótkocsi-méret.');
+   return tr;
+ }
+ /** Pótkocsi és (méterben, középre vonatkoztatott) dobozok beállítása; hibánál semmi sem változik. */
+ function applyTrailerAndBoxes(tr,boxes){
+   const oldT={...trailer},oldC={...trailerCm};
+   trailer.length=tr.length/100;trailer.width=tr.width/100;trailer.height=tr.height/100;Object.assign(trailerCm,tr);
+   const check=sceneCheck(boxes);
+   if(!check.ok){Object.assign(trailer,oldT);Object.assign(trailerCm,oldC);return check;}
+   state.boxes=boxes;state.selectedId=boxes[0]?.id??null;state.nextId=Math.max(0,...boxes.map(b=>b.id))+1;state.hover=null;externalHover=null;
+   syncTrailerUI();return check;
+ }
+ function syncTrailerUI(){
+   $('trailer-type').value=trailerCm.type in LDM.POTKOCSI_TIPUSOK?trailerCm.type:'Egyedi méret';
+   for(const k of ['length','width','height'])$('trailer-'+k).value=trailerCm[k];
+   $('trailer-payload').value=trailerCm.payloadKg;
+   $('trailer-title').textContent=(trailerCm.type==='Egyedi méret'?'Egyedi':trailerCm.type)+' félpótkocsi';
+   $('trailer-sub').textContent=`${trailerCm.length} × ${trailerCm.width} × ${trailerCm.height} cm · belső méret · ${fmt(trailerCm.payloadKg,0)} kg`;
+   $('trailer-bottom').textContent=`${fmt(trailerCm.length/100)} × ${fmt(trailerCm.width/100)} × ${fmt(trailerCm.height/100)} m`;
+   for(const k of ['width','height']){$(k+'-range').max=trailerCm[k];$(k+'-input').max=trailerCm[k];}
+   $('height-max-label').textContent=trailerCm.height+' cm';$('width-range').nextElementSibling.lastElementChild.textContent=trailerCm.width+' cm';
+ }
+ function changeTrailer(tr){
+   // A dobozok a homlokfaltól és a bal faltól mért helyükön maradnak.
+   const cur=currentPlan(); // egész cm, homlokfaltól
+   const moved=cur.boxes.map((b,i)=>({...state.boxes[i],x:b.placed?b.x/100-tr.length/200:0,y:b.placed?b.y/100-tr.width/200:0}));
+   const res=applyTrailerAndBoxes(tr,moved);
+   if(!res.ok){showMessage('A pótkocsi mérete nem módosítható, mert a jelenlegi elrendezés nem férne el: '+res.reason,'bad');syncTrailerUI();}
+   else showMessage(`Pótkocsi: ${tr.length} × ${tr.width} × ${tr.height} cm.`,'good');
+   updateUI();
+ }
+ $('trailer-type').addEventListener('change',e=>{
+   const t=LDM.POTKOCSI_TIPUSOK[e.target.value];
+   if(t)changeTrailer({...trailerCm,type:e.target.value,...t});else{trailerCm.type='Egyedi méret';syncTrailerUI();updateUI();}
+ });
+ for(const k of ['length','width','height','payload'])$('trailer-'+k).addEventListener('change',()=>{
+   try{
+     const tr=readTrailer({type:'Egyedi méret',length:Number($('trailer-length').value),width:Number($('trailer-width').value),height:Number($('trailer-height').value),payloadKg:Number($('trailer-payload').value)});
+     const std=Object.entries(LDM.POTKOCSI_TIPUSOK).find(([,v])=>v.length===tr.length&&v.width===tr.width&&v.height===tr.height);
+     if(std)tr.type=std[0];
+     changeTrailer(tr);
+   }catch(err){showMessage(err.message+' (hossz 200–2000, szélesség 100–300, magasság 100–400 egész cm)','bad');syncTrailerUI();}
+ });
+ $('label-input').addEventListener('change',e=>{const b=sel();if(!b)return;b.label=e.target.value.trim().slice(0,40);showMessage(`${b.id}. doboz azonosítója: ${b.label||'(alapértelmezett)'}`,'good');updateUI();});
+ $('type-input').addEventListener('change',e=>{const b=sel();if(!b)return;b.type=e.target.value;updateUI();});
+ $('color-input').addEventListener('input',e=>{const b=sel();if(!b)return;b.color=e.target.value;updateList();requestRender();});
+
+ // --- Díjszámítási beállítás (FuvarDíj 4.0 szabályai) ---
+ for(const k of Object.keys(LDM.KEREKITESI_SZABALYOK))$('bill-round').append(el('option',{value:k,text:k}));
+ function setBilling(c){
+   const n={...LDM.ALAP_ELSZAMOLAS,...c};
+   if(!(Number(n.kgPerLdm)>0)||!LDM.ELSZAMOLASI_SZABALYOK.includes(n.szabaly)||!(n.kerekites in LDM.KEREKITESI_SZABALYOK))return false;
+   billing={kgPerLdm:Number(n.kgPerLdm),szabaly:n.szabaly,kerekites:n.kerekites};
+   $('bill-kg').value=billing.kgPerLdm;$('bill-rule').value=billing.szabaly;$('bill-round').value=billing.kerekites;return true;
+ }
+ setBilling(billing);
+ for(const id of ['bill-kg','bill-rule','bill-round'])$(id).addEventListener('change',()=>{
+   if(!setBilling({kgPerLdm:Number($('bill-kg').value),szabaly:$('bill-rule').value,kerekites:$('bill-round').value})){showMessage('Az elszámolási index legyen nagyobb 0-nál.','bad');setBilling(billing);}
+   updateUI();
+ });
+
+ // --- Konverzió a 3D-állapot (m, középre vonatkoztatva) és az LDM-modul (egész cm, homlokfaltól) között ---
+ function currentPlan(nev='Aktuális munkaterület'){
+   return {nev,trailer:{...trailerCm},elszamolas:{...billing},boxes:state.boxes.map(b=>({id:b.id,label:b.label||'',type:b.type||'Doboz',color:b.color,length:b.length,width:b.width,height:b.height,weight:b.weight,stackable:b.stackable,maxLayers:b.maxLayers,maxLoadKg:b.maxLoadKg??null,rot:b.rot,placed:b.placed,
+     x:b.placed?Math.round((b.x+trailer.length/2)*100):0,y:b.placed?Math.round((b.y+trailer.width/2)*100):0,z:b.placed?Math.round((b.z||0)*100):0}))};
+ }
+ function planToState(p){
+   const tr=readTrailer(p.trailer);
+   const boxes=p.boxes.map(b=>({...b,x:b.placed?b.x/100-tr.length/200:0,y:b.placed?b.y/100-tr.width/200:0,z:b.placed?b.z/100:0}));
+   const res=applyTrailerAndBoxes(tr,boxes);
+   if(res.ok&&p.elszamolas)setBilling(p.elszamolas);
+   return res;
+ }
+
+ // --- Elemzés megjelenítése ---
+ const li=(cls,text)=>el('li',{class:cls,text});
+ function updateAnalysis(){
+   const plan=currentPlan(),a=LDM.elemzes(plan);lastAnalysis=a;
+   const e=a.elmeleti,f=a.fizikai,d=a.dijszamitas;
+   $('ldm-theo').firstChild.textContent=e?fmt(e.adatokbolHalmozva):'–';
+   $('ldm-theo-sub').replaceChildren(...(e?[
+     el('div',{text:`Halmozás nélkül: ${fmt(e.halmozasNelkul)} LDM`}),
+     el('div',{text:`Adatokból megengedett halmozással: ${fmt(e.adatokbolHalmozva)} LDM`}),
+     el('div',{text:`A tervben alkalmazott halmozással: ${fmt(e.tervSzerintiHalmozas)} LDM`}),
+     el('div',{text:`Képlet: Σ hossz × szélesség ÷ (${trailerCm.width} × 100)`,style:'color:#9fb1d2'})]:[el('div',{text:'Hibás bemenet'})]));
+   $('ldm-theo-assume').replaceChildren(...(e?[...e.feltetelezesek,...e.csoportok.map(c=>`${c.darab} db ${c.meret}: ${c.szint} szint → ${c.helyek} hely (${c.indok})`)].map(t=>el('li',{text:t})):[]));
+   $('ldm-phys').firstChild.textContent=f?fmt(f.ldm):'–';
+   $('ldm-phys-sub').replaceChildren(...(f?[
+     el('div',{text:`Lefoglalt hossz a homlokfaltól: ${f.hasznaltHosszCm} cm · maradék: ${f.maradoHosszCm} cm`}),
+     el('div',{text:`Nettó foglalt hossz (hézagok nélkül): ${f.nettoFoglaltHosszCm} cm`}),
+     el('div',{text:`Alapterület: ${fmt(f.alapteruletCm2/1e4)} m² (${fmt(f.padloKihasznaltsagPct,1)}% a padlóból, ${fmt(f.savKihasznaltsagPct,1)}% a lefoglalt sávból)`}),
+     el('div',{text:`Szabad: ${fmt(f.szabadTeruletOsszesCm2/1e4)} m² összesen, ebből ${fmt(f.szabadTeruletSavbanCm2/1e4)} m² a lefoglalt sávon belül`}),
+     el('div',{text:`Összehasonlításul a dobozhosszak összege: ${f.dobozHosszOsszegCm} cm – ez nem LDM.`,style:'color:#9fb1d2'})]:[]));
+   $('ldm-phys-def').textContent=f?f.meghatarozas:'';
+   $('ldm-bill').firstChild.textContent=d?fmt(d.elszamolasiLdm):'–';
+   $('ldm-bill-sub').replaceChildren(...(d?[
+     el('div',{text:`Tömegalapú LDM: ${fmt(a.elhelyezettTomegKg,0)} kg ÷ ${fmt(d.kgPerLdm,0)} kg/LDM = ${fmt(d.tomegalapuLdm,3)}`}),
+     el('div',{text:`Szabály: ${d.szabaly} → nyers ${fmt(d.nyersLdm,3)} · meghatározó: ${d.meghatarozo}`}),
+     el('div',{text:`Kerekítés: ${d.kerekites}`})]:[el('div',{text:a.dijHiba||'–'})]));
+   const iss=$('issues');iss.replaceChildren();
+   for(const h of a.ellenorzes.hibak)iss.append(li('err','⛔ '+h.szoveg));
+   for(const w of a.ellenorzes.figyelmeztetesek)iss.append(li('warn','⚠ '+w.szoveg));
+   if(a.megfelel)iss.append(li('ok','✓ A terv megfelel a megadott geometriai, ütközési, alátámasztási, réteg-, ráterhelési és teherbírási szabályoknak.'));
+   $('diffs').replaceChildren(...a.elteresek.map(t=>li('info',t)));
+   $('unverified').replaceChildren(...a.nemEllenorzott.map(t=>li('warn',t)));
+   $('ldm-phys-bottom').textContent=f?fmt(f.ldm):'–';$('ldm-bill-bottom').textContent=d?fmt(d.elszamolasiLdm):'–';
+   const st=$('plan-state-bottom');st.textContent=!a.megfelel?'Nem felel meg':!a.teljes?'Hiányos':'Megfelel';st.className=a.megfelel&&a.teljes?'ok-txt':'bad-txt';
+   renderPlans();
+ }
+
+ // --- Több rakodási terv ---
+ const PLAN_KEY='rakodastervezo3d.v05.tervek';
+ let plans=[];
+ try{const raw=localStorage.getItem(PLAN_KEY);if(raw)plans=JSON.parse(raw).filter(p=>p&&p.key&&p.trailer&&Array.isArray(p.boxes));}catch{plans=[];}
+ function persistPlans(){try{localStorage.setItem(PLAN_KEY,JSON.stringify(plans));}catch{}}
+ const newKey=()=>'p'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+ function planFor(key){return key==='current'?currentPlan():plans.find(p=>p.key===key)||null;}
+ function renderPlans(){
+   const body=$('cmp-body');body.replaceChildren();
+   const list=[{key:'current',...currentPlan('● Aktuális munkaterület (nem mentett)')},...plans];
+   if(!list.some(p=>p.key===selectedPlanKey))selectedPlanKey='current';
+   const rows=LDM.osszehasonlit(list);
+   rows.forEach((r,i)=>{
+     const p=list[i],a=r.elemzes;
+     const radio=el('input',{type:'radio',name:'plan-sel','aria-label':'Kijelölés: '+p.nev});radio.checked=p.key===selectedPlanKey;
+     radio.addEventListener('change',()=>{selectedPlanKey=p.key;if(p.key!=='current')$('plan-name').value=p.nev;renderPlans();});
+     const tag=!r.megfelel?el('span',{class:'tag bad',text:'Nem felel meg'}):!a.teljes?el('span',{class:'tag warn',text:'Hiányos'}):el('span',{class:'tag ok',text:'Megfelel'});
+     const warn=r.korlatozasok.length?el('ul',{class:'warn-list'},...r.korlatozasok.slice(0,6).map(t=>el('li',{text:t})),r.korlatozasok.length>6?el('li',{text:`… és még ${r.korlatozasok.length-6}`}):null):el('span',{text:'–'});
+     const tr=el('tr',{class:p.key===selectedPlanKey?'sel':''},
+       el('td',{},radio),
+       el('td',{},el('b',{text:p.nev}),el('div',{style:'color:#9fb1d2;font-size:11px',text:`${a.elhelyezettDarab}/${a.darab} db · ${p.trailer.length}×${p.trailer.width}×${p.trailer.height} cm${p.savedAt?' · '+new Date(p.savedAt).toLocaleString('hu-HU'):''}`})),
+       el('td',{class:'num',text:r.fizikaiLdm==null?'–':fmt(r.fizikaiLdm)}),
+       el('td',{class:'num',text:r.dijszamitasiLdm==null?'–':fmt(r.dijszamitasiLdm)}),
+       el('td',{class:'num',text:r.elmeletiLdm==null?'–':fmt(r.elmeletiLdm)}),
+       el('td',{class:'num',text:fmt(r.osszTomegKg,0)+' kg'}),
+       el('td',{class:'num',text:r.kihasznaltAlapteruletM2==null?'–':`${fmt(r.kihasznaltAlapteruletM2)} m² (${fmt(r.padloKihasznaltsagPct,1)}%)`}),
+       el('td',{class:'num',text:r.szabadTeruletM2==null?'–':`${fmt(r.szabadTeruletM2)} m²`},el('div',{style:'color:#9fb1d2',text:r.szabadTeruletSavbanM2==null?'':`sávban: ${fmt(r.szabadTeruletSavbanM2)} m²`})),
+       el('td',{},tag),
+       el('td',{},warn));
+     body.append(tr);
+   });
+   $('plan-overwrite').disabled=$('plan-open').disabled=$('plan-delete').disabled=selectedPlanKey==='current';
+   updatePackage();
+ }
+ function storedPlan(nev){const p=currentPlan(nev);return {key:newKey(),savedAt:new Date().toISOString(),...p};}
+ $('plan-save-new').addEventListener('click',()=>{
+   const nev=$('plan-name').value.trim()||`Terv ${plans.length+1}`;
+   if(plans.length>=30){showMessage('Legfeljebb 30 terv tárolható; töröljön egyet.','bad');return;}
+   const p=storedPlan(nev);plans.push(p);persistPlans();selectedPlanKey=p.key;$('plan-name').value='';
+   showMessage(`„${nev}” terv mentve (${plans.length}. terv).`,'good');renderPlans();
+ });
+ $('plan-overwrite').addEventListener('click',()=>{
+   const i=plans.findIndex(p=>p.key===selectedPlanKey);if(i<0)return;
+   const nev=$('plan-name').value.trim()||plans[i].nev;
+   plans[i]={...storedPlan(nev),key:plans[i].key};persistPlans();showMessage(`„${nev}” felülírva az aktuális munkaterülettel.`,'good');renderPlans();
+ });
+ $('plan-open').addEventListener('click',()=>{
+   const p=planFor(selectedPlanKey);if(!p||selectedPlanKey==='current')return;
+   let res;try{res=planToState(p);}catch(err){res={ok:false,reason:err.message};}
+   if(!res.ok){showMessage(`„${p.nev}” nem nyitható meg a 3D-ben, mert hibás: ${res.reason} Az összehasonlításban továbbra is szerepel.`,'bad');return;}
+   showMessage(`„${p.nev}” betöltve a 3D-munkaterületre.`,'good');selectedPlanKey='current';updateUI();
+ });
+ $('plan-delete').addEventListener('click',()=>{
+   const p=plans.find(q=>q.key===selectedPlanKey);if(!p)return;
+   if(!confirm(`Törli a(z) „${p.nev}” tervet?`))return;
+   plans=plans.filter(q=>q!==p);persistPlans();selectedPlanKey='current';showMessage(`„${p.nev}” törölve.`);renderPlans();
+ });
+ $('plans-export').addEventListener('click',()=>{
+   if(!plans.length){showMessage('Nincs mentett terv.','bad');return;}
+   downloadJson({format:'rakodastervezo-3d-tervgyujtemeny',version:5,units:'cm',coordinates:'x: homlokfaltól, y: bal faltól, z: padlótól',plans:plans.map(({key,...p})=>p)},'rakodasi-tervek-v05.json');
+   showMessage(`${plans.length} terv exportálva.`,'good');
+ });
+ $('plans-import').addEventListener('click',()=>$('plan-file').click());
+ function importPlans(doc){
+   if(doc.version!==5||!Array.isArray(doc.plans))throw Error('Nem támogatott tervgyűjtemény.');
+   let n=0;
+   for(const p of doc.plans){
+     const tr=readTrailer(p.trailer);
+     if(!Array.isArray(p.boxes)||p.boxes.length>100)throw Error('Hibás terv: '+p.nev);
+     const boxes=p.boxes.map(b=>({id:Number(b.id),label:String(b.label||'').slice(0,40),type:String(b.type||'Doboz').slice(0,30),color:/^#[0-9a-f]{6}$/i.test(b.color||'')?b.color:'#8d78fc',length:b.length,width:b.width,height:b.height,weight:b.weight,stackable:b.stackable!==false,maxLayers:b.maxLayers,maxLoadKg:b.maxLoadKg??null,rot:b.rot?1:0,placed:b.placed===true,x:b.x,y:b.y,z:b.z}));
+     const chk=LDM.ellenoriz(tr,boxes);
+     if(chk.hibak.some(h=>h.kod==='ADAT'))throw Error(`„${p.nev}”: `+chk.hibak.find(h=>h.kod==='ADAT').szoveg);
+     plans.push({key:newKey(),savedAt:p.savedAt||new Date().toISOString(),nev:String(p.nev||'Importált terv').slice(0,60),trailer:tr,elszamolas:p.elszamolas||{...LDM.ALAP_ELSZAMOLAS},boxes});n++;
+   }
+   persistPlans();showMessage(`${n} terv importálva az összehasonlításba.`,'good');renderPlans();
+ }
+
+ // --- FuvarDíj 4.0 adatcsomag ---
+ function updatePackage(){
+   const p=planFor(selectedPlanKey);if(!p)return;
+   const pkg=LDM.fuvardijCsomag(p);
+   $('pkg-preview').textContent=JSON.stringify(pkg,null,2);
+   const s=$('pkg-status');
+   s.textContent=`Kijelölt: ${p.nev} · fizikai ${pkg.ldm.fizikai==null?'–':fmt(pkg.ldm.fizikai)} · díjszámítási ${pkg.ldm.dijszamitasi==null?'–':fmt(pkg.ldm.dijszamitasi)} LDM · ${pkg.ajanlatra_alkalmas?'✓ árajánlatra előkészíthető':'⛔ nem alkalmas árajánlatra: '+pkg.ajanlat_akadalyai.join(' ')}`;
+   s.style.borderColor=pkg.ajanlatra_alkalmas?'#408963':'#c45d72';
+ }
+ $('pkg-download').addEventListener('click',()=>{
+   const p=planFor(selectedPlanKey);if(!p)return;
+   const pkg=LDM.fuvardijCsomag(p);
+   downloadJson(pkg,`fuvardij4-csomag-${pkg.terv.azonosito}.json`);
+   showMessage(pkg.ajanlatra_alkalmas?'Adatcsomag letöltve. Az árat a FuvarDíj 4.0 számolja ki a meglévő díjszabás szerint.':'Adatcsomag letöltve, de a terv NEM alkalmas árajánlatra – a FuvarDíj 4.0 adapter elutasítja.',pkg.ajanlatra_alkalmas?'good':'bad');
+ });
+ syncTrailerUI();
+
+ document.getElementById('view-reset').addEventListener('click',()=>{state.yaw=defaults.yaw;state.elev=defaults.elev;state.zoom=1;requestRender();});
+ document.getElementById('view-top').addEventListener('click',()=>{state.yaw=0;state.elev=1.49;state.zoom=1;requestRender();});
+ const helpToggle=document.getElementById('help-toggle');
+ const helpPanel=document.getElementById('help-panel');
+ helpToggle.addEventListener('click',()=>{
+   const nextOpen=helpPanel.hidden;
+   helpPanel.hidden=!nextOpen;
+   helpToggle.setAttribute('aria-expanded',String(nextOpen));
+   helpToggle.title=nextOpen?'Egérvezérlés útmutató bezárása':'Egérvezérlés útmutató megnyitása';
+   requestRender();
+ });
+ const fullButton=document.getElementById('fullscreen');
+ fullButton.addEventListener('click',async()=>{
+   try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.querySelector('.main').requestFullscreen)await document.querySelector('.main').requestFullscreen();else showMessage('Ez a böngésző nem támogatja a teljes képernyős módot.','bad');}
+   catch{showMessage('Ebben a böngészőben a teljes képernyő nem indítható.','bad');}
+ });
+ document.addEventListener('fullscreenchange',()=>{fullButton.textContent=document.fullscreenElement?'⤢ Kilépés':'⛶ Teljes képernyő';setTimeout(requestRender,80);});
+ if(window.ResizeObserver)new ResizeObserver(requestRender).observe(visual);window.addEventListener('resize',requestRender);
+ updateUI();createBoxes();
+})();
+</script>
+</body>
+</html>
