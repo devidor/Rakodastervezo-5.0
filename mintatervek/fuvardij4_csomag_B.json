@@ -1,0 +1,357 @@
+{
+  "format": "fuvardij4-rakodasi-csomag",
+  "verzio": 1,
+  "letrehozva": "2026-11-08T00:00:00.000Z",
+  "forras": {
+    "alkalmazas": "Rakodástervező 3D",
+    "verzio": "0.5",
+    "ldm_modul": "0.5.0"
+  },
+  "terv": {
+    "nev": "B – keresztben forgatva",
+    "azonosito": "5b187add"
+  },
+  "mertekegysegek": {
+    "hossz": "cm",
+    "tomeg": "kg",
+    "ldm": "m (rakodóméter)",
+    "koordinatak": "x: homlokfaltól, y: bal faltól, z: padlótól"
+  },
+  "potkocsi": {
+    "tipus": "Normál",
+    "hossz_cm": 1360,
+    "szelesseg_cm": 245,
+    "magassag_cm": 270,
+    "teherbiras_kg": 24000
+  },
+  "rakomanyok": [
+    {
+      "azonosito": "EUR-01",
+      "belso_id": 1,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-02",
+      "belso_id": 2,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 0,
+        "y": 120,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-03",
+      "belso_id": 3,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 80,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-04",
+      "belso_id": 4,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 80,
+        "y": 120,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-05",
+      "belso_id": 5,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 160,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-06",
+      "belso_id": 6,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 160,
+        "y": 120,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-07",
+      "belso_id": 7,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 240,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-08",
+      "belso_id": 8,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 240,
+        "y": 120,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-09",
+      "belso_id": 9,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 320,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-10",
+      "belso_id": 10,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 320,
+        "y": 120,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-11",
+      "belso_id": 11,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 400,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-12",
+      "belso_id": 12,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": true,
+      "alapterulet_hossz_cm": 80,
+      "alapterulet_szelesseg_cm": 120,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 400,
+        "y": 120,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    }
+  ],
+  "osszesites": {
+    "darab": 12,
+    "elhelyezett_darab": 12,
+    "ossz_tomeg_kg": 5400,
+    "elhelyezett_tomeg_kg": 5400
+  },
+  "ldm": {
+    "elmeleti_halmozas_nelkul": 4.702041,
+    "elmeleti_adatokbol_halmozva": 2.35102,
+    "elmeleti_terv_szerinti_halmozas": 4.702041,
+    "elmeleti_feltetelezesek": [
+      "Referencia-szélesség: 245 cm (a pótkocsi belső szélessége).",
+      "Területalapú alsó becslés: a doboz forgatását, a köztes hézagokat és a szélességi maradékot nem veszi figyelembe.",
+      "„Adatokból” változat: azonos tételek a megadott réteg-, belmagasság- és ráterhelési korlát szerint halmozva.",
+      "„Terv szerinti” változat: csak a padlón álló (és a még el nem helyezett) egységek alapterülete."
+    ],
+    "fizikai": 4.8,
+    "fizikai_hasznalt_hossz_cm": 480,
+    "fizikai_meghatarozas": "A homlokfaltól (x = 0) a legtávolabbi elhelyezett rakományélig mért hossz ÷ 100. A közbenső és oldalsó szabad helyek beszámítanak, mert más rakomány számára nem használhatók fel hosszirányban.",
+    "dijszamitasi": 4.8,
+    "megjegyzes": "A három mutató eltérhet; egyezésük nem automatikus."
+  },
+  "dijszamitas": {
+    "kg_per_ldm": 1750,
+    "kerekites": "Felfelé 0,1 LDM-re",
+    "szabaly": "maximum",
+    "tomegalapu_ldm": 3.085714285714286,
+    "meghatarozo": "fizikai",
+    "szamitas_alapja": "elhelyezett tömeg és fizikai LDM",
+    "forras": "fuvar-kalkulator feature/fuvardij-4: billing_config.py, ldm_calculator.py (JS-tükör; a FuvarDíj 4.0 adapter újraszámolja)",
+    "fuvarozo_megerositette": false
+  },
+  "ellenorzes": {
+    "megfelel": true,
+    "hibak": [],
+    "figyelmeztetesek": [],
+    "nem_ellenorzott_feltetelek": [
+      "Tengelyterhelés és hosszirányú súlyelosztás",
+      "A rakomány súlypontja, borulási és csúszási stabilitása",
+      "Rakományrögzítés (pl. EN 12195-1 szerinti rögzítési számítás, spanifer, csúszásgátló, kitámasztás)",
+      "Dinamikus terhelés fékezéskor, gyorsításkor és kanyarodáskor",
+      "A csomagolás és a raklap tényleges szerkezeti teherbírása (a megadott ráterhelés felhasználói adat)",
+      "Részleges alátámasztás, áthidalás – a modul csak teljes alapterületű alátámasztást fogad el",
+      "Rakodási és lerakodási sorrend, hozzáférhetőség, ajtónyílás",
+      "Kerékdob, ajtókeret, rögzítősín miatti szűkebb tényleges rakodótér (ha nincs külön megadva)",
+      "A díjszámítási szabály fuvarozói megerősítése (a FuvarDíj 4.0 beállításai szerint számolva)"
+    ]
+  },
+  "ajanlatra_alkalmas": true,
+  "ajanlat_akadalyai": [],
+  "arazas": null,
+  "arazas_megjegyzes": "A csomag nem tartalmaz díjat vagy tarifát. Az árat kizárólag a FuvarDíj 4.0 meglévő díjszabási logikája (pricing.szamol_dij) számolhatja ki."
+}

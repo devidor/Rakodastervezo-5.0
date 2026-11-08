@@ -1,0 +1,60 @@
+{
+  "format": "rakodastervezo-3d",
+  "version": 4,
+  "units": "cm",
+  "trailer": {
+    "length": 1360,
+    "width": 245,
+    "height": 270
+  },
+  "boxes": [
+    {
+      "id": 1,
+      "length": 120,
+      "width": 80,
+      "height": 60,
+      "weight": 100,
+      "stackable": true,
+      "maxLayers": 3,
+      "maxLoadKg": 500,
+      "x": -300,
+      "y": -40,
+      "z": 0,
+      "rot": 0,
+      "placed": true,
+      "color": "#8d78fc"
+    },
+    {
+      "id": 2,
+      "length": 100,
+      "width": 60,
+      "height": 50,
+      "weight": 100,
+      "stackable": true,
+      "maxLayers": 3,
+      "maxLoadKg": 500,
+      "x": -290,
+      "y": -30,
+      "z": 60,
+      "rot": 0,
+      "placed": true,
+      "color": "#32bda9"
+    },
+    {
+      "id": 3,
+      "length": 80,
+      "width": 40,
+      "height": 40,
+      "weight": 100,
+      "stackable": true,
+      "maxLayers": 3,
+      "maxLoadKg": 500,
+      "x": -280,
+      "y": -20,
+      "z": 110,
+      "rot": 0,
+      "placed": true,
+      "color": "#f59f54"
+    }
+  ]
+}

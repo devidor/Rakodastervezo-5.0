@@ -1,0 +1,96 @@
+{
+  "format": "rakodastervezo-3d-tervgyujtemeny",
+  "version": 5,
+  "units": "cm",
+  "plans": [
+    {
+      "nev": "D – hibás (ütközés, lebegés, kint maradt)",
+      "trailer": {
+        "type": "Normál",
+        "length": 1360,
+        "width": 245,
+        "height": 270,
+        "payloadKg": 24000
+      },
+      "boxes": [
+        {
+          "id": 1,
+          "label": "EUR-01",
+          "type": "EUR-raklap",
+          "color": "#8d78fc",
+          "length": 120,
+          "width": 80,
+          "height": 110,
+          "weight": 450,
+          "stackable": true,
+          "maxLayers": 2,
+          "maxLoadKg": 600,
+          "rot": 0,
+          "placed": true,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "id": 2,
+          "label": "EUR-02",
+          "type": "EUR-raklap",
+          "color": "#8d78fc",
+          "length": 120,
+          "width": 80,
+          "height": 110,
+          "weight": 450,
+          "stackable": true,
+          "maxLayers": 2,
+          "maxLoadKg": 600,
+          "rot": 0,
+          "placed": true,
+          "x": 60,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "id": 3,
+          "label": "EUR-03",
+          "type": "EUR-raklap",
+          "color": "#8d78fc",
+          "length": 120,
+          "width": 80,
+          "height": 110,
+          "weight": 450,
+          "stackable": true,
+          "maxLayers": 2,
+          "maxLoadKg": 600,
+          "rot": 0,
+          "placed": true,
+          "x": 300,
+          "y": 0,
+          "z": 20
+        },
+        {
+          "id": 4,
+          "label": "EUR-04",
+          "type": "EUR-raklap",
+          "color": "#8d78fc",
+          "length": 120,
+          "width": 80,
+          "height": 110,
+          "weight": 450,
+          "stackable": true,
+          "maxLayers": 2,
+          "maxLoadKg": 600,
+          "rot": 0,
+          "placed": false,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "elszamolas": {
+        "kgPerLdm": 1750,
+        "szabaly": "maximum",
+        "kerekites": "Felfelé 0,1 LDM-re"
+      }
+    }
+  ]
+}
