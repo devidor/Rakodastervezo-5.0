@@ -1,0 +1,8966 @@
+{
+ "elszamolas": [
+  {
+   "fizikai": 0,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 0.01,
+   "tomegalapu_ldm": 0.0005714285714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 1,
+   "tomegalapu_ldm": 1,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.501050105010501,
+   "tomegalapu_ldm": 10.501050105010501,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 4,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.5,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 16,
+   "tomegalapu_ldm": 16,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.3,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.4,
+   "tomegalapu_ldm": 0.0005,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 4.4,
+   "tomegalapu_ldm": 1.75,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.5,
+   "tomegalapu_ldm": 3.5,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14,
+   "tomegalapu_ldm": 2.6666666666666665,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 13.126312631263126,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 72.01,
+   "tomegalapu_ldm": 72.007200720072,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 0.25,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.1,
+   "tomegalapu_ldm": 0.0005714285714285715,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1,
+   "tomegalapu_ldm": 1,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 10.501050105010501,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 12.001200120012001,
+   "tomegalapu_ldm": 12.001200120012001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.25,
+   "tomegalapu_ldm": 2.9166666666666665,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12,
+   "tomegalapu_ldm": 12,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 0.25,
+   "tomegalapu_ldm": 0.001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 13.6,
+   "tomegalapu_ldm": 1.1666666666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 3,
+   "tomegalapu_ldm": 2.6666666666666665,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.2,
+   "tomegalapu_ldm": 13.126312631263126,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 16,
+   "tomegalapu_ldm": 16,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 0.001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 1,
+   "tomegalapu_ldm": 1,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 2.25,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.2857142857142856,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.5,
+   "tomegalapu_ldm": 4.375,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.7,
+   "tomegalapu_ldm": 13.714285714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.6,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.0005714285714285715,
+   "tomegalapu_ldm": 0.0005714285714285715,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 1.25,
+   "tomegalapu_ldm": 1.1666666666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 1.2,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.5,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 13.714285714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0.003000300030003,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 1,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.4,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 4,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.6,
+   "tomegalapu_ldm": 2.5,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.75,
+   "tomegalapu_ldm": 13.714285714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.1,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.001,
+   "tomegalapu_ldm": 0.001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.875,
+   "tomegalapu_ldm": 0.875,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 1.75,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.0000000001,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 2.05,
+   "tomegalapu_ldm": 13.126312631263126,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.75,
+   "tomegalapu_ldm": 13.714285714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 4.5,
+   "tomegalapu_ldm": 0.0005714285714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.2,
+   "tomegalapu_ldm": 1,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.6,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.3,
+   "tomegalapu_ldm": 2.2857142857142856,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 13.126312631263126,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 0.5,
+   "tomegalapu_ldm": 16,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 0.25,
+   "tomegalapu_ldm": 0.003000300030003,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 5.26,
+   "tomegalapu_ldm": 5.2505250525052505,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.1,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.6666666666666665,
+   "tomegalapu_ldm": 2.6666666666666665,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.5,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 12,
+   "tomegalapu_ldm": 12,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 0,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.6,
+   "tomegalapu_ldm": 0.0005714285714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 1.25,
+   "tomegalapu_ldm": 1.1666666666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.01,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 2,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.1,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.2857142857142856,
+   "tomegalapu_ldm": 2.2857142857142856,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.2,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.5,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12,
+   "tomegalapu_ldm": 12,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.0000000001,
+   "kg": 0,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 0,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.05,
+   "kg": 1,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.05,
+   "tomegalapu_ldm": 0.0006666666666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.25,
+   "kg": 1750,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.3,
+   "tomegalapu_ldm": 5.2505250525052505,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.35,
+   "kg": 3500,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 3.5,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.4,
+   "kg": 4000,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 4.4,
+   "tomegalapu_ldm": 2.6666666666666665,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 4375,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.2,
+   "tomegalapu_ldm": 13.126312631263126,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.6,
+   "kg": 24000,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14,
+   "tomegalapu_ldm": 13.714285714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.13,
+   "kg": 25087.78,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 25.1,
+   "tomegalapu_ldm": 25.08778,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.32,
+   "kg": 15592.54,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.32,
+   "tomegalapu_ldm": 10.395026666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.64,
+   "kg": 5544.31,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 16.64,
+   "tomegalapu_ldm": 16.634593459345936,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.2,
+   "kg": 26647.85,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 79.95154515451544,
+   "tomegalapu_ldm": 79.95154515451544,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.71,
+   "kg": 17615.54,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.9,
+   "tomegalapu_ldm": 8.80777,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.68,
+   "kg": 29643.99,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 16.94,
+   "tomegalapu_ldm": 16.93942285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.99,
+   "kg": 21280.45,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4,
+   "tomegalapu_ldm": 14.186966666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.36,
+   "kg": 9481.47,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 28.45,
+   "tomegalapu_ldm": 28.447254725472543,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.09,
+   "kg": 18538.19,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 9.09,
+   "tomegalapu_ldm": 12.358793333333333,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.06,
+   "kg": 17251.67,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 9.06,
+   "tomegalapu_ldm": 8.625834999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.95,
+   "kg": 10472.89,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.47289,
+   "tomegalapu_ldm": 10.47289,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.31,
+   "kg": 29099.18,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 14.54959,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.49,
+   "kg": 2195.45,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 9.5,
+   "tomegalapu_ldm": 1.254542857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.65,
+   "kg": 24836.82,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.7,
+   "tomegalapu_ldm": 74.51791179117912,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.32,
+   "kg": 23219.9,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 13.27,
+   "tomegalapu_ldm": 13.268514285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.67,
+   "kg": 6649.04,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.7,
+   "tomegalapu_ldm": 19.949114911491147,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.86,
+   "kg": 21993.47,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.9,
+   "tomegalapu_ldm": 65.98700870087009,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.31,
+   "kg": 26295.45,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 15,
+   "tomegalapu_ldm": 15.02597142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.23,
+   "kg": 4384.17,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 12.5,
+   "tomegalapu_ldm": 2.50524,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.6,
+   "kg": 37.05,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 10.6,
+   "tomegalapu_ldm": 0.018525,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.38,
+   "kg": 21309.98,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.7,
+   "tomegalapu_ldm": 10.65499,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.06,
+   "kg": 10927.41,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 10.06,
+   "tomegalapu_ldm": 6.244234285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.8,
+   "kg": 9746.88,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 9.746879999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.06,
+   "kg": 15.39,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 1.25,
+   "tomegalapu_ldm": 0.0076950000000000005,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.41,
+   "kg": 28452.18,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 28.5,
+   "tomegalapu_ldm": 28.452180000000002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.35,
+   "kg": 28269.81,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.4,
+   "tomegalapu_ldm": 14.134905,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.43,
+   "kg": 14261.56,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.5,
+   "tomegalapu_ldm": 42.788958895889586,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.96,
+   "kg": 11534.34,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 4.96,
+   "tomegalapu_ldm": 11.53434,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.71,
+   "kg": 1136.09,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.7,
+   "tomegalapu_ldm": 1.1360899999999998,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.52,
+   "kg": 8428.41,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 6.75,
+   "tomegalapu_ldm": 5.61894,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.87,
+   "kg": 21626.2,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.8131,
+   "tomegalapu_ldm": 10.8131,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.59,
+   "kg": 17701.67,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 53.25,
+   "tomegalapu_ldm": 53.1103210321032,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.16,
+   "kg": 3456.21,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.8,
+   "tomegalapu_ldm": 1.728105,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.39,
+   "kg": 24000.85,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 7.5,
+   "tomegalapu_ldm": 13.714771428571428,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.68,
+   "kg": 21892.52,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 22,
+   "tomegalapu_ldm": 21.89252,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.04,
+   "kg": 1193.12,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 1,
+   "tomegalapu_ldm": 0.7954133333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.86,
+   "kg": 25814.01,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 9,
+   "tomegalapu_ldm": 14.750862857142856,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.79,
+   "kg": 17185.39,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 6.79,
+   "tomegalapu_ldm": 11.456926666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.46,
+   "kg": 11331.07,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 8.46,
+   "tomegalapu_ldm": 6.4748971428571425,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.65,
+   "kg": 25457.85,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 76.39,
+   "tomegalapu_ldm": 76.38118811881188,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.76,
+   "kg": 25774.38,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.8,
+   "tomegalapu_ldm": 14.728217142857144,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.34,
+   "kg": 3169.02,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.6,
+   "tomegalapu_ldm": 9.508010801080108,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.85,
+   "kg": 26270.96,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7,
+   "tomegalapu_ldm": 15.011977142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.14,
+   "kg": 25562.58,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13,
+   "tomegalapu_ldm": 12.78129,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.91,
+   "kg": 25318.32,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 12.65916,
+   "tomegalapu_ldm": 12.65916,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.78,
+   "kg": 28388.52,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 85.17407740774077,
+   "tomegalapu_ldm": 85.17407740774077,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.53,
+   "kg": 132.91,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.6,
+   "tomegalapu_ldm": 0.066455,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.39,
+   "kg": 16018.12,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 10.68,
+   "tomegalapu_ldm": 10.678746666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.5,
+   "kg": 17461.05,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 8.730525,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.49,
+   "kg": 9758.39,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.49,
+   "tomegalapu_ldm": 6.505593333333333,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.18,
+   "kg": 10374.52,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 10.37452,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.84,
+   "kg": 20432.06,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 11.675462857142858,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.67,
+   "kg": 12704.02,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 8.469346666666667,
+   "tomegalapu_ldm": 8.469346666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.27,
+   "kg": 8459.29,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.2,
+   "tomegalapu_ldm": 4.2296450000000005,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.52,
+   "kg": 19566.21,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.5,
+   "tomegalapu_ldm": 9.783104999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.05,
+   "kg": 25331.42,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 76.00186018601859,
+   "tomegalapu_ldm": 76.00186018601859,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.01,
+   "kg": 23289.68,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 23.5,
+   "tomegalapu_ldm": 23.28968,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.6,
+   "kg": 29380.81,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 88.16,
+   "tomegalapu_ldm": 88.15124512451246,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.48,
+   "kg": 22316.97,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 22.31697,
+   "tomegalapu_ldm": 22.31697,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.13,
+   "kg": 27998.94,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 16,
+   "tomegalapu_ldm": 15.999394285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.38,
+   "kg": 727.69,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.4,
+   "tomegalapu_ldm": 0.4851266666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.17,
+   "kg": 4812.23,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14.5,
+   "tomegalapu_ldm": 14.438133813381336,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.76,
+   "kg": 17268.34,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 17.27,
+   "tomegalapu_ldm": 17.26834,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.65,
+   "kg": 15666.85,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.75,
+   "tomegalapu_ldm": 8.952485714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.18,
+   "kg": 19561.44,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.25,
+   "tomegalapu_ldm": 13.040959999999998,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.47,
+   "kg": 28475.16,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 3.5,
+   "tomegalapu_ldm": 28.47516,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.84,
+   "kg": 10875.53,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 6.214588571428572,
+   "tomegalapu_ldm": 6.214588571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.33,
+   "kg": 20911.68,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 21,
+   "tomegalapu_ldm": 20.91168,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.32,
+   "kg": 17843.5,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 1.5,
+   "tomegalapu_ldm": 10.196285714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.78,
+   "kg": 13491.63,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 6.7458149999999995,
+   "tomegalapu_ldm": 6.7458149999999995,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.48,
+   "kg": 27194.44,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 1.5,
+   "tomegalapu_ldm": 15.539679999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.21,
+   "kg": 15594.18,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 1.21,
+   "tomegalapu_ldm": 15.59418,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.56,
+   "kg": 2288.81,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.6,
+   "tomegalapu_ldm": 1.3078914285714285,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.32,
+   "kg": 25381.57,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 16.9,
+   "tomegalapu_ldm": 16.921046666666665,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.8,
+   "kg": 15393.22,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.8,
+   "tomegalapu_ldm": 8.796125714285713,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.99,
+   "kg": 13187.75,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7.75,
+   "tomegalapu_ldm": 7.535857142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.15,
+   "kg": 13574.38,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.2,
+   "tomegalapu_ldm": 9.049586666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.91,
+   "kg": 28683.26,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 16.4,
+   "tomegalapu_ldm": 16.390434285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.68,
+   "kg": 4207.24,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.75,
+   "tomegalapu_ldm": 12.622982298229822,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.97,
+   "kg": 6839.34,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.97,
+   "tomegalapu_ldm": 3.908194285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.18,
+   "kg": 24754.18,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14.5,
+   "tomegalapu_ldm": 14.145245714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.83,
+   "kg": 13290.64,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 7.6,
+   "tomegalapu_ldm": 7.594651428571428,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.51,
+   "kg": 20056.18,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.75,
+   "tomegalapu_ldm": 10.02809,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.07,
+   "kg": 8006.59,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.6,
+   "tomegalapu_ldm": 4.575194285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.81,
+   "kg": 13258.06,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.9,
+   "tomegalapu_ldm": 8.838706666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.1,
+   "kg": 4101.1,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.3434857142857144,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.24,
+   "kg": 13041.91,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.25,
+   "tomegalapu_ldm": 6.520955,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.91,
+   "kg": 8014.8,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.9,
+   "tomegalapu_ldm": 24.046804680468046,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.24,
+   "kg": 4443.39,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 3,
+   "tomegalapu_ldm": 2.5390800000000002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.1,
+   "kg": 5067.64,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 11.25,
+   "tomegalapu_ldm": 2.53382,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.19,
+   "kg": 12546.06,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.1691771428571425,
+   "tomegalapu_ldm": 7.1691771428571425,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.1,
+   "kg": 22377.62,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.1,
+   "tomegalapu_ldm": 11.18881,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.01,
+   "kg": 12168.18,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 8.25,
+   "tomegalapu_ldm": 8.11212,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.79,
+   "kg": 26249.03,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.8,
+   "tomegalapu_ldm": 26.249029999999998,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.34,
+   "kg": 21645.89,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.4,
+   "tomegalapu_ldm": 21.645889999999998,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.25,
+   "kg": 25225.14,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 14.5,
+   "tomegalapu_ldm": 14.414365714285713,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.84,
+   "kg": 19354.41,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 19.36,
+   "tomegalapu_ldm": 19.35441,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.71,
+   "kg": 19951.75,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 2.71,
+   "tomegalapu_ldm": 19.95175,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.82,
+   "kg": 7067.32,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 7.06732,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.31,
+   "kg": 8683.18,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 6.5,
+   "tomegalapu_ldm": 4.961817142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.8,
+   "kg": 29010.4,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 16.75,
+   "tomegalapu_ldm": 16.57737142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.42,
+   "kg": 9557.57,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 5,
+   "tomegalapu_ldm": 4.778785,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.38,
+   "kg": 18893.75,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13,
+   "tomegalapu_ldm": 12.595833333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.27,
+   "kg": 19547.46,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 19.75,
+   "tomegalapu_ldm": 19.547459999999997,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.15,
+   "kg": 13680.86,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.2,
+   "tomegalapu_ldm": 13.680860000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.23,
+   "kg": 12130.27,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 8.25,
+   "tomegalapu_ldm": 8.086846666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.52,
+   "kg": 1749.59,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.2,
+   "tomegalapu_ldm": 5.249294929492949,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.31,
+   "kg": 3096.49,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.0643266666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.17,
+   "kg": 18793.48,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 18.79348,
+   "tomegalapu_ldm": 18.79348,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.57,
+   "kg": 23395.6,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.57,
+   "tomegalapu_ldm": 23.395599999999998,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.38,
+   "kg": 6677.03,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.38,
+   "tomegalapu_ldm": 6.677029999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.11,
+   "kg": 11386.85,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.25,
+   "tomegalapu_ldm": 6.506771428571429,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.66,
+   "kg": 22870.66,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 22.87066,
+   "tomegalapu_ldm": 22.87066,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.77,
+   "kg": 11187.84,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.8,
+   "tomegalapu_ldm": 6.393051428571429,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.47,
+   "kg": 20425.02,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 20.5,
+   "tomegalapu_ldm": 20.42502,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.86,
+   "kg": 20874.65,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 62.7,
+   "tomegalapu_ldm": 62.63021302130213,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.91,
+   "kg": 5075.36,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3,
+   "tomegalapu_ldm": 2.9002057142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.92,
+   "kg": 20957.07,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12,
+   "tomegalapu_ldm": 11.975468571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.37,
+   "kg": 16369.07,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 9.36,
+   "tomegalapu_ldm": 9.353754285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.52,
+   "kg": 21706.9,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.4,
+   "tomegalapu_ldm": 12.403942857142859,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.67,
+   "kg": 18059.56,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.7,
+   "tomegalapu_ldm": 54.184098409840985,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.95,
+   "kg": 24430.65,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 16.5,
+   "tomegalapu_ldm": 16.287100000000002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.23,
+   "kg": 28780.62,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 16.5,
+   "tomegalapu_ldm": 16.446068571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.87,
+   "kg": 28526.58,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 19.01772,
+   "tomegalapu_ldm": 19.01772,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.53,
+   "kg": 11584.28,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 6.62,
+   "tomegalapu_ldm": 6.619588571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.67,
+   "kg": 20022.73,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.75,
+   "tomegalapu_ldm": 10.011365,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.47,
+   "kg": 29664.88,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 17,
+   "tomegalapu_ldm": 16.95136,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.94,
+   "kg": 135.11,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 0.09007333333333334,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.41,
+   "kg": 29879.79,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 29.87979,
+   "tomegalapu_ldm": 29.87979,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.63,
+   "kg": 1085.67,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7.75,
+   "tomegalapu_ldm": 1.0856700000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.22,
+   "kg": 24885.61,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 17,
+   "tomegalapu_ldm": 16.590406666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.29,
+   "kg": 22855.99,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.4,
+   "tomegalapu_ldm": 11.427995000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.59,
+   "kg": 3214.86,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 9.645544554455446,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.26,
+   "kg": 15596.83,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 10.5,
+   "tomegalapu_ldm": 10.397886666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.83,
+   "kg": 13795.95,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 9.83,
+   "tomegalapu_ldm": 7.883400000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.72,
+   "kg": 9943.4,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.9,
+   "tomegalapu_ldm": 9.9434,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.59,
+   "kg": 11643.64,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.6,
+   "tomegalapu_ldm": 6.653508571428571,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.28,
+   "kg": 8374.86,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 2.28,
+   "tomegalapu_ldm": 4.785634285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.21,
+   "kg": 4093.73,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.4,
+   "tomegalapu_ldm": 2.3392742857142856,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.22,
+   "kg": 6879.39,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 7.5,
+   "tomegalapu_ldm": 6.87939,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.32,
+   "kg": 16399.19,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 6.5,
+   "tomegalapu_ldm": 16.399189999999997,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.63,
+   "kg": 14418.85,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.63,
+   "tomegalapu_ldm": 8.239342857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.36,
+   "kg": 11120.15,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 6.36,
+   "tomegalapu_ldm": 6.354371428571429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.56,
+   "kg": 9903.59,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 9.90359,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.72,
+   "kg": 11902.05,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 8,
+   "tomegalapu_ldm": 7.934699999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.7,
+   "kg": 19464.41,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 5.75,
+   "tomegalapu_ldm": 58.3990699069907,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.6,
+   "kg": 8320.63,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 5.547086666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.84,
+   "kg": 12619,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 7.210857142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.5,
+   "kg": 28852.94,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 86.57,
+   "tomegalapu_ldm": 86.56747674767476,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.64,
+   "kg": 11350.22,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.7,
+   "tomegalapu_ldm": 34.05406540654065,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.6,
+   "kg": 13086.49,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 7.48,
+   "tomegalapu_ldm": 7.477994285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.18,
+   "kg": 13017.81,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.2,
+   "tomegalapu_ldm": 13.017809999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.89,
+   "kg": 26378.17,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.9,
+   "tomegalapu_ldm": 13.189084999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.86,
+   "kg": 3288.93,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 3.5,
+   "tomegalapu_ldm": 3.2889299999999997,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6,
+   "kg": 19696.19,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.26,
+   "tomegalapu_ldm": 11.254965714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.88,
+   "kg": 20770.76,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14,
+   "tomegalapu_ldm": 13.847173333333332,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.53,
+   "kg": 18696.44,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 19,
+   "tomegalapu_ldm": 18.69644,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.9,
+   "kg": 27636.04,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 14,
+   "tomegalapu_ldm": 13.81802,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.53,
+   "kg": 8575.04,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.5,
+   "tomegalapu_ldm": 4.287520000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.29,
+   "kg": 22124.03,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 22.13,
+   "tomegalapu_ldm": 22.124029999999998,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.37,
+   "kg": 9276.01,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 5.300577142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.49,
+   "kg": 16250.67,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.9,
+   "tomegalapu_ldm": 10.83378,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.54,
+   "kg": 28591.87,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 19.5,
+   "tomegalapu_ldm": 19.061246666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.82,
+   "kg": 17247.27,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.8,
+   "tomegalapu_ldm": 11.49818,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.42,
+   "kg": 2950.77,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.42,
+   "tomegalapu_ldm": 1.6861542857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.61,
+   "kg": 1041.8,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 0.75,
+   "tomegalapu_ldm": 0.6945333333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.97,
+   "kg": 26611.73,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 13.305864999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.53,
+   "kg": 12376.5,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.6,
+   "tomegalapu_ldm": 6.18825,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.39,
+   "kg": 13964.02,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.4,
+   "tomegalapu_ldm": 7.97944,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.63,
+   "kg": 25793.79,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 14.75,
+   "tomegalapu_ldm": 14.739308571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.84,
+   "kg": 6023.05,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 9,
+   "tomegalapu_ldm": 3.0115250000000002,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.48,
+   "kg": 6595.78,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 6.5957799999999995,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.18,
+   "kg": 25408.86,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.2,
+   "tomegalapu_ldm": 16.93924,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.14,
+   "kg": 7865.07,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7.25,
+   "tomegalapu_ldm": 4.494325714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.66,
+   "kg": 23458.23,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 15.75,
+   "tomegalapu_ldm": 15.638819999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.75,
+   "kg": 20601.21,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.8,
+   "tomegalapu_ldm": 13.73414,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.14,
+   "kg": 13033.65,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.4478,
+   "tomegalapu_ldm": 7.4478,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.77,
+   "kg": 5853.49,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 3.91,
+   "tomegalapu_ldm": 3.9023266666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.39,
+   "kg": 20426.36,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.4,
+   "tomegalapu_ldm": 20.42636,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.51,
+   "kg": 12291.17,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 8.2,
+   "tomegalapu_ldm": 8.194113333333334,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.09,
+   "kg": 3881.59,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.9,
+   "tomegalapu_ldm": 1.940795,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.16,
+   "kg": 6822.28,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.2,
+   "tomegalapu_ldm": 3.41114,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.95,
+   "kg": 4076.74,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.1,
+   "tomegalapu_ldm": 4.07674,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.51,
+   "kg": 11526.4,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.5,
+   "tomegalapu_ldm": 5.763199999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.47,
+   "kg": 27732.96,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 18.48864,
+   "tomegalapu_ldm": 18.48864,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.87,
+   "kg": 4180.31,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 6,
+   "tomegalapu_ldm": 2.7868733333333338,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.98,
+   "kg": 18812.05,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 10.749742857142857,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.43,
+   "kg": 3903.87,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.25,
+   "tomegalapu_ldm": 2.230782857142857,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.38,
+   "kg": 6818.88,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 7.38,
+   "tomegalapu_ldm": 3.40944,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.48,
+   "kg": 4810.38,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.8,
+   "tomegalapu_ldm": 2.7487885714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.63,
+   "kg": 17969.88,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.268502857142858,
+   "tomegalapu_ldm": 10.268502857142858,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.56,
+   "kg": 887.96,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 1.75,
+   "tomegalapu_ldm": 0.5074057142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.83,
+   "kg": 26775.25,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 80.3,
+   "tomegalapu_ldm": 80.33378337833783,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.53,
+   "kg": 1539.31,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.53,
+   "tomegalapu_ldm": 1.0262066666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.41,
+   "kg": 22291.34,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 14.9,
+   "tomegalapu_ldm": 14.860893333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.14,
+   "kg": 21142.89,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 1.14,
+   "tomegalapu_ldm": 21.142889999999998,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.83,
+   "kg": 29305.78,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.8,
+   "tomegalapu_ldm": 87.92613261326132,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.54,
+   "kg": 14543.58,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 43.7,
+   "tomegalapu_ldm": 43.63510351035103,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.09,
+   "kg": 29395.53,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.1,
+   "tomegalapu_ldm": 14.697764999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.1,
+   "kg": 15409.98,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.1,
+   "tomegalapu_ldm": 8.805702857142856,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.24,
+   "kg": 14522.61,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.3,
+   "tomegalapu_ldm": 7.261305,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.02,
+   "kg": 12784.28,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 9,
+   "tomegalapu_ldm": 8.522853333333334,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.85,
+   "kg": 15978.71,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.85,
+   "tomegalapu_ldm": 10.652473333333333,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.15,
+   "kg": 14773.73,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 8.5,
+   "tomegalapu_ldm": 8.442131428571429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.74,
+   "kg": 18433.56,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 55.5,
+   "tomegalapu_ldm": 55.30621062106211,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.52,
+   "kg": 14065.08,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 8.04,
+   "tomegalapu_ldm": 8.03718857142857,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.23,
+   "kg": 21956.65,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 10.978325,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.37,
+   "kg": 9660.15,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.4,
+   "tomegalapu_ldm": 28.98334833483348,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.93,
+   "kg": 8544.51,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7,
+   "tomegalapu_ldm": 4.882577142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.51,
+   "kg": 9807,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.75,
+   "tomegalapu_ldm": 5.604,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.8,
+   "kg": 13269.3,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 8.8462,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.82,
+   "kg": 4411.4,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 3,
+   "tomegalapu_ldm": 2.5208,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.02,
+   "kg": 28045.81,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.1,
+   "tomegalapu_ldm": 84.14584458445844,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.93,
+   "kg": 28133.76,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 18.76,
+   "tomegalapu_ldm": 18.75584,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.76,
+   "kg": 7566.14,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.5,
+   "tomegalapu_ldm": 4.3235085714285715,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.54,
+   "kg": 9780.27,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 6.52018,
+   "tomegalapu_ldm": 6.52018,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.43,
+   "kg": 26551.43,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 15.2,
+   "tomegalapu_ldm": 15.172245714285715,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.18,
+   "kg": 26361.4,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 26.3614,
+   "tomegalapu_ldm": 26.3614,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.18,
+   "kg": 24491.24,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.18,
+   "tomegalapu_ldm": 16.327493333333333,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.92,
+   "kg": 13188.36,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.92,
+   "tomegalapu_ldm": 13.188360000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.07,
+   "kg": 22859.55,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.25,
+   "tomegalapu_ldm": 13.0626,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.02,
+   "kg": 1485.94,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1,
+   "tomegalapu_ldm": 0.9906266666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.58,
+   "kg": 29786.67,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.6,
+   "tomegalapu_ldm": 14.893334999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.48,
+   "kg": 4091.7,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 12.276327632763275,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.28,
+   "kg": 22703.44,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 22.7,
+   "tomegalapu_ldm": 22.703439999999997,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.95,
+   "kg": 24762.85,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14.5,
+   "tomegalapu_ldm": 14.1502,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.37,
+   "kg": 19932.98,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 59.81,
+   "tomegalapu_ldm": 59.8049204920492,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.52,
+   "kg": 19297.49,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 13.52,
+   "tomegalapu_ldm": 12.864993333333334,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.75,
+   "kg": 21961.28,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 65.9,
+   "tomegalapu_ldm": 65.89042904290429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.88,
+   "kg": 3972.06,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 11.917371737173717,
+   "tomegalapu_ldm": 11.917371737173717,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.57,
+   "kg": 11545.55,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 13.57,
+   "tomegalapu_ldm": 11.545549999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.74,
+   "kg": 575.83,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 5.74,
+   "tomegalapu_ldm": 0.28791500000000003,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.44,
+   "kg": 13293.77,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.7,
+   "tomegalapu_ldm": 6.646885,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.32,
+   "kg": 4462.3,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.3,
+   "tomegalapu_ldm": 2.5498857142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3,
+   "kg": 7245.62,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 7.25,
+   "tomegalapu_ldm": 7.24562,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.33,
+   "kg": 14410.07,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.4,
+   "tomegalapu_ldm": 43.234533453345335,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.19,
+   "kg": 11678.13,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 1.5,
+   "tomegalapu_ldm": 7.785419999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.14,
+   "kg": 17568.42,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 17.6,
+   "tomegalapu_ldm": 17.56842,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.15,
+   "kg": 17224.56,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.15,
+   "tomegalapu_ldm": 11.48304,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.76,
+   "kg": 11229.57,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.23,
+   "tomegalapu_ldm": 11.229569999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.3,
+   "kg": 1807.43,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.3,
+   "tomegalapu_ldm": 1.0328171428571429,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.79,
+   "kg": 22495.57,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 15,
+   "tomegalapu_ldm": 14.997046666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.54,
+   "kg": 13220.32,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.6,
+   "tomegalapu_ldm": 8.813546666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.39,
+   "kg": 18968.72,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.4,
+   "tomegalapu_ldm": 10.839268571428573,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.05,
+   "kg": 17823.89,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 8.25,
+   "tomegalapu_ldm": 8.911945,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.37,
+   "kg": 25263.9,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 25.263900000000003,
+   "tomegalapu_ldm": 25.263900000000003,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.47,
+   "kg": 29124.76,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 16.64272,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.99,
+   "kg": 23295.78,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 15.54,
+   "tomegalapu_ldm": 15.53052,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.18,
+   "kg": 3354.81,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.25,
+   "tomegalapu_ldm": 2.2365399999999998,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.16,
+   "kg": 5807.53,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 12.5,
+   "tomegalapu_ldm": 3.318588571428571,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.12,
+   "kg": 29940.55,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 29.940549999999998,
+   "tomegalapu_ldm": 29.940549999999998,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.75,
+   "kg": 24355.44,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 16.25,
+   "tomegalapu_ldm": 16.23696,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.61,
+   "kg": 7320.17,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.9,
+   "tomegalapu_ldm": 4.880113333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.68,
+   "kg": 11821.65,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 35.47,
+   "tomegalapu_ldm": 35.46849684968497,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.09,
+   "kg": 18306.41,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 10.47,
+   "tomegalapu_ldm": 10.460805714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.82,
+   "kg": 17368.78,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 17.4,
+   "tomegalapu_ldm": 17.368779999999997,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.65,
+   "kg": 18480.25,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 1.65,
+   "tomegalapu_ldm": 10.560142857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.12,
+   "kg": 15451.32,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 46.358595859585954,
+   "tomegalapu_ldm": 46.358595859585954,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.86,
+   "kg": 15309.51,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.7,
+   "tomegalapu_ldm": 7.654755,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.13,
+   "kg": 11934.47,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8,
+   "tomegalapu_ldm": 7.956313333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.76,
+   "kg": 9192.43,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 27.58004800480048,
+   "tomegalapu_ldm": 27.58004800480048,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.63,
+   "kg": 26415.86,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.75,
+   "tomegalapu_ldm": 15.094777142857144,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.52,
+   "kg": 9803.73,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.52,
+   "tomegalapu_ldm": 5.602131428571428,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.18,
+   "kg": 2374.78,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 9.25,
+   "tomegalapu_ldm": 1.357017142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.12,
+   "kg": 16345.62,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.9,
+   "tomegalapu_ldm": 10.89708,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.79,
+   "kg": 2662.57,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.8,
+   "tomegalapu_ldm": 2.66257,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.17,
+   "kg": 7952.45,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.95245,
+   "tomegalapu_ldm": 7.95245,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.58,
+   "kg": 18970.37,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.8,
+   "tomegalapu_ldm": 10.840211428571427,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.96,
+   "kg": 4941.15,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 6,
+   "tomegalapu_ldm": 2.4705749999999997,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.13,
+   "kg": 7143.42,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.25,
+   "tomegalapu_ldm": 4.081954285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.79,
+   "kg": 22214.81,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 66.7,
+   "tomegalapu_ldm": 66.65109510951095,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.33,
+   "kg": 7427.39,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.3,
+   "tomegalapu_ldm": 22.284398439843983,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.27,
+   "kg": 17288.98,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 8.65,
+   "tomegalapu_ldm": 8.64449,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.85,
+   "kg": 16808.63,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 9.61,
+   "tomegalapu_ldm": 9.60493142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.2,
+   "kg": 26494,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 26.5,
+   "tomegalapu_ldm": 26.494,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.7,
+   "kg": 11420.9,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 6.526228571428571,
+   "tomegalapu_ldm": 6.526228571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.95,
+   "kg": 8287.84,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.75,
+   "tomegalapu_ldm": 4.735908571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.84,
+   "kg": 27410.7,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 3,
+   "tomegalapu_ldm": 15.663257142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.83,
+   "kg": 1666.42,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 3.83,
+   "tomegalapu_ldm": 0.9522400000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.04,
+   "kg": 558.04,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.3,
+   "tomegalapu_ldm": 0.27902,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.15,
+   "kg": 4758.1,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.758100000000001,
+   "tomegalapu_ldm": 4.758100000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.15,
+   "kg": 25212.8,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.2,
+   "tomegalapu_ldm": 16.808533333333333,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.44,
+   "kg": 23210.51,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 6.5,
+   "tomegalapu_ldm": 11.605255,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.04,
+   "kg": 13605.04,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 40.81920192019202,
+   "tomegalapu_ldm": 40.81920192019202,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.83,
+   "kg": 4296.18,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.5,
+   "tomegalapu_ldm": 2.4549600000000003,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.76,
+   "kg": 4195.21,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.6,
+   "tomegalapu_ldm": 12.586888688868887,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6,
+   "kg": 20153.85,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 20.5,
+   "tomegalapu_ldm": 20.15385,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.23,
+   "kg": 4321.51,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.9,
+   "tomegalapu_ldm": 2.881006666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.06,
+   "kg": 26619.11,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 15.25,
+   "tomegalapu_ldm": 15.21092,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.95,
+   "kg": 4853.5,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 15,
+   "tomegalapu_ldm": 14.561956195619562,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.84,
+   "kg": 12057.43,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.1,
+   "tomegalapu_ldm": 12.05743,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.96,
+   "kg": 14745.96,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 44.25,
+   "tomegalapu_ldm": 44.24230423042304,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.01,
+   "kg": 17868.13,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7,
+   "tomegalapu_ldm": 10.210360000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.94,
+   "kg": 8182.35,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.1,
+   "tomegalapu_ldm": 4.091175,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.95,
+   "kg": 18255.76,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.5,
+   "tomegalapu_ldm": 10.431862857142857,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.62,
+   "kg": 18276.32,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 18.3,
+   "tomegalapu_ldm": 18.27632,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.42,
+   "kg": 5840.03,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 7.5,
+   "tomegalapu_ldm": 5.84003,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.66,
+   "kg": 5938.54,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 4,
+   "tomegalapu_ldm": 3.9590266666666665,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.95,
+   "kg": 11071.62,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 11.95,
+   "tomegalapu_ldm": 11.071620000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.92,
+   "kg": 12388.96,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 7.08,
+   "tomegalapu_ldm": 7.079405714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.26,
+   "kg": 11614.96,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 34.84836483648365,
+   "tomegalapu_ldm": 34.84836483648365,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.19,
+   "kg": 5777.14,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 8.5,
+   "tomegalapu_ldm": 2.88857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.43,
+   "kg": 22224.06,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 66.67884788478848,
+   "tomegalapu_ldm": 66.67884788478848,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.97,
+   "kg": 18340.28,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.25,
+   "tomegalapu_ldm": 12.226853333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.5,
+   "kg": 10549.45,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.5,
+   "tomegalapu_ldm": 10.54945,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.9,
+   "kg": 7354.32,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.9,
+   "tomegalapu_ldm": 22.065166516651665,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.91,
+   "kg": 9148.7,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 5.5,
+   "tomegalapu_ldm": 5.227828571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.5,
+   "kg": 12694.43,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 12.5,
+   "tomegalapu_ldm": 7.25396,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.89,
+   "kg": 3103.43,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 0.89,
+   "tomegalapu_ldm": 3.10343,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.29,
+   "kg": 22990.91,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 23,
+   "tomegalapu_ldm": 22.99091,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.52,
+   "kg": 25448.69,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 17,
+   "tomegalapu_ldm": 16.965793333333334,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.32,
+   "kg": 3020.91,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 9.32,
+   "tomegalapu_ldm": 1.5104549999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.18,
+   "kg": 23470.04,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 70.42,
+   "tomegalapu_ldm": 70.41716171617162,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.45,
+   "kg": 13990.04,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8,
+   "tomegalapu_ldm": 7.994308571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.48,
+   "kg": 17195.41,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.5,
+   "tomegalapu_ldm": 9.82594857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.15,
+   "kg": 17605.89,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.25,
+   "tomegalapu_ldm": 10.06050857142857,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.94,
+   "kg": 11476.81,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.94,
+   "tomegalapu_ldm": 7.651206666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.14,
+   "kg": 11203.03,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.5,
+   "tomegalapu_ldm": 6.401731428571429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.06,
+   "kg": 14297.5,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.06,
+   "tomegalapu_ldm": 7.14875,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.6,
+   "kg": 26520.92,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 15.5,
+   "tomegalapu_ldm": 15.154811428571428,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.28,
+   "kg": 20727.19,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 12.5,
+   "tomegalapu_ldm": 13.818126666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.54,
+   "kg": 5936.93,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 17.8,
+   "tomegalapu_ldm": 17.81257125712571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0,
+   "kg": 23656.94,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 70.97791779177918,
+   "tomegalapu_ldm": 70.97791779177918,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.9,
+   "kg": 28892.86,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 19.5,
+   "tomegalapu_ldm": 19.26190666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.91,
+   "kg": 13451,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 6.73,
+   "tomegalapu_ldm": 6.7255,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.53,
+   "kg": 14797.65,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 5,
+   "tomegalapu_ldm": 14.797649999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.57,
+   "kg": 18331.09,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 13.57,
+   "tomegalapu_ldm": 54.998769876987694,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.55,
+   "kg": 8718.67,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5,
+   "tomegalapu_ldm": 4.982097142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.88,
+   "kg": 32.61,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 4,
+   "tomegalapu_ldm": 0.09783978397839783,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.08,
+   "kg": 9562.45,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 4.08,
+   "tomegalapu_ldm": 4.781225,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.25,
+   "kg": 4419.27,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.41927,
+   "tomegalapu_ldm": 4.41927,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.87,
+   "kg": 9068.91,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.87,
+   "tomegalapu_ldm": 5.182234285714285,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.52,
+   "kg": 28685.65,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 1.52,
+   "tomegalapu_ldm": 19.12376666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.39,
+   "kg": 10675.38,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.675379999999999,
+   "tomegalapu_ldm": 10.675379999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.9,
+   "kg": 4892.68,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.8,
+   "tomegalapu_ldm": 2.795817142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.8,
+   "kg": 12023.66,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.8,
+   "tomegalapu_ldm": 6.870662857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.41,
+   "kg": 18242.89,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 54.7,
+   "tomegalapu_ldm": 54.73414341434143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.52,
+   "kg": 20459.55,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 20.5,
+   "tomegalapu_ldm": 20.45955,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.69,
+   "kg": 17086.52,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 9.763725714285714,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.19,
+   "kg": 9184.59,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 28,
+   "tomegalapu_ldm": 27.556525652565256,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.86,
+   "kg": 4530.19,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13,
+   "tomegalapu_ldm": 2.5886799999999996,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.61,
+   "kg": 19640.02,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 20,
+   "tomegalapu_ldm": 19.64002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.92,
+   "kg": 8072.88,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.6,
+   "tomegalapu_ldm": 4.613074285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.95,
+   "kg": 25106.99,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 25.5,
+   "tomegalapu_ldm": 25.106990000000003,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.74,
+   "kg": 28293.11,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 84.88781878187818,
+   "tomegalapu_ldm": 84.88781878187818,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.52,
+   "kg": 18270.85,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.5,
+   "tomegalapu_ldm": 12.180566666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.71,
+   "kg": 19633.29,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.8,
+   "tomegalapu_ldm": 9.816645000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.49,
+   "kg": 13495.41,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 6.747705,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.8,
+   "kg": 10145.01,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.1,
+   "tomegalapu_ldm": 10.145010000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.07,
+   "kg": 9660.32,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 5.520182857142857,
+   "tomegalapu_ldm": 5.520182857142857,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.12,
+   "kg": 12049.61,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 36.25,
+   "tomegalapu_ldm": 36.15244524452445,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.71,
+   "kg": 3506.81,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 10.52148214821482,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.64,
+   "kg": 25505.44,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 14.58,
+   "tomegalapu_ldm": 14.574537142857142,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.94,
+   "kg": 13387.87,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7.75,
+   "tomegalapu_ldm": 7.650211428571429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.71,
+   "kg": 13432.02,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.7,
+   "tomegalapu_ldm": 6.71601,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.29,
+   "kg": 11004.79,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.6,
+   "tomegalapu_ldm": 5.502395000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.63,
+   "kg": 19997.46,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 9.99873,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.08,
+   "kg": 11006.64,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.1,
+   "tomegalapu_ldm": 11.006639999999999,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.24,
+   "kg": 8802.91,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 5.5,
+   "tomegalapu_ldm": 8.80291,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.69,
+   "kg": 17108.82,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 4.69,
+   "tomegalapu_ldm": 51.33159315931593,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.26,
+   "kg": 23272.73,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 15.75,
+   "tomegalapu_ldm": 15.515153333333332,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.61,
+   "kg": 5525.25,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.7,
+   "tomegalapu_ldm": 3.6835,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.07,
+   "kg": 655.32,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 0.07,
+   "tomegalapu_ldm": 0.3744685714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.75,
+   "kg": 23882.06,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 16,
+   "tomegalapu_ldm": 15.921373333333333,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.41,
+   "kg": 6733.04,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.9,
+   "tomegalapu_ldm": 3.8474514285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.53,
+   "kg": 23262.7,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 69.8,
+   "tomegalapu_ldm": 69.79507950795079,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.49,
+   "kg": 20204.79,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 11.545594285714285,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.42,
+   "kg": 24501.7,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.5,
+   "tomegalapu_ldm": 12.25085,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.49,
+   "kg": 8117.11,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.5,
+   "tomegalapu_ldm": 4.638348571428571,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.42,
+   "kg": 4169.98,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 2.25,
+   "tomegalapu_ldm": 2.08499,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.48,
+   "kg": 26053.3,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 13.02665,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.44,
+   "kg": 2755.4,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.5,
+   "tomegalapu_ldm": 1.5745142857142858,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.87,
+   "kg": 13421.39,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 6.710694999999999,
+   "tomegalapu_ldm": 6.710694999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.68,
+   "kg": 14212.29,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 14.2,
+   "tomegalapu_ldm": 14.212290000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.12,
+   "kg": 24484.06,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.3,
+   "tomegalapu_ldm": 12.242030000000002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.87,
+   "kg": 24207.64,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 12.25,
+   "tomegalapu_ldm": 12.103819999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.87,
+   "kg": 24123.55,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 3,
+   "tomegalapu_ldm": 16.082366666666665,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.77,
+   "kg": 20905.58,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 62.7,
+   "tomegalapu_ldm": 62.72301230123013,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.28,
+   "kg": 3105.94,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 6.5,
+   "tomegalapu_ldm": 2.0706266666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.35,
+   "kg": 8879.82,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.4,
+   "tomegalapu_ldm": 4.43991,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.46,
+   "kg": 25177.48,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 12.59,
+   "tomegalapu_ldm": 12.58874,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.35,
+   "kg": 10601.01,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.4,
+   "tomegalapu_ldm": 7.06734,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.57,
+   "kg": 27066.2,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 13.57,
+   "tomegalapu_ldm": 27.066200000000002,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.38,
+   "kg": 12787.73,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 6.38,
+   "tomegalapu_ldm": 38.367026702670266,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.53,
+   "kg": 26748.52,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 17.84,
+   "tomegalapu_ldm": 17.832346666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.15,
+   "kg": 3611.37,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 2.15,
+   "tomegalapu_ldm": 2.06364,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.68,
+   "kg": 14550.41,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.8,
+   "tomegalapu_ldm": 9.700273333333334,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.32,
+   "kg": 23180.16,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 1.5,
+   "tomegalapu_ldm": 11.59008,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.2,
+   "kg": 157.65,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.2,
+   "tomegalapu_ldm": 0.15765,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.04,
+   "kg": 10772.94,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 5.38647,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.51,
+   "kg": 5788.17,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 17.5,
+   "tomegalapu_ldm": 17.366246624662466,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.83,
+   "kg": 19822.49,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 59.47341734173418,
+   "tomegalapu_ldm": 59.47341734173418,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.95,
+   "kg": 16003.5,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 9.15,
+   "tomegalapu_ldm": 9.144857142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.55,
+   "kg": 12536.67,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.6,
+   "tomegalapu_ldm": 6.268335,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.34,
+   "kg": 7283.44,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.6,
+   "tomegalapu_ldm": 3.64172,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.4,
+   "kg": 12168.98,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 36.510591059105906,
+   "tomegalapu_ldm": 36.510591059105906,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.39,
+   "kg": 29930.71,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 15,
+   "tomegalapu_ldm": 14.965354999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.62,
+   "kg": 19182.42,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 57.553015301530145,
+   "tomegalapu_ldm": 57.553015301530145,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.04,
+   "kg": 488.29,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 0.5,
+   "tomegalapu_ldm": 0.3255266666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.69,
+   "kg": 9767.33,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.7,
+   "tomegalapu_ldm": 5.581331428571429,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.61,
+   "kg": 29013.65,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.61,
+   "tomegalapu_ldm": 87.04965496549656,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.91,
+   "kg": 8249.99,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 5,
+   "tomegalapu_ldm": 4.71428,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.35,
+   "kg": 21638.65,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 64.92244224422443,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.19,
+   "kg": 10739.61,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.2,
+   "tomegalapu_ldm": 6.13692,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.32,
+   "kg": 29224.05,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 16.7,
+   "tomegalapu_ldm": 16.699457142857142,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.32,
+   "kg": 22780.72,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.4,
+   "tomegalapu_ldm": 15.187146666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.54,
+   "kg": 16971.06,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 9.697748571428573,
+   "tomegalapu_ldm": 9.697748571428573,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.53,
+   "kg": 10682.97,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 32.1,
+   "tomegalapu_ldm": 32.05211521152115,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.67,
+   "kg": 21951.36,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 8.75,
+   "tomegalapu_ldm": 14.63424,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.18,
+   "kg": 1463.3,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 10.2,
+   "tomegalapu_ldm": 0.8361714285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.49,
+   "kg": 25038.88,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 75.25,
+   "tomegalapu_ldm": 75.12415241524153,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.27,
+   "kg": 11834.08,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7,
+   "tomegalapu_ldm": 6.762331428571429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.79,
+   "kg": 5044.7,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 11.79,
+   "tomegalapu_ldm": 2.882685714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.75,
+   "kg": 29277.78,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 16.7,
+   "tomegalapu_ldm": 16.730159999999998,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.69,
+   "kg": 15347.01,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.69,
+   "tomegalapu_ldm": 8.76972,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.72,
+   "kg": 19840.97,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 11.337697142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.72,
+   "kg": 1344.86,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.7,
+   "tomegalapu_ldm": 1.34486,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.55,
+   "kg": 24731.2,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.6,
+   "tomegalapu_ldm": 14.132114285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.72,
+   "kg": 10023.56,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.8,
+   "tomegalapu_ldm": 5.727748571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.05,
+   "kg": 22986.09,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 13.134908571428571,
+   "tomegalapu_ldm": 13.134908571428571,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.63,
+   "kg": 5175.47,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 3.75,
+   "tomegalapu_ldm": 2.5877350000000003,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.62,
+   "kg": 17278.92,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 5.6,
+   "tomegalapu_ldm": 8.63946,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.62,
+   "kg": 12747.55,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7.3,
+   "tomegalapu_ldm": 7.284314285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.44,
+   "kg": 16204.18,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 8.25,
+   "tomegalapu_ldm": 8.10209,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.91,
+   "kg": 14761.79,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 2.9,
+   "tomegalapu_ldm": 44.28979897989799,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.76,
+   "kg": 16025.16,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 9.5,
+   "tomegalapu_ldm": 9.157234285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.11,
+   "kg": 26651.04,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.2,
+   "tomegalapu_ldm": 13.325520000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.68,
+   "kg": 19738.99,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.75,
+   "tomegalapu_ldm": 13.159326666666669,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.72,
+   "kg": 16046.02,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9.2,
+   "tomegalapu_ldm": 9.169154285714287,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.59,
+   "kg": 8296.59,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.1,
+   "tomegalapu_ldm": 4.148295,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.49,
+   "kg": 414.79,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 0.5,
+   "tomegalapu_ldm": 0.41479000000000005,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.35,
+   "kg": 19782.2,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.31,
+   "tomegalapu_ldm": 11.304114285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.85,
+   "kg": 867.83,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 12.85,
+   "tomegalapu_ldm": 0.49590285714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.03,
+   "kg": 4182.76,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 5.5,
+   "tomegalapu_ldm": 2.7885066666666667,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.06,
+   "kg": 29275.92,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 16.729097142857142,
+   "tomegalapu_ldm": 16.729097142857142,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.02,
+   "kg": 5938.73,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 9,
+   "tomegalapu_ldm": 17.817971797179716,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.46,
+   "kg": 19978.93,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 60,
+   "tomegalapu_ldm": 59.942784278427844,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.31,
+   "kg": 20637.04,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.8,
+   "tomegalapu_ldm": 11.792594285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.27,
+   "kg": 5166.43,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.5,
+   "tomegalapu_ldm": 3.4442866666666667,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.8,
+   "kg": 17861.83,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.8,
+   "tomegalapu_ldm": 8.930915,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.03,
+   "kg": 8860.28,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.03,
+   "tomegalapu_ldm": 8.860280000000001,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.72,
+   "kg": 26231.87,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 78.75,
+   "tomegalapu_ldm": 78.7034803480348,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.13,
+   "kg": 17701.42,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 0.5,
+   "tomegalapu_ldm": 53.109570957095706,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.68,
+   "kg": 901.86,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.7,
+   "tomegalapu_ldm": 0.60124,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.47,
+   "kg": 1810.86,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 11.5,
+   "tomegalapu_ldm": 1.0347771428571428,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13,
+   "kg": 25162.06,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14.5,
+   "tomegalapu_ldm": 14.37832,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.46,
+   "kg": 25235.55,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.7,
+   "tomegalapu_ldm": 12.617775,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.86,
+   "kg": 28112.58,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.9,
+   "tomegalapu_ldm": 18.74172,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.41,
+   "kg": 7276.64,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 7.41,
+   "tomegalapu_ldm": 7.27664,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.08,
+   "kg": 16589.89,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 3.5,
+   "tomegalapu_ldm": 9.479937142857143,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 1.95,
+   "kg": 22706.72,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 2,
+   "tomegalapu_ldm": 15.137813333333334,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 7.02,
+   "kg": 13458.47,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 7,
+   "tomegalapu_ldm": 8.972313333333332,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.55,
+   "kg": 24888.56,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 0.55,
+   "tomegalapu_ldm": 14.222034285714287,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 0.39,
+   "kg": 22925.71,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 15.283806666666665,
+   "tomegalapu_ldm": 15.283806666666665,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.17,
+   "kg": 20485.49,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.25,
+   "tomegalapu_ldm": 10.242745000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.84,
+   "kg": 28567.12,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 16.33,
+   "tomegalapu_ldm": 16.324068571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.16,
+   "kg": 2178.21,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 0.16,
+   "tomegalapu_ldm": 1.45214,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.67,
+   "kg": 28137.96,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 16.078834285714287,
+   "tomegalapu_ldm": 16.078834285714287,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.13,
+   "kg": 25949.27,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 14.828154285714286,
+   "tomegalapu_ldm": 14.828154285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.94,
+   "kg": 2870.17,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.7,
+   "tomegalapu_ldm": 1.640097142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.69,
+   "kg": 16440.03,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11,
+   "tomegalapu_ldm": 10.96002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.16,
+   "kg": 4686.04,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.677737142857143,
+   "tomegalapu_ldm": 2.677737142857143,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.9,
+   "kg": 16999.69,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 8.5,
+   "tomegalapu_ldm": 8.499844999999999,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.57,
+   "kg": 24476.74,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 73.5,
+   "tomegalapu_ldm": 73.43756375637564,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.32,
+   "kg": 14708.7,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 8.41,
+   "tomegalapu_ldm": 8.404971428571429,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.41,
+   "kg": 5170.19,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 10.5,
+   "tomegalapu_ldm": 15.51212121212121,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.69,
+   "kg": 24242.2,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 16.2,
+   "tomegalapu_ldm": 16.161466666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.2,
+   "kg": 6623.04,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 3.79,
+   "tomegalapu_ldm": 3.784594285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 8.11,
+   "kg": 12320.57,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.1,
+   "tomegalapu_ldm": 6.160285,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.8,
+   "kg": 2291.76,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 1.5,
+   "tomegalapu_ldm": 1.14588,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 1.37,
+   "kg": 26046.5,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.4,
+   "tomegalapu_ldm": 78.14731473147314,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 10.45,
+   "kg": 12041.83,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.5,
+   "tomegalapu_ldm": 6.881045714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.45,
+   "kg": 8027.8,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.25,
+   "tomegalapu_ldm": 4.0139000000000005,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.47,
+   "kg": 8217.88,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.75,
+   "tomegalapu_ldm": 4.695931428571428,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.51,
+   "kg": 28206.58,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 14.2,
+   "tomegalapu_ldm": 14.103290000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 2.83,
+   "kg": 15095.64,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 2.83,
+   "tomegalapu_ldm": 10.06376,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.19,
+   "kg": 21133.93,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 14.5,
+   "tomegalapu_ldm": 14.089286666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.39,
+   "kg": 21944.05,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 21.95,
+   "tomegalapu_ldm": 21.94405,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 10.41,
+   "kg": 17419.09,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 52.27,
+   "tomegalapu_ldm": 52.26249624962496,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.44,
+   "kg": 19017.35,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 10.867057142857142,
+   "tomegalapu_ldm": 10.867057142857142,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.41,
+   "kg": 3619.79,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 2.0684514285714286,
+   "tomegalapu_ldm": 2.0684514285714286,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.03,
+   "kg": 20748.71,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 13.1,
+   "tomegalapu_ldm": 11.856405714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 12.4,
+   "kg": 25298.84,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 14.46,
+   "tomegalapu_ldm": 14.45648,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.41,
+   "kg": 13101.96,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,5 LDM-re"
+   },
+   "elszamolasi_ldm": 7.5,
+   "tomegalapu_ldm": 7.486834285714285,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.62,
+   "kg": 17728.32,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.6,
+   "tomegalapu_ldm": 10.13046857142857,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.67,
+   "kg": 9333.18,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.7,
+   "tomegalapu_ldm": 5.333245714285715,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 5.43,
+   "kg": 7150.21,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7.25,
+   "tomegalapu_ldm": 7.15021,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.21,
+   "kg": 12193.28,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 8.1,
+   "tomegalapu_ldm": 8.128853333333334,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.7,
+   "kg": 26977.13,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 0.7,
+   "tomegalapu_ldm": 80.93948394839484,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 2.27,
+   "kg": 27741.01,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 15.86,
+   "tomegalapu_ldm": 15.852005714285713,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.85,
+   "kg": 27213.06,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 15.6,
+   "tomegalapu_ldm": 15.550320000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 13.39,
+   "kg": 8309.34,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13.5,
+   "tomegalapu_ldm": 4.748194285714286,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 13.21,
+   "kg": 6067.58,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 18.25,
+   "tomegalapu_ldm": 18.204560456045602,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.8,
+   "kg": 26650.31,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 15.3,
+   "tomegalapu_ldm": 15.228748571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 5.42,
+   "kg": 19602.11,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10,
+   "tomegalapu_ldm": 9.801055,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.2,
+   "kg": 1750.12,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "maximum",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 12.2,
+   "tomegalapu_ldm": 1.1667466666666666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 6.92,
+   "kg": 2659.05,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1.8,
+   "tomegalapu_ldm": 1.7727000000000002,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.23,
+   "kg": 6132.92,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "maximum",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 6.23,
+   "tomegalapu_ldm": 3.5045257142857142,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.23,
+   "kg": 21658.35,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 8.23,
+   "tomegalapu_ldm": 21.65835,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.24,
+   "kg": 16531.54,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4.25,
+   "tomegalapu_ldm": 9.446594285714287,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.93,
+   "kg": 1477.24,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 1,
+   "tomegalapu_ldm": 0.9848266666666666,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 6.32,
+   "kg": 11474.13,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 6.4,
+   "tomegalapu_ldm": 6.556645714285714,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.58,
+   "kg": 13931.34,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 11.58,
+   "tomegalapu_ldm": 7.9607657142857144,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 4.08,
+   "kg": 12489.34,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 37.5,
+   "tomegalapu_ldm": 37.47176717671767,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 4.84,
+   "kg": 18725.15,
+   "cfg": {
+    "kgPerLdm": 1500,
+    "szabaly": "fizikai",
+    "kerekites": "Matematikai kerekítés 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 4.8,
+   "tomegalapu_ldm": 12.483433333333334,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.93,
+   "kg": 7146.66,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 8.93,
+   "tomegalapu_ldm": 7.14666,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 11.65,
+   "kg": 8511.16,
+   "cfg": {
+    "kgPerLdm": 333.3,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 11.7,
+   "tomegalapu_ldm": 25.536033603360334,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 3.26,
+   "kg": 3896.61,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "maximum",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 4,
+   "tomegalapu_ldm": 3.89661,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 7.26,
+   "kg": 22265.61,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Nincs kerekítés"
+   },
+   "elszamolasi_ldm": 11.132805000000001,
+   "tomegalapu_ldm": 11.132805000000001,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 0.56,
+   "kg": 17532.68,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 10.25,
+   "tomegalapu_ldm": 10.018674285714287,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 9.76,
+   "kg": 14928.61,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,01 LDM-re"
+   },
+   "elszamolasi_ldm": 9.76,
+   "tomegalapu_ldm": 7.464305,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 8.33,
+   "kg": 11938.83,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 7,
+   "tomegalapu_ldm": 6.822188571428572,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 3.73,
+   "kg": 543.98,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "fizikai",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 3.8,
+   "tomegalapu_ldm": 0.54398,
+   "meghatarozo": "fizikai"
+  },
+  {
+   "fizikai": 9.07,
+   "kg": 487.7,
+   "cfg": {
+    "kgPerLdm": 1750,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 0.5,
+   "tomegalapu_ldm": 0.27868571428571426,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 11.43,
+   "kg": 342.66,
+   "cfg": {
+    "kgPerLdm": 1000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,1 LDM-re"
+   },
+   "elszamolasi_ldm": 0.4,
+   "tomegalapu_ldm": 0.34266,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "fizikai": 12.67,
+   "kg": 25889.92,
+   "cfg": {
+    "kgPerLdm": 2000,
+    "szabaly": "tömeg",
+    "kerekites": "Felfelé 0,25 LDM-re"
+   },
+   "elszamolasi_ldm": 13,
+   "tomegalapu_ldm": 12.944959999999998,
+   "meghatarozo": "tömeg"
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.05,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 0.05
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.15,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 0.15
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.25,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 0.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.3,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 0.30000000000000004
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 1.005,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 1.005
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 2.45,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 2.45
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 7.125,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 7.125
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 9.999999999,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 9.999999999
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Nincs kerekítés",
+   "eredmeny": 0.30000000000000004
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.05,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 0.05
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.15,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 0.15
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.25,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 0.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.3,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 1.005,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 1.01
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 2.45,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 2.45
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 7.125,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 7.13
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 9.999999999,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 10
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,01 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.05,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 0.1
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.15,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 0.2
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.25,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.3,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 1.005,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 1.1
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 2.45,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 2.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 7.125,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 7.2
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 9.999999999,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 10
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.05,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 0.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.15,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 0.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.25,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 0.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.3,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 1.005,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 1.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 2.45,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 2.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 7.125,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 7.25
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 9.999999999,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 10
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,25 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.05,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.15,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.25,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.3,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 1.005,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 1.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 2.45,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 2.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 7.125,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 7.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 9.999999999,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 10
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Felfelé 0,5 LDM-re",
+   "eredmeny": 0.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.05,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 0.1
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.15,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 0.2
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.25,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.3,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 0.3
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 1.005,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 1
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 2.45,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 2.5
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 7.125,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 7.1
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 9.999999999,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 10
+  },
+  {
+   "kerekites_teszt": true,
+   "ertek": 0.30000000000000004,
+   "szabaly": "Matematikai kerekítés 0,1 LDM-re",
+   "eredmeny": 0.3
+  }
+ ],
+ "elmeleti": [
+  {
+   "darab": 20,
+   "hossz": 33,
+   "szelesseg": 171,
+   "ref": 245,
+   "ldm": 4.606530612244898
+  },
+  {
+   "darab": 10,
+   "hossz": 112,
+   "szelesseg": 75,
+   "ref": 240,
+   "ldm": 3.5
+  },
+  {
+   "darab": 3,
+   "hossz": 412,
+   "szelesseg": 36,
+   "ref": 248,
+   "ldm": 1.7941935483870968
+  },
+  {
+   "darab": 24,
+   "hossz": 112,
+   "szelesseg": 21,
+   "ref": 245,
+   "ldm": 2.304
+  },
+  {
+   "darab": 8,
+   "hossz": 501,
+   "szelesseg": 243,
+   "ref": 248,
+   "ldm": 39.27193548387097
+  },
+  {
+   "darab": 3,
+   "hossz": 483,
+   "szelesseg": 58,
+   "ref": 248,
+   "ldm": 3.388790322580645
+  },
+  {
+   "darab": 19,
+   "hossz": 425,
+   "szelesseg": 173,
+   "ref": 248,
+   "ldm": 56.32963709677419
+  },
+  {
+   "darab": 28,
+   "hossz": 346,
+   "szelesseg": 239,
+   "ref": 240,
+   "ldm": 96.47633333333333
+  },
+  {
+   "darab": 37,
+   "hossz": 21,
+   "szelesseg": 172,
+   "ref": 240,
+   "ldm": 5.5685
+  },
+  {
+   "darab": 32,
+   "hossz": 40,
+   "szelesseg": 67,
+   "ref": 248,
+   "ldm": 3.458064516129032
+  },
+  {
+   "darab": 17,
+   "hossz": 87,
+   "szelesseg": 188,
+   "ref": 245,
+   "ldm": 11.349061224489796
+  },
+  {
+   "darab": 8,
+   "hossz": 145,
+   "szelesseg": 70,
+   "ref": 245,
+   "ldm": 3.3142857142857145
+  },
+  {
+   "darab": 18,
+   "hossz": 38,
+   "szelesseg": 115,
+   "ref": 245,
+   "ldm": 3.210612244897959
+  },
+  {
+   "darab": 39,
+   "hossz": 385,
+   "szelesseg": 121,
+   "ref": 248,
+   "ldm": 73.25866935483872
+  },
+  {
+   "darab": 37,
+   "hossz": 98,
+   "szelesseg": 30,
+   "ref": 245,
+   "ldm": 4.44
+  },
+  {
+   "darab": 30,
+   "hossz": 173,
+   "szelesseg": 142,
+   "ref": 245,
+   "ldm": 30.080816326530613
+  },
+  {
+   "darab": 35,
+   "hossz": 481,
+   "szelesseg": 122,
+   "ref": 240,
+   "ldm": 85.57791666666667
+  },
+  {
+   "darab": 18,
+   "hossz": 200,
+   "szelesseg": 26,
+   "ref": 240,
+   "ldm": 3.9
+  },
+  {
+   "darab": 18,
+   "hossz": 461,
+   "szelesseg": 55,
+   "ref": 245,
+   "ldm": 18.62816326530612
+  },
+  {
+   "darab": 34,
+   "hossz": 438,
+   "szelesseg": 146,
+   "ref": 240,
+   "ldm": 90.593
+  },
+  {
+   "darab": 29,
+   "hossz": 237,
+   "szelesseg": 45,
+   "ref": 240,
+   "ldm": 12.886875
+  },
+  {
+   "darab": 15,
+   "hossz": 358,
+   "szelesseg": 178,
+   "ref": 248,
+   "ldm": 38.54274193548387
+  },
+  {
+   "darab": 35,
+   "hossz": 369,
+   "szelesseg": 32,
+   "ref": 240,
+   "ldm": 17.22
+  },
+  {
+   "darab": 33,
+   "hossz": 187,
+   "szelesseg": 89,
+   "ref": 240,
+   "ldm": 22.884125
+  },
+  {
+   "darab": 2,
+   "hossz": 519,
+   "szelesseg": 107,
+   "ref": 248,
+   "ldm": 4.478467741935484
+  },
+  {
+   "darab": 12,
+   "hossz": 335,
+   "szelesseg": 113,
+   "ref": 245,
+   "ldm": 18.54122448979592
+  },
+  {
+   "darab": 27,
+   "hossz": 416,
+   "szelesseg": 165,
+   "ref": 245,
+   "ldm": 75.64408163265306
+  },
+  {
+   "darab": 40,
+   "hossz": 114,
+   "szelesseg": 193,
+   "ref": 248,
+   "ldm": 35.487096774193546
+  },
+  {
+   "darab": 19,
+   "hossz": 119,
+   "szelesseg": 134,
+   "ref": 245,
+   "ldm": 12.366285714285715
+  },
+  {
+   "darab": 10,
+   "hossz": 422,
+   "szelesseg": 210,
+   "ref": 240,
+   "ldm": 36.925
+  },
+  {
+   "darab": 35,
+   "hossz": 175,
+   "szelesseg": 102,
+   "ref": 248,
+   "ldm": 25.191532258064516
+  },
+  {
+   "darab": 23,
+   "hossz": 512,
+   "szelesseg": 125,
+   "ref": 245,
+   "ldm": 60.08163265306123
+  },
+  {
+   "darab": 8,
+   "hossz": 517,
+   "szelesseg": 129,
+   "ref": 240,
+   "ldm": 22.231
+  },
+  {
+   "darab": 30,
+   "hossz": 454,
+   "szelesseg": 241,
+   "ref": 248,
+   "ldm": 132.3556451612903
+  },
+  {
+   "darab": 6,
+   "hossz": 401,
+   "szelesseg": 178,
+   "ref": 245,
+   "ldm": 17.480326530612246
+  },
+  {
+   "darab": 36,
+   "hossz": 586,
+   "szelesseg": 20,
+   "ref": 248,
+   "ldm": 17.01290322580645
+  },
+  {
+   "darab": 7,
+   "hossz": 558,
+   "szelesseg": 176,
+   "ref": 245,
+   "ldm": 28.059428571428572
+  },
+  {
+   "darab": 35,
+   "hossz": 282,
+   "szelesseg": 173,
+   "ref": 245,
+   "ldm": 69.69428571428571
+  },
+  {
+   "darab": 38,
+   "hossz": 25,
+   "szelesseg": 198,
+   "ref": 248,
+   "ldm": 7.584677419354839
+  },
+  {
+   "darab": 16,
+   "hossz": 83,
+   "szelesseg": 159,
+   "ref": 245,
+   "ldm": 8.618448979591836
+  },
+  {
+   "darab": 2,
+   "hossz": 396,
+   "szelesseg": 111,
+   "ref": 245,
+   "ldm": 3.588244897959184
+  },
+  {
+   "darab": 16,
+   "hossz": 247,
+   "szelesseg": 72,
+   "ref": 245,
+   "ldm": 11.614040816326531
+  },
+  {
+   "darab": 18,
+   "hossz": 110,
+   "szelesseg": 235,
+   "ref": 245,
+   "ldm": 18.991836734693877
+  },
+  {
+   "darab": 24,
+   "hossz": 343,
+   "szelesseg": 196,
+   "ref": 248,
+   "ldm": 65.05935483870968
+  },
+  {
+   "darab": 13,
+   "hossz": 230,
+   "szelesseg": 108,
+   "ref": 245,
+   "ldm": 13.180408163265307
+  },
+  {
+   "darab": 31,
+   "hossz": 485,
+   "szelesseg": 225,
+   "ref": 248,
+   "ldm": 136.40625
+  },
+  {
+   "darab": 28,
+   "hossz": 254,
+   "szelesseg": 83,
+   "ref": 240,
+   "ldm": 24.595666666666666
+  },
+  {
+   "darab": 16,
+   "hossz": 130,
+   "szelesseg": 186,
+   "ref": 245,
+   "ldm": 15.791020408163265
+  },
+  {
+   "darab": 14,
+   "hossz": 194,
+   "szelesseg": 120,
+   "ref": 245,
+   "ldm": 13.302857142857142
+  },
+  {
+   "darab": 8,
+   "hossz": 247,
+   "szelesseg": 145,
+   "ref": 245,
+   "ldm": 11.694693877551021
+  },
+  {
+   "darab": 26,
+   "hossz": 229,
+   "szelesseg": 59,
+   "ref": 240,
+   "ldm": 14.636916666666666
+  },
+  {
+   "darab": 34,
+   "hossz": 164,
+   "szelesseg": 31,
+   "ref": 245,
+   "ldm": 7.05534693877551
+  },
+  {
+   "darab": 18,
+   "hossz": 247,
+   "szelesseg": 239,
+   "ref": 248,
+   "ldm": 42.846532258064514
+  },
+  {
+   "darab": 29,
+   "hossz": 101,
+   "szelesseg": 46,
+   "ref": 248,
+   "ldm": 5.432822580645161
+  },
+  {
+   "darab": 8,
+   "hossz": 445,
+   "szelesseg": 227,
+   "ref": 240,
+   "ldm": 33.67166666666667
+  },
+  {
+   "darab": 20,
+   "hossz": 113,
+   "szelesseg": 65,
+   "ref": 248,
+   "ldm": 5.923387096774194
+  },
+  {
+   "darab": 36,
+   "hossz": 67,
+   "szelesseg": 141,
+   "ref": 248,
+   "ldm": 13.713387096774193
+  },
+  {
+   "darab": 11,
+   "hossz": 90,
+   "szelesseg": 72,
+   "ref": 240,
+   "ldm": 2.97
+  },
+  {
+   "darab": 13,
+   "hossz": 108,
+   "szelesseg": 79,
+   "ref": 240,
+   "ldm": 4.6215
+  },
+  {
+   "darab": 9,
+   "hossz": 223,
+   "szelesseg": 47,
+   "ref": 245,
+   "ldm": 3.8501632653061226
+  },
+  {
+   "darab": 3,
+   "hossz": 99,
+   "szelesseg": 120,
+   "ref": 248,
+   "ldm": 1.4370967741935483
+  },
+  {
+   "darab": 30,
+   "hossz": 202,
+   "szelesseg": 195,
+   "ref": 245,
+   "ldm": 48.23265306122449
+  },
+  {
+   "darab": 2,
+   "hossz": 588,
+   "szelesseg": 232,
+   "ref": 240,
+   "ldm": 11.368
+  },
+  {
+   "darab": 16,
+   "hossz": 48,
+   "szelesseg": 193,
+   "ref": 240,
+   "ldm": 6.176
+  },
+  {
+   "darab": 19,
+   "hossz": 289,
+   "szelesseg": 80,
+   "ref": 245,
+   "ldm": 17.929795918367347
+  },
+  {
+   "darab": 3,
+   "hossz": 257,
+   "szelesseg": 119,
+   "ref": 248,
+   "ldm": 3.6995564516129034
+  },
+  {
+   "darab": 23,
+   "hossz": 88,
+   "szelesseg": 82,
+   "ref": 245,
+   "ldm": 6.774204081632653
+  },
+  {
+   "darab": 40,
+   "hossz": 85,
+   "szelesseg": 176,
+   "ref": 248,
+   "ldm": 24.129032258064516
+  },
+  {
+   "darab": 31,
+   "hossz": 554,
+   "szelesseg": 121,
+   "ref": 240,
+   "ldm": 86.58558333333333
+  },
+  {
+   "darab": 8,
+   "hossz": 383,
+   "szelesseg": 80,
+   "ref": 248,
+   "ldm": 9.883870967741936
+  },
+  {
+   "darab": 14,
+   "hossz": 501,
+   "szelesseg": 181,
+   "ref": 245,
+   "ldm": 51.81771428571429
+  },
+  {
+   "darab": 22,
+   "hossz": 502,
+   "szelesseg": 153,
+   "ref": 248,
+   "ldm": 68.13435483870968
+  },
+  {
+   "darab": 36,
+   "hossz": 92,
+   "szelesseg": 210,
+   "ref": 245,
+   "ldm": 28.388571428571428
+  },
+  {
+   "darab": 11,
+   "hossz": 327,
+   "szelesseg": 74,
+   "ref": 240,
+   "ldm": 11.09075
+  },
+  {
+   "darab": 2,
+   "hossz": 337,
+   "szelesseg": 111,
+   "ref": 245,
+   "ldm": 3.0536326530612246
+  },
+  {
+   "darab": 11,
+   "hossz": 450,
+   "szelesseg": 217,
+   "ref": 248,
+   "ldm": 43.3125
+  },
+  {
+   "darab": 4,
+   "hossz": 177,
+   "szelesseg": 83,
+   "ref": 245,
+   "ldm": 2.398530612244898
+  },
+  {
+   "darab": 26,
+   "hossz": 503,
+   "szelesseg": 208,
+   "ref": 248,
+   "ldm": 109.68645161290323
+  },
+  {
+   "darab": 30,
+   "hossz": 413,
+   "szelesseg": 188,
+   "ref": 240,
+   "ldm": 97.055
+  },
+  {
+   "darab": 6,
+   "hossz": 275,
+   "szelesseg": 70,
+   "ref": 248,
+   "ldm": 4.657258064516129
+  },
+  {
+   "darab": 39,
+   "hossz": 565,
+   "szelesseg": 49,
+   "ref": 248,
+   "ldm": 43.536895161290325
+  },
+  {
+   "darab": 36,
+   "hossz": 146,
+   "szelesseg": 151,
+   "ref": 248,
+   "ldm": 32.00225806451613
+  },
+  {
+   "darab": 35,
+   "hossz": 268,
+   "szelesseg": 239,
+   "ref": 245,
+   "ldm": 91.50285714285714
+  },
+  {
+   "darab": 36,
+   "hossz": 249,
+   "szelesseg": 54,
+   "ref": 248,
+   "ldm": 19.518387096774195
+  },
+  {
+   "darab": 25,
+   "hossz": 551,
+   "szelesseg": 214,
+   "ref": 248,
+   "ldm": 118.8649193548387
+  },
+  {
+   "darab": 37,
+   "hossz": 103,
+   "szelesseg": 163,
+   "ref": 248,
+   "ldm": 25.048104838709676
+  },
+  {
+   "darab": 16,
+   "hossz": 375,
+   "szelesseg": 176,
+   "ref": 248,
+   "ldm": 42.58064516129032
+  },
+  {
+   "darab": 7,
+   "hossz": 460,
+   "szelesseg": 152,
+   "ref": 245,
+   "ldm": 19.97714285714286
+  },
+  {
+   "darab": 22,
+   "hossz": 596,
+   "szelesseg": 159,
+   "ref": 240,
+   "ldm": 86.867
+  },
+  {
+   "darab": 4,
+   "hossz": 402,
+   "szelesseg": 92,
+   "ref": 240,
+   "ldm": 6.164
+  },
+  {
+   "darab": 29,
+   "hossz": 286,
+   "szelesseg": 125,
+   "ref": 248,
+   "ldm": 41.80443548387097
+  },
+  {
+   "darab": 19,
+   "hossz": 126,
+   "szelesseg": 112,
+   "ref": 248,
+   "ldm": 10.811612903225807
+  },
+  {
+   "darab": 37,
+   "hossz": 479,
+   "szelesseg": 193,
+   "ref": 245,
+   "ldm": 139.61383673469388
+  },
+  {
+   "darab": 7,
+   "hossz": 146,
+   "szelesseg": 180,
+   "ref": 248,
+   "ldm": 7.417741935483871
+  },
+  {
+   "darab": 37,
+   "hossz": 271,
+   "szelesseg": 98,
+   "ref": 245,
+   "ldm": 40.108
+  },
+  {
+   "darab": 14,
+   "hossz": 383,
+   "szelesseg": 24,
+   "ref": 248,
+   "ldm": 5.1890322580645165
+  },
+  {
+   "darab": 19,
+   "hossz": 350,
+   "szelesseg": 123,
+   "ref": 240,
+   "ldm": 34.08125
+  },
+  {
+   "darab": 18,
+   "hossz": 304,
+   "szelesseg": 62,
+   "ref": 248,
+   "ldm": 13.68
+  },
+  {
+   "darab": 29,
+   "hossz": 42,
+   "szelesseg": 129,
+   "ref": 240,
+   "ldm": 6.54675
+  },
+  {
+   "darab": 15,
+   "hossz": 118,
+   "szelesseg": 224,
+   "ref": 240,
+   "ldm": 16.52
+  },
+  {
+   "darab": 26,
+   "hossz": 39,
+   "szelesseg": 66,
+   "ref": 248,
+   "ldm": 2.6985483870967744
+  },
+  {
+   "darab": 31,
+   "hossz": 120,
+   "szelesseg": 243,
+   "ref": 240,
+   "ldm": 37.665
+  },
+  {
+   "darab": 22,
+   "hossz": 390,
+   "szelesseg": 164,
+   "ref": 240,
+   "ldm": 58.63
+  },
+  {
+   "darab": 9,
+   "hossz": 502,
+   "szelesseg": 70,
+   "ref": 248,
+   "ldm": 12.75241935483871
+  },
+  {
+   "darab": 25,
+   "hossz": 110,
+   "szelesseg": 116,
+   "ref": 240,
+   "ldm": 13.291666666666666
+  },
+  {
+   "darab": 27,
+   "hossz": 486,
+   "szelesseg": 200,
+   "ref": 240,
+   "ldm": 109.35
+  },
+  {
+   "darab": 24,
+   "hossz": 173,
+   "szelesseg": 197,
+   "ref": 248,
+   "ldm": 32.98161290322581
+  },
+  {
+   "darab": 30,
+   "hossz": 236,
+   "szelesseg": 91,
+   "ref": 248,
+   "ldm": 25.979032258064517
+  },
+  {
+   "darab": 17,
+   "hossz": 588,
+   "szelesseg": 26,
+   "ref": 245,
+   "ldm": 10.608
+  },
+  {
+   "darab": 14,
+   "hossz": 353,
+   "szelesseg": 86,
+   "ref": 248,
+   "ldm": 17.13758064516129
+  },
+  {
+   "darab": 38,
+   "hossz": 270,
+   "szelesseg": 165,
+   "ref": 245,
+   "ldm": 69.09795918367347
+  },
+  {
+   "darab": 2,
+   "hossz": 89,
+   "szelesseg": 91,
+   "ref": 245,
+   "ldm": 0.6611428571428571
+  },
+  {
+   "darab": 36,
+   "hossz": 276,
+   "szelesseg": 233,
+   "ref": 245,
+   "ldm": 94.49338775510203
+  },
+  {
+   "darab": 31,
+   "hossz": 103,
+   "szelesseg": 175,
+   "ref": 245,
+   "ldm": 22.807142857142857
+  },
+  {
+   "darab": 22,
+   "hossz": 567,
+   "szelesseg": 79,
+   "ref": 248,
+   "ldm": 39.73572580645161
+  },
+  {
+   "darab": 19,
+   "hossz": 462,
+   "szelesseg": 174,
+   "ref": 240,
+   "ldm": 63.6405
+  },
+  {
+   "darab": 34,
+   "hossz": 121,
+   "szelesseg": 183,
+   "ref": 245,
+   "ldm": 30.729061224489797
+  },
+  {
+   "darab": 32,
+   "hossz": 278,
+   "szelesseg": 95,
+   "ref": 245,
+   "ldm": 34.49469387755102
+  },
+  {
+   "darab": 13,
+   "hossz": 436,
+   "szelesseg": 149,
+   "ref": 248,
+   "ldm": 34.053709677419356
+  },
+  {
+   "darab": 34,
+   "hossz": 127,
+   "szelesseg": 198,
+   "ref": 248,
+   "ldm": 34.47435483870968
+  },
+  {
+   "darab": 6,
+   "hossz": 208,
+   "szelesseg": 36,
+   "ref": 240,
+   "ldm": 1.872
+  },
+  {
+   "darab": 4,
+   "hossz": 314,
+   "szelesseg": 77,
+   "ref": 245,
+   "ldm": 3.9474285714285715
+  },
+  {
+   "darab": 11,
+   "hossz": 358,
+   "szelesseg": 234,
+   "ref": 245,
+   "ldm": 37.61191836734694
+  },
+  {
+   "darab": 11,
+   "hossz": 172,
+   "szelesseg": 122,
+   "ref": 240,
+   "ldm": 9.617666666666667
+  },
+  {
+   "darab": 26,
+   "hossz": 231,
+   "szelesseg": 116,
+   "ref": 245,
+   "ldm": 28.43657142857143
+  },
+  {
+   "darab": 13,
+   "hossz": 170,
+   "szelesseg": 180,
+   "ref": 245,
+   "ldm": 16.23673469387755
+  },
+  {
+   "darab": 17,
+   "hossz": 81,
+   "szelesseg": 196,
+   "ref": 240,
+   "ldm": 11.2455
+  },
+  {
+   "darab": 18,
+   "hossz": 415,
+   "szelesseg": 140,
+   "ref": 240,
+   "ldm": 43.575
+  },
+  {
+   "darab": 13,
+   "hossz": 542,
+   "szelesseg": 135,
+   "ref": 245,
+   "ldm": 38.82489795918367
+  },
+  {
+   "darab": 6,
+   "hossz": 220,
+   "szelesseg": 198,
+   "ref": 248,
+   "ldm": 10.538709677419355
+  },
+  {
+   "darab": 40,
+   "hossz": 247,
+   "szelesseg": 25,
+   "ref": 248,
+   "ldm": 9.959677419354838
+  },
+  {
+   "darab": 22,
+   "hossz": 454,
+   "szelesseg": 124,
+   "ref": 245,
+   "ldm": 50.55151020408163
+  },
+  {
+   "darab": 17,
+   "hossz": 306,
+   "szelesseg": 224,
+   "ref": 240,
+   "ldm": 48.552
+  },
+  {
+   "darab": 14,
+   "hossz": 566,
+   "szelesseg": 228,
+   "ref": 245,
+   "ldm": 73.74171428571428
+  },
+  {
+   "darab": 19,
+   "hossz": 547,
+   "szelesseg": 193,
+   "ref": 248,
+   "ldm": 80.88100806451612
+  },
+  {
+   "darab": 16,
+   "hossz": 141,
+   "szelesseg": 206,
+   "ref": 245,
+   "ldm": 18.96881632653061
+  },
+  {
+   "darab": 15,
+   "hossz": 291,
+   "szelesseg": 157,
+   "ref": 245,
+   "ldm": 27.971632653061224
+  },
+  {
+   "darab": 32,
+   "hossz": 346,
+   "szelesseg": 131,
+   "ref": 248,
+   "ldm": 58.48516129032258
+  },
+  {
+   "darab": 20,
+   "hossz": 186,
+   "szelesseg": 200,
+   "ref": 248,
+   "ldm": 30
+  },
+  {
+   "darab": 20,
+   "hossz": 50,
+   "szelesseg": 228,
+   "ref": 248,
+   "ldm": 9.193548387096774
+  },
+  {
+   "darab": 37,
+   "hossz": 437,
+   "szelesseg": 151,
+   "ref": 240,
+   "ldm": 101.72995833333333
+  },
+  {
+   "darab": 24,
+   "hossz": 528,
+   "szelesseg": 100,
+   "ref": 240,
+   "ldm": 52.8
+  },
+  {
+   "darab": 8,
+   "hossz": 102,
+   "szelesseg": 57,
+   "ref": 245,
+   "ldm": 1.8984489795918367
+  },
+  {
+   "darab": 2,
+   "hossz": 209,
+   "szelesseg": 96,
+   "ref": 245,
+   "ldm": 1.6378775510204082
+  },
+  {
+   "darab": 9,
+   "hossz": 329,
+   "szelesseg": 97,
+   "ref": 245,
+   "ldm": 11.723142857142857
+  },
+  {
+   "darab": 5,
+   "hossz": 320,
+   "szelesseg": 118,
+   "ref": 248,
+   "ldm": 7.612903225806452
+  },
+  {
+   "darab": 1,
+   "hossz": 531,
+   "szelesseg": 184,
+   "ref": 240,
+   "ldm": 4.071
+  },
+  {
+   "darab": 4,
+   "hossz": 573,
+   "szelesseg": 125,
+   "ref": 240,
+   "ldm": 11.9375
+  },
+  {
+   "darab": 33,
+   "hossz": 249,
+   "szelesseg": 133,
+   "ref": 248,
+   "ldm": 44.066975806451616
+  },
+  {
+   "darab": 2,
+   "hossz": 539,
+   "szelesseg": 82,
+   "ref": 240,
+   "ldm": 3.6831666666666667
+  },
+  {
+   "darab": 37,
+   "hossz": 323,
+   "szelesseg": 188,
+   "ref": 248,
+   "ldm": 90.59629032258064
+  },
+  {
+   "darab": 21,
+   "hossz": 333,
+   "szelesseg": 48,
+   "ref": 248,
+   "ldm": 13.53483870967742
+  },
+  {
+   "darab": 33,
+   "hossz": 485,
+   "szelesseg": 97,
+   "ref": 245,
+   "ldm": 63.366734693877554
+  },
+  {
+   "darab": 19,
+   "hossz": 29,
+   "szelesseg": 154,
+   "ref": 240,
+   "ldm": 3.5355833333333333
+  },
+  {
+   "darab": 14,
+   "hossz": 309,
+   "szelesseg": 113,
+   "ref": 248,
+   "ldm": 19.711209677419355
+  },
+  {
+   "darab": 4,
+   "hossz": 130,
+   "szelesseg": 39,
+   "ref": 248,
+   "ldm": 0.817741935483871
+  },
+  {
+   "darab": 34,
+   "hossz": 64,
+   "szelesseg": 102,
+   "ref": 240,
+   "ldm": 9.248
+  },
+  {
+   "darab": 37,
+   "hossz": 186,
+   "szelesseg": 212,
+   "ref": 240,
+   "ldm": 60.791
+  },
+  {
+   "darab": 16,
+   "hossz": 294,
+   "szelesseg": 118,
+   "ref": 245,
+   "ldm": 22.656
+  },
+  {
+   "darab": 26,
+   "hossz": 203,
+   "szelesseg": 164,
+   "ref": 240,
+   "ldm": 36.06633333333333
+  },
+  {
+   "darab": 7,
+   "hossz": 126,
+   "szelesseg": 215,
+   "ref": 248,
+   "ldm": 7.646370967741936
+  },
+  {
+   "darab": 18,
+   "hossz": 209,
+   "szelesseg": 205,
+   "ref": 240,
+   "ldm": 32.13375
+  },
+  {
+   "darab": 31,
+   "hossz": 112,
+   "szelesseg": 153,
+   "ref": 240,
+   "ldm": 22.134
+  },
+  {
+   "darab": 40,
+   "hossz": 282,
+   "szelesseg": 59,
+   "ref": 248,
+   "ldm": 26.835483870967742
+  },
+  {
+   "darab": 30,
+   "hossz": 326,
+   "szelesseg": 133,
+   "ref": 248,
+   "ldm": 52.44919354838709
+  },
+  {
+   "darab": 29,
+   "hossz": 476,
+   "szelesseg": 52,
+   "ref": 245,
+   "ldm": 29.298285714285715
+  },
+  {
+   "darab": 38,
+   "hossz": 89,
+   "szelesseg": 85,
+   "ref": 240,
+   "ldm": 11.977916666666667
+  },
+  {
+   "darab": 4,
+   "hossz": 59,
+   "szelesseg": 183,
+   "ref": 248,
+   "ldm": 1.7414516129032258
+  },
+  {
+   "darab": 11,
+   "hossz": 478,
+   "szelesseg": 206,
+   "ref": 240,
+   "ldm": 45.131166666666665
+  },
+  {
+   "darab": 39,
+   "hossz": 113,
+   "szelesseg": 218,
+   "ref": 240,
+   "ldm": 40.03025
+  },
+  {
+   "darab": 5,
+   "hossz": 362,
+   "szelesseg": 51,
+   "ref": 248,
+   "ldm": 3.7221774193548387
+  },
+  {
+   "darab": 2,
+   "hossz": 240,
+   "szelesseg": 139,
+   "ref": 245,
+   "ldm": 2.7232653061224488
+  },
+  {
+   "darab": 10,
+   "hossz": 434,
+   "szelesseg": 220,
+   "ref": 248,
+   "ldm": 38.5
+  },
+  {
+   "darab": 9,
+   "hossz": 363,
+   "szelesseg": 41,
+   "ref": 248,
+   "ldm": 5.40108870967742
+  },
+  {
+   "darab": 15,
+   "hossz": 186,
+   "szelesseg": 133,
+   "ref": 240,
+   "ldm": 15.46125
+  },
+  {
+   "darab": 9,
+   "hossz": 114,
+   "szelesseg": 157,
+   "ref": 248,
+   "ldm": 6.495241935483871
+  },
+  {
+   "darab": 4,
+   "hossz": 564,
+   "szelesseg": 193,
+   "ref": 248,
+   "ldm": 17.55677419354839
+  },
+  {
+   "darab": 8,
+   "hossz": 421,
+   "szelesseg": 110,
+   "ref": 245,
+   "ldm": 15.121632653061225
+  },
+  {
+   "darab": 28,
+   "hossz": 147,
+   "szelesseg": 36,
+   "ref": 248,
+   "ldm": 5.974838709677419
+  },
+  {
+   "darab": 11,
+   "hossz": 349,
+   "szelesseg": 91,
+   "ref": 248,
+   "ldm": 14.086653225806451
+  },
+  {
+   "darab": 6,
+   "hossz": 484,
+   "szelesseg": 53,
+   "ref": 240,
+   "ldm": 6.413
+  },
+  {
+   "darab": 18,
+   "hossz": 221,
+   "szelesseg": 141,
+   "ref": 245,
+   "ldm": 22.893795918367346
+  },
+  {
+   "darab": 1,
+   "hossz": 313,
+   "szelesseg": 113,
+   "ref": 248,
+   "ldm": 1.4261693548387098
+  },
+  {
+   "darab": 9,
+   "hossz": 557,
+   "szelesseg": 225,
+   "ref": 248,
+   "ldm": 45.48084677419355
+  },
+  {
+   "darab": 28,
+   "hossz": 106,
+   "szelesseg": 217,
+   "ref": 245,
+   "ldm": 26.288
+  },
+  {
+   "darab": 20,
+   "hossz": 333,
+   "szelesseg": 226,
+   "ref": 245,
+   "ldm": 61.435102040816325
+  },
+  {
+   "darab": 14,
+   "hossz": 125,
+   "szelesseg": 144,
+   "ref": 245,
+   "ldm": 10.285714285714286
+  },
+  {
+   "darab": 20,
+   "hossz": 349,
+   "szelesseg": 45,
+   "ref": 248,
+   "ldm": 12.665322580645162
+  },
+  {
+   "darab": 8,
+   "hossz": 112,
+   "szelesseg": 139,
+   "ref": 240,
+   "ldm": 5.189333333333333
+  },
+  {
+   "darab": 29,
+   "hossz": 108,
+   "szelesseg": 66,
+   "ref": 245,
+   "ldm": 8.437224489795918
+  },
+  {
+   "darab": 30,
+   "hossz": 28,
+   "szelesseg": 134,
+   "ref": 240,
+   "ldm": 4.69
+  },
+  {
+   "darab": 1,
+   "hossz": 386,
+   "szelesseg": 167,
+   "ref": 248,
+   "ldm": 2.599274193548387
+  },
+  {
+   "darab": 5,
+   "hossz": 103,
+   "szelesseg": 239,
+   "ref": 245,
+   "ldm": 5.023877551020409
+  },
+  {
+   "darab": 24,
+   "hossz": 474,
+   "szelesseg": 213,
+   "ref": 248,
+   "ldm": 97.70516129032258
+  },
+  {
+   "darab": 18,
+   "hossz": 201,
+   "szelesseg": 218,
+   "ref": 245,
+   "ldm": 32.19281632653061
+  },
+  {
+   "darab": 11,
+   "hossz": 530,
+   "szelesseg": 216,
+   "ref": 240,
+   "ldm": 52.47
+  },
+  {
+   "darab": 9,
+   "hossz": 231,
+   "szelesseg": 229,
+   "ref": 240,
+   "ldm": 19.837125
+  },
+  {
+   "darab": 25,
+   "hossz": 344,
+   "szelesseg": 180,
+   "ref": 248,
+   "ldm": 62.41935483870968
+  },
+  {
+   "darab": 36,
+   "hossz": 452,
+   "szelesseg": 110,
+   "ref": 240,
+   "ldm": 74.58
+  },
+  {
+   "darab": 12,
+   "hossz": 313,
+   "szelesseg": 73,
+   "ref": 245,
+   "ldm": 11.19134693877551
+  }
+ ]
+}
