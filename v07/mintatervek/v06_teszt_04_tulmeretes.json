@@ -1,0 +1,52 @@
+{
+  "format": "rakodastervezo-3d",
+  "version": 6,
+  "program": {
+    "nev": "Rakománytervező 3D V06 – Smart Load Optimizer",
+    "verzio": "0.6.0"
+  },
+  "letrehozva": "2026-11-26T12:00:00.000Z",
+  "mertekegysegek": {
+    "hossz": "cm",
+    "tomeg": "kg"
+  },
+  "koordinatak": "x: homlokfaltól, y: bal faltól, z: padlótól; a bal-első-alsó sarok, egész cm",
+  "nev": "Teszt 4 – túlméretes rakomány",
+  "trailer": {
+    "type": "Standard félpótkocsi",
+    "length": 1360,
+    "width": 245,
+    "height": 270,
+    "payloadKg": 24000
+  },
+  "elszamolas": {
+    "kgPerLdm": 1750,
+    "kerekites": "Nincs kerekítés",
+    "szabaly": "maximum"
+  },
+  "beallitasok": {},
+  "boxes": [
+    {
+      "id": 1,
+      "label": "T01-01",
+      "name": "",
+      "itemId": "T01",
+      "type": "Gép / egyedi",
+      "color": "#8d78fc",
+      "length": 300,
+      "width": 260,
+      "height": 200,
+      "weight": 1000,
+      "stackMode": "nem",
+      "maxLayers": 1,
+      "maxLoadKg": null,
+      "rotatable": true,
+      "stop": null,
+      "rot": 0,
+      "placed": false,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}
