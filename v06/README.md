@@ -1,19 +1,19 @@
 # Rakománytervező 3D V06 – Smart Load Optimizer
 
 Böngészős rakománytervező és -optimalizáló. Statikus webalkalmazás: build, telepítés és külső (CDN-/npm-) függőség nélkül fut.
-A V05 a repó gyökerében változatlanul megmaradt; a V06 ebben a mappában (`rakodastervezo_3d_v06/`) önállóan futtatható.
+A V05 a `v05/` mappában változatlanul megmaradt; a V06 ebben a mappában (`v06/`) önállóan futtatható. A repó gyökerében verzióválasztó oldal van.
 
 ## Indítás
 
 **Ajánlott: helyi HTTP-szerver.** Így az optimalizáló Web Workerben, háttérszálon fut:
 
 ```powershell
-py -m http.server 8136 --directory rakodastervezo_3d_v06
+py -m http.server 8136 --directory v06
 ```
 
 Ezután nyisd meg böngészőben: <http://localhost:8136/>
 
-- **GitHub Pages:** ha a repó gyökeréből (`main` / root) van közzétéve, a V06 a `…/rakodastervezo_3d_v06/` címen érhető el. A V05 továbbra is a gyökér `index.html`.
+- **GitHub Pages:** https://devidor.github.io/Rakodastervezo-5.0/v06/ (a V05: `…/v05/`, a verzióválasztó: a gyökér).
 - **Fájlból (`index.html` dupla kattintással):** működik, de a böngészők `file://` alatt nem indítanak Web Workert. Ilyenkor az optimalizálás a fő szálon, kis szeletekben fut, így a felület nem fagy le, és a megszakítás is működik. Ez a módszer a beépített böngészőben nem volt tesztelhető; a Worker letiltásával szimulálva ellenőriztük (lásd: TESZTJELENTES.md).
 - **Claude Code előnézet:** a `Testing/.claude/launch.json` fájlban a `rakodastervezo-3d-v06` konfiguráció (8136-os port).
 

@@ -1,8 +1,8 @@
 # Rakománytervező 3D V06 – használati útmutató
 
 ## Indítás
-Indítsd el a helyi szervert (`py -m http.server 8136 --directory rakodastervezo_3d_v06`), majd nyisd meg a <http://localhost:8136/> címet.
-GitHub Pages-en a `…/rakodastervezo_3d_v06/` címen érhető el. Fájlból megnyitva is működik, de ilyenkor az optimalizálás a fő szálon fut.
+Indítsd el a helyi szervert (`py -m http.server 8136 --directory v06`), majd nyisd meg a <http://localhost:8136/> címet.
+GitHub Pages-en: https://devidor.github.io/Rakodastervezo-5.0/v06/. Fájlból megnyitva is működik, de ilyenkor az optimalizálás a fő szálon fut.
 
 ## 1. Jármű (bal panel, ⓪)
 Válassz járműtípust:

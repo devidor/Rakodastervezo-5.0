@@ -57,4 +57,8 @@
 
 ### Változatlan
 - `ldm_modul.js`, `fuvardij_kapcsolat/fuvardij4_adapter.py`, a FuvarDíj 4.0 adatcsomag formátuma és a 30 + 869 V05-teszt.
-- A V05 a repó gyökerében, illetve a `Desktop/fuvar/Rakodástervező/rakodastervezo_3d_v05` mappában érintetlen.
+- A V05 a `v05/` mappában (korábban a repó gyökerében), illetve a `Desktop/fuvar/Rakodástervező/rakodastervezo_3d_v05` mappában érintetlen.
+
+## 0.6.0-1 – 2026-11-26 – verziók szétválasztása
+- A repó szerkezete: `v05/` (változatlan V05), `v06/` (ez a verzió), a gyökérben verzióválasztó oldal.
+- A V06 saját böngészőtárhely-kulcsot használ (`rakodastervezo3d.v06.tervek`), így a GitHub Pages közös originjén sem írja felül a V05 mentett tervlistáját; a V05 listáját első indításkor egyszer, csak olvasva veszi át.

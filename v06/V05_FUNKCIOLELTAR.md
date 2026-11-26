@@ -1,6 +1,6 @@
 # V05 funkcióleltár és regressziós állapot (V06)
 
-Forrás: a repó gyökerében lévő V05 (`index.html`, `ldm_modul.js`), amely bájtra azonos (a sorvégeket nem számítva) a `Desktop/fuvar/Rakodástervező/rakodastervezo_3d_v05` mappával.
+Forrás: a V05 (`v05/index.html`, `v05/ldm_modul.js`; korábban a repó gyökerében), amely bájtra azonos (a sorvégeket nem számítva) a `Desktop/fuvar/Rakodástervező/rakodastervezo_3d_v05` mappával.
 Ellenőrzés módja: **B** = böngészőben, a V06 felületén (helyi szerver, beépített böngésző); **N** = automatizált Node-teszt; **P** = Python-teszt.
 
 | # | V05-funkció | Vezérlés a V05-ben | V06 állapot | Ellenőrzés |
