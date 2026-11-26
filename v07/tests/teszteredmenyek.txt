@@ -1,0 +1,56 @@
+# Tesztfuttatás 2026-11-08 03:31  –  Node v24.18.1, Python 3.12.3
+# FuvarDíj 4.0 forrás: fuvar-kalkulator origin/feature/fuvardij-4 @ 105cf84 (git archive, csak olvasva)
+
+## node --test tests/ldm_modul.test.js
+✔ elméleti LDM: halmozás nélkül = Σ hossz × szélesség ÷ (245 × 100) (1.9656ms)
+✔ elméleti LDM: forgatás nem változtat a területalapú értéken (0.3711ms)
+✔ elméleti LDM: adatokból halmozva – rétegszám, belmagasság és ráterhelés korlátja (0.5106ms)
+✔ elméleti LDM: nem halmozható és ismeretlen ráterhelés → nincs halmozás feltételezve (0.2945ms)
+✔ elméleti LDM: terv szerinti halmozás csak a padlón állókat számolja (0.2058ms)
+✔ elméleti LDM a referenciaszélességgel számol (szűkített pótkocsi) (0.1642ms)
+✔ fizikai LDM: egymás melletti dobozok NEM összegződnek (0.643ms)
+✔ fizikai LDM: forgatott raklapok – 80 cm hosszirányú lefoglalás (0.8995ms)
+✔ fizikai LDM: halmozott doboz nem növeli a hosszt, és nem duplázza az alapterületet (0.2376ms)
+✔ fizikai LDM: homlokfal-hézag és közbenső hézag beszámít és figyelmeztet (1.5574ms)
+✔ fizikai LDM: 33 EUR raklap – fizikai 13,20 ≠ elméleti 12,93 ≠ hosszösszeg 39,6 (24.1771ms)
+✔ fizikai LDM: vegyes méretek (1.52ms)
+✔ üres terv: 0 LDM, figyelmeztetés (0.3155ms)
+✔ ütközés észlelése (0.2127ms)
+✔ geometriai határok: hossz, szélesség, magasság, negatív pozíció (0.3442ms)
+✔ alátámasztás: lebegő és részben alátámasztott doboz hibás (0.1897ms)
+✔ nem halmozható alsó egység (0.1381ms)
+✔ rétegszám-korlát (0.1655ms)
+✔ ráterhelés: túllépés hiba, ismeretlen érték figyelmeztetés (0.4632ms)
+✔ teherbírás-túllépés (0.3298ms)
+✔ nem egész cm adat elutasítva (0.3204ms)
+✔ több hibát is összegyűjt (0.2025ms)
+✔ unionArea pontos (0.1146ms)
+✔ kerekítés: lebegőpontos zaj nem kerekít felfelé (0.479ms)
+✔ elszámolás: maximum / fizikai / tömeg szabály (0.2422ms)
+✔ a díjszámítási LDM eltérhet a fizikaitól – a modul jelzi (0.5683ms)
+✔ három terv összehasonlítása (1.8321ms)
+✔ FuvarDíj 4.0 csomag tartalma (0.9411ms)
+✔ hiányos vagy hibás terv nem alkalmas ajánlatra (2.618ms)
+✔ nem igazolt ráterhelésű halmozásból nincs ajánlat (FuvarDíj 4.0 szabály) (0.8642ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 212.2134
+
+## py -m pytest tests
+........................................................................ [ 99%]
+.....                                                                    [100%]
+869 passed in 0.93s
+
+## Adapter – C terv
+Terv: C – kétszintes halmozás (e64c4535)
+Fizikai LDM: 2.40  Díjszámítási LDM (FuvarDíj 4.0): 3.10  – meghatározó: tömeg
+Egyezés a csomaggal: IGEN
+Árajánlatra alkalmas: igen
+
+## Adapter – D (hibás) terv, árazási kísérlet
+ELUTASÍTVA: A terv nem alkalmas árajánlatra: A terv nem felel meg a geometriai / halmozási szabályoknak. Nincs minden rakomány elhelyezve.

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rakománytervező 3D – verzióválasztó</title>
-  <meta name="description" content="Rakománytervező 3D: válassz a stabil V05 és a fejlesztési V06 verzió között.">
+  <meta name="description" content="Rakománytervező 3D: válassz a stabil V05, a V06 és a V07 Professional verzió között.">
   <style>
     :root { color-scheme: dark; --ink:#e7ecff; --muted:#9aabca; --line:#34416a; --bg:#0d1425; }
     * { box-sizing: border-box; }
@@ -19,7 +19,7 @@
       background: linear-gradient(150deg, #8466ff, #4232aa); box-shadow: 0 8px 30px #7154f455; }
     h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 10px; letter-spacing: -0.5px; }
     .lead { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0 auto 36px; max-width: 620px; }
-    .versions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; width: 100%; max-width: 860px; }
+    .versions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; width: 100%; max-width: 1180px; }
     .card { display: flex; flex-direction: column; gap: 14px; padding: 26px; border-radius: 20px; background: #182440cc;
       border: 1px solid var(--line); backdrop-filter: blur(10px); }
     .tag { align-self: flex-start; font-size: 12px; font-weight: 750; letter-spacing: 0.6px; text-transform: uppercase; padding: 5px 10px; border-radius: 8px; }
@@ -33,15 +33,17 @@
     .btn:focus-visible { outline: 3px solid #a690ff; outline-offset: 3px; }
     .btn.stable { background: linear-gradient(115deg, #22895f, #34b07b); border-color: #59d29d; }
     .btn.dev { background: linear-gradient(115deg, #6550e9, #8c6bff); border-color: #9784ff; }
+    .tag.pro { background: #5a3a12; color: #ffd9a0; }
+    .btn.pro { background: linear-gradient(115deg, #b86a14, #e59a2c); border-color: #f0b35a; }
     footer { margin-top: 36px; color: #8395b6; font-size: 12px; text-align: center; line-height: 1.6; max-width: 760px; }
-    @media (max-width: 720px) { .versions { grid-template-columns: 1fr; } }
+    @media (max-width: 1000px) { .versions { grid-template-columns: 1fr; max-width: 620px; } }
   </style>
 </head>
 <body>
   <header>
     <div class="logo" aria-hidden="true">⬡</div>
     <h1>Rakománytervező 3D</h1>
-    <p class="lead">Interaktív 3D rakodástervezés, rakodóméter-számítás és díjkalkuláció-előkészítés. Válaszd ki, melyik verzióval szeretnél dolgozni – a két változat egymástól függetlenül működik.</p>
+    <p class="lead">Interaktív 3D rakodástervezés, rakodóméter-számítás és díjkalkuláció-előkészítés. Válaszd ki, melyik verzióval szeretnél dolgozni – a változatok egymástól függetlenül működnek.</p>
   </header>
   <main class="versions">
     <section class="card" aria-labelledby="v05-cim">
@@ -64,7 +66,17 @@
       </ul>
       <a class="btn dev" href="v06/">V06 – Fejlesztési verzió</a>
     </section>
+    <section class="card" aria-labelledby="v07-cim">
+      <span class="tag pro">Fejlesztés alatt · Professional</span>
+      <h2 id="v07-cim">V07 – Professional</h2>
+      <ul>
+        <li>Sérülésmentességi szabályok: törékenység, felületi nyomás, borulás</li>
+        <li>Tengelyterhelés, súlypont, rögzítési becslés</li>
+        <li>Átrakás nélküli lerakodás, lerakodási idő, fotorealisztikus 3D</li>
+      </ul>
+      <a class="btn pro" href="v07/">V07 – Professional (fejlesztés alatt)</a>
+    </section>
   </main>
-  <footer>A V05 és a V06 külön mappában, saját fájlokkal fut; a mentett tervlistáik is külön tárolódnak. A program a geometriai és halmozási szabályokat ellenőrzi, rakományrögzítési vagy közlekedésbiztonsági minősítést nem ad.</footer>
+  <footer>A V05, a V06 és a V07 külön mappában, saját fájlokkal fut; a mentett tervlistáik is külön tárolódnak. A program a geometriai és halmozási szabályokat ellenőrzi, rakományrögzítési vagy közlekedésbiztonsági minősítést nem ad.</footer>
 </body>
 </html>
