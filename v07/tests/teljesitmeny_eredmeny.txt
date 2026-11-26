@@ -1,0 +1,33 @@
+Rakománytervező 3D V06 – teljesítménymérés
+Dátum: 2026-11-26T03:56:10.218Z · Node v24.18.1 · Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz · 8 szál
+Jármű: 1360 × 245 × 270 cm, 24 000 kg · rakomány: 6 vegyes tétel ismétlődve, seed = 1000 + n · optimalizáló seed = 42
+
+egység | mód        | futási idő (s) | iteráció | megállás oka          | elhelyezett | fizikai helyigény (m) | alsó korlát (m) | érvényes | 1 greedy menet (ms) | ellenőrzés (ms) | szabadtér-elemzés (ms)
+
+A sorozat – vegyes, nagyrészt nem halmozható (100 és 200 egység nem fér el egy járműben)
+    10 | gyors      |          0,009 |        7 | determinisztikus kész |       10/10 |                  2,30 |            1,80 |     igen |                 2,1 |             0,1 |                    0,9
+    10 | intelligens |          0,053 |      307 | iterációkorlát/alsó korlát |       10/10 |                  2,30 |            1,80 |     igen |                 2,1 |             0,1 |                    0,1
+    10 | maximalis  |          0,359 |     3007 | iterációkorlát/alsó korlát |       10/10 |                  2,30 |            1,80 |     igen |                 2,1 |             0,1 |                    0,1
+    50 | gyors      |          0,018 |        7 | determinisztikus kész |       50/50 |                 13,20 |           12,25 |     igen |                 1,7 |             0,3 |                    0,5
+    50 | intelligens |          0,350 |      307 | iterációkorlát/alsó korlát |       50/50 |                 12,90 |           12,25 |     igen |                 1,7 |             0,4 |                    0,9
+    50 | maximalis  |          4,367 |     3007 | iterációkorlát/alsó korlát |       50/50 |                 12,70 |           12,25 |     igen |                 1,7 |             0,7 |                    0,6
+   100 | gyors      |          0,028 |        7 | determinisztikus kész |      74/100 |                 13,60 |            7,75 |     igen |                 9,8 |             0,6 |                    0,6
+   100 | intelligens |          1,331 |      307 | iterációkorlát/alsó korlát |      86/100 |                 13,50 |            7,75 |     igen |                 9,8 |             0,6 |                    1,6
+   100 | maximalis  |         16,692 |     3007 | iterációkorlát/alsó korlát |      89/100 |                 13,40 |            7,75 |     igen |                 9,8 |             1,5 |                    3,0
+   200 | gyors      |          0,501 |        7 | determinisztikus kész |     172/200 |                 13,50 |            9,48 |     igen |               154,2 |             2,5 |                    5,9
+   200 | intelligens |          5,028 |      114 | időkorlát             |     174/200 |                 13,40 |            9,48 |     igen |               154,2 |             2,6 |                   17,5
+   200 | maximalis  |         30,030 |      672 | időkorlát             |     174/200 |                 13,30 |            9,48 |     igen |               154,2 |             1,2 |                    8,7
+
+B sorozat – halmozható kartonok (3 méret, max. 5 szint, 200 kg terhelhetőség)
+    10 | gyors      |          0,003 |        7 | determinisztikus kész |       10/10 |                  0,80 |            0,80 |     igen |                 0,5 |             0,1 |                    0,1
+    10 | intelligens |          0,002 |        7 | determinisztikus kész |       10/10 |                  0,80 |            0,80 |     igen |                 0,5 |             0,1 |                    0,1
+    10 | maximalis  |          0,002 |        7 | determinisztikus kész |       10/10 |                  0,80 |            0,80 |     igen |                 0,5 |             0,1 |                    0,1
+    50 | gyors      |          0,023 |        7 | determinisztikus kész |       50/50 |                  2,80 |            2,26 |     igen |                 6,9 |             0,4 |                    0,1
+    50 | intelligens |          1,121 |      307 | iterációkorlát/alsó korlát |       50/50 |                  2,80 |            2,26 |     igen |                 6,9 |             0,7 |                    0,5
+    50 | maximalis  |          7,743 |     3007 | iterációkorlát/alsó korlát |       50/50 |                  2,80 |            2,26 |     igen |                 6,9 |             0,5 |                    0,2
+   100 | gyors      |          0,059 |        7 | determinisztikus kész |     100/100 |                  5,40 |            4,57 |     igen |                18,4 |             0,9 |                    0,2
+   100 | intelligens |          1,664 |      307 | iterációkorlát/alsó korlát |     100/100 |                  5,20 |            4,57 |     igen |                18,4 |             0,6 |                    1,6
+   100 | maximalis  |         21,773 |     3007 | iterációkorlát/alsó korlát |     100/100 |                  5,20 |            4,57 |     igen |                18,4 |             0,5 |                    1,6
+   200 | gyors      |          0,194 |        7 | determinisztikus kész |     200/200 |                 10,80 |            9,16 |     igen |                66,5 |             1,5 |                    0,5
+   200 | intelligens |          5,018 |      217 | időkorlát             |     200/200 |                 10,60 |            9,16 |     igen |                66,5 |             1,6 |                    1,4
+   200 | maximalis  |         30,020 |     1351 | időkorlát             |     200/200 |                 10,60 |            9,16 |     igen |                66,5 |             1,6 |                    1,3
