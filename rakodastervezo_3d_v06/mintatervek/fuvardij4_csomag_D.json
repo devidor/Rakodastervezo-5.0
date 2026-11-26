@@ -1,0 +1,190 @@
+{
+  "format": "fuvardij4-rakodasi-csomag",
+  "verzio": 1,
+  "letrehozva": "2026-11-08T00:00:00.000Z",
+  "forras": {
+    "alkalmazas": "Rakodástervező 3D",
+    "verzio": "0.5",
+    "ldm_modul": "0.5.0"
+  },
+  "terv": {
+    "nev": "D – hibás (ütközés, lebegés, kint maradt)",
+    "azonosito": "d200f68a"
+  },
+  "mertekegysegek": {
+    "hossz": "cm",
+    "tomeg": "kg",
+    "ldm": "m (rakodóméter)",
+    "koordinatak": "x: homlokfaltól, y: bal faltól, z: padlótól"
+  },
+  "potkocsi": {
+    "tipus": "Normál",
+    "hossz_cm": 1360,
+    "szelesseg_cm": 245,
+    "magassag_cm": 270,
+    "teherbiras_kg": 24000
+  },
+  "rakomanyok": [
+    {
+      "azonosito": "EUR-01",
+      "belso_id": 1,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": false,
+      "alapterulet_hossz_cm": 120,
+      "alapterulet_szelesseg_cm": 80,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-02",
+      "belso_id": 2,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": false,
+      "alapterulet_hossz_cm": 120,
+      "alapterulet_szelesseg_cm": 80,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 60,
+        "y": 0,
+        "z": 0
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-03",
+      "belso_id": 3,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": false,
+      "alapterulet_hossz_cm": 120,
+      "alapterulet_szelesseg_cm": 80,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": true,
+      "pozicio_cm": {
+        "x": 300,
+        "y": 0,
+        "z": 20
+      },
+      "alatta_levo_belso_id": null
+    },
+    {
+      "azonosito": "EUR-04",
+      "belso_id": 4,
+      "tipus": "EUR-raklap",
+      "szin": "#8d78fc",
+      "hossz_cm": 120,
+      "szelesseg_cm": 80,
+      "magassag_cm": 110,
+      "tomeg_kg": 450,
+      "forgatva_90": false,
+      "alapterulet_hossz_cm": 120,
+      "alapterulet_szelesseg_cm": 80,
+      "halmozhato": true,
+      "max_retegszam": 2,
+      "max_raterheles_kg": 600,
+      "elhelyezve": false,
+      "pozicio_cm": null,
+      "alatta_levo_belso_id": null
+    }
+  ],
+  "osszesites": {
+    "darab": 4,
+    "elhelyezett_darab": 3,
+    "ossz_tomeg_kg": 1800,
+    "elhelyezett_tomeg_kg": 1350
+  },
+  "ldm": {
+    "elmeleti_halmozas_nelkul": 1.567347,
+    "elmeleti_adatokbol_halmozva": 0.783673,
+    "elmeleti_terv_szerinti_halmozas": 1.17551,
+    "elmeleti_feltetelezesek": [
+      "Referencia-szélesség: 245 cm (a pótkocsi belső szélessége).",
+      "Területalapú alsó becslés: a doboz forgatását, a köztes hézagokat és a szélességi maradékot nem veszi figyelembe.",
+      "„Adatokból” változat: azonos tételek a megadott réteg-, belmagasság- és ráterhelési korlát szerint halmozva.",
+      "„Terv szerinti” változat: csak a padlón álló (és a még el nem helyezett) egységek alapterülete."
+    ],
+    "fizikai": 4.2,
+    "fizikai_hasznalt_hossz_cm": 420,
+    "fizikai_meghatarozas": "A homlokfaltól (x = 0) a legtávolabbi elhelyezett rakományélig mért hossz ÷ 100. A közbenső és oldalsó szabad helyek beszámítanak, mert más rakomány számára nem használhatók fel hosszirányban.",
+    "dijszamitasi": 4.2,
+    "megjegyzes": "A három mutató eltérhet; egyezésük nem automatikus."
+  },
+  "dijszamitas": {
+    "kg_per_ldm": 1750,
+    "kerekites": "Felfelé 0,1 LDM-re",
+    "szabaly": "maximum",
+    "tomegalapu_ldm": 0.7714285714285715,
+    "meghatarozo": "fizikai",
+    "szamitas_alapja": "elhelyezett tömeg és fizikai LDM",
+    "forras": "fuvar-kalkulator feature/fuvardij-4: billing_config.py, ldm_calculator.py (JS-tükör; a FuvarDíj 4.0 adapter újraszámolja)",
+    "fuvarozo_megerositette": false
+  },
+  "ellenorzes": {
+    "megfelel": false,
+    "hibak": [
+      {
+        "kod": "UTKOZES",
+        "szoveg": "Ütközés: EUR-01 (#1) és EUR-02 (#2)."
+      },
+      {
+        "kod": "ALATAMASZTAS",
+        "szoveg": "EUR-03 (#3) alatt nincs teljes alapterületű alátámasztás (lebeg vagy részben alátámasztott)."
+      }
+    ],
+    "figyelmeztetesek": [
+      {
+        "kod": "NINCS_ELHELYEZVE",
+        "szoveg": "1 rakomány nincs elhelyezve – a terv nem teljes, árajánlathoz nem használható."
+      },
+      {
+        "kod": "KERESZT_HEZAG",
+        "szoveg": "180–300 cm között 120 cm-es teljes szélességű üres sáv van; a terv tömöríthető."
+      }
+    ],
+    "nem_ellenorzott_feltetelek": [
+      "Tengelyterhelés és hosszirányú súlyelosztás",
+      "A rakomány súlypontja, borulási és csúszási stabilitása",
+      "Rakományrögzítés (pl. EN 12195-1 szerinti rögzítési számítás, spanifer, csúszásgátló, kitámasztás)",
+      "Dinamikus terhelés fékezéskor, gyorsításkor és kanyarodáskor",
+      "A csomagolás és a raklap tényleges szerkezeti teherbírása (a megadott ráterhelés felhasználói adat)",
+      "Részleges alátámasztás, áthidalás – a modul csak teljes alapterületű alátámasztást fogad el",
+      "Rakodási és lerakodási sorrend, hozzáférhetőség, ajtónyílás",
+      "Kerékdob, ajtókeret, rögzítősín miatti szűkebb tényleges rakodótér (ha nincs külön megadva)",
+      "A díjszámítási szabály fuvarozói megerősítése (a FuvarDíj 4.0 beállításai szerint számolva)"
+    ]
+  },
+  "ajanlatra_alkalmas": false,
+  "ajanlat_akadalyai": [
+    "A terv nem felel meg a geometriai / halmozási szabályoknak.",
+    "Nincs minden rakomány elhelyezve."
+  ],
+  "arazas": null,
+  "arazas_megjegyzes": "A csomag nem tartalmaz díjat vagy tarifát. Az árat kizárólag a FuvarDíj 4.0 meglévő díjszabási logikája (pricing.szamol_dij) számolhatja ki."
+}
