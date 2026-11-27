@@ -1,5 +1,22 @@
 # CHANGELOG – Rakománytervező 3D V05 → V06 → V07
 
+## 0.7.1 – 2026-11-27 – Szétosztás több járműre
+
+### Új
+- **`flotta.js`:** a teljes rakomány szétosztása több járműre:
+  - cél: a lehető legkevesebb jármű, minden jármű terve kemény szabálysértés nélkül;
+  - módok: „az aktuális járműből annyi, amennyi kell”, Jumbo szerelvény(ek) (motorkocsi + pótkocsi), saját járműlista;
+  - lerakók: lehetőleg egy járműre („előnyben”), vagy kötelezően egy járműre (akkor is, ha emiatt több jármű kell);
+  - becsült alsó korlát a járműszámra (tömeg, illetve alapterület és halmozás alapján);
+  - figyelmeztetés a több járműre került lerakókról és a kimaradt egységekről;
+  - Jumbo szerelvénynél az együttes 40 t-s össztömeg ellenőrzése;
+  - lépésenként fut: Web Workerben, illetve fő szálon is.
+- **Felület:**
+  - „🚚 Szétosztás több járműre” panel;
+  - eredménytáblázat járművenként (lerakók, darab, tömeg, helyigény, tengely, kemény hiba, pánt, lerakodási idő, állapot);
+  - járművenkénti megnyitás a 3D-ben, visszaállítás a teljes rakománylistára;
+  - mentés az összehasonlításba, exportálás tervgyűjteményként.
+
 ## 0.7.0 – 2026-11-26 – Professional
 
 ### Új

@@ -41,6 +41,7 @@ $env:FUVARDIJ4_PATH = "<FuvarDíj 4.0 kicsomagolt mappa>"; py -m pytest tests
 | `biztonsag.js` | Sérülésmentességi szabályok, súlypont, tengely, hézag, rögzítési becslés, biztonsági tartalék, lexikografikus kulcs |
 | `lerakodas.js` | Kivételi folyosók (hátsó / bal / jobb / felső), átrakásszám, villairány, csoportosítás, időmodell, lerakodási és rakodási sorrend |
 | `optimalizalo_profi.js` | Profi optimalizáló: lerakó-tudatos konstrukció, kemény szabályok jelöltenként, borulásvédelem, keresztirányú kiegyenlítés, tengelyhez igazítás, A/B/C döntés lexikografikus kulccsal |
+| `flotta.js` | Szétosztás több járműre (legkevesebb jármű, lerakók egyben, Jumbo szerelvény, alsó korlát) |
 | `render3d.js` | Fotorealisztikus WebGL-megjelenítő (three.js), procedurális textúrák, összevont geometria, kijelölés sugárkövetéssel |
 | `vendor/three/` | three.js r149 (`three.min.js`, MIT `LICENSE`) – lásd `vendor/LICENCEK.md` |
 | `ellenorzo.js` | V06 + opcionális több egységen átívelő alátámasztás (`tobbTamasz`); nélküle a V06-szabály változatlan |

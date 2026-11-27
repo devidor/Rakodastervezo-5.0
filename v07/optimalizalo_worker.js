@@ -5,13 +5,16 @@
  * A számítás kis szeletekben fut, így a megszakítás üzenete is feldolgozható, és megszakításkor
  * az addigi legjobb eredmény marad meg.
  */
-/* global importScripts, Optimalizalo, OptimalizaloProfi */
-importScripts('ldm_modul.js', 'geometria.js', 'ellenorzo.js', 'szabad_ter.js', 'optimalizalo.js', 'jarmu.js', 'lerakodas.js', 'biztonsag.js', 'optimalizalo_profi.js');
+/* global importScripts, Optimalizalo, OptimalizaloProfi, Flotta */
+importScripts('ldm_modul.js', 'geometria.js', 'ellenorzo.js', 'szabad_ter.js', 'optimalizalo.js', 'jarmu.js', 'lerakodas.js', 'biztonsag.js', 'optimalizalo_profi.js', 'flotta.js');
 let kereses = null;
 self.onmessage = (e) => {
   const m = e.data || {};
-  if (m.tipus === 'indit') {
-    try { kereses = (m.beall && m.beall.profi ? OptimalizaloProfi : Optimalizalo).keresesInditas(m.terv, m.beall); } catch (err) { self.postMessage({ tipus: 'hiba', uzenet: err.message }); return; }
+  if (m.tipus === 'indit' || m.tipus === 'flotta-indit') {
+    try {
+      kereses = m.tipus === 'flotta-indit' ? Flotta.szetosztInditas(m.terv, m.spec, m.beall)
+        : (m.beall && m.beall.profi ? OptimalizaloProfi : Optimalizalo).keresesInditas(m.terv, m.beall);
+    } catch (err) { self.postMessage({ tipus: 'hiba', uzenet: err.message }); return; }
     const kor = () => {
       if (!kereses) return;
       try {

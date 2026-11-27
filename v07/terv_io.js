@@ -12,7 +12,7 @@
   else root.TervIO = factory(root.LDMModul, root.Ellenorzo, root.Mutatok);
 })(typeof self !== 'undefined' ? self : this, function (LDM, E, MU) {
   'use strict';
-  const PROGRAM = Object.freeze({ nev: 'Rakománytervező 3D V07 – Professional', verzio: '0.7.0' });
+  const PROGRAM = Object.freeze({ nev: 'Rakománytervező 3D V07 – Professional', verzio: '0.7.1' });
   const MAX_EGYSEG = 300;
   const INTEGRACIO_FORMAT = 'rakodastervezo-fuvardij-export';
   const INTEGRACIO_SEMA = '1.1.0';
