@@ -26,7 +26,12 @@
 7. **Optimalizálás.**
    - A terv = ajánlott (biztonság → lerakodás → hossz), B = legkisebb helyigény, C = legnagyobb biztonsági tartalék.
    - Kemény szabályt sértő terv soha nem „Érvényes”. Ha nem fér be minden, a program megmondja, mi marad ki és miért, és javaslatot ad.
-8. **Export.** PNG 2× / 4× / átlátszó háttér. PDF: teljes jelentés, rakodási utasítás, sofőrlap. A JSON-adatcsomag 1.1.0, biztonsági blokkal.
+8. **Szétosztás több járműre (🚚 panel).**
+   - Járművek: „az aktuális járműből annyi, amennyi kell” (legfeljebb N), Jumbo szerelvény(ek), vagy saját lista típusonkénti darabszámmal.
+   - „Egy lerakó csak egy járműre” bekapcsolva: egy lerakó sosem oszlik meg, akkor sem, ha emiatt több jármű kell. Kikapcsolva: a program a legkevesebb járműre törekszik, és ha kell, egy lerakót két jármű között oszt meg (erre figyelmeztet).
+   - Az eredmény az elemzésben jelenik meg járművenként. A „Megnyitás a 3D-ben” az adott jármű tervét tölti a munkaterületre; a „Vissza a teljes rakománylistához” visszahozza az eredeti listát.
+   - „Mind mentése tervként”: a járművek bekerülnek a tervek összehasonlításába. Az exportálás tervgyűjtemény-JSON-t ad.
+9. **Export.** PNG 2× / 4× / átlátszó háttér. PDF: teljes jelentés, rakodási utasítás, sofőrlap. A JSON-adatcsomag 1.1.0, biztonsági blokkal.
 
 > A program a megadott adatok alapján a modellezett szabályokat ellenőrzi. A tényleges rögzítés a rakodást végző felelőssége; hatósági vagy EN 12195-1 szerinti minősítést a program nem ad.
 

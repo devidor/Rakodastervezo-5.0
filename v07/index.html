@@ -373,6 +373,18 @@
       <div class="progress" id="opt-progress">–</div><div class="progress-bar"><span id="opt-bar"></span></div>
     </div>
     <div class="panel">
+      <h3>🚚 Szétosztás több járműre</h3>
+      <div class="field-grid">
+        <div class="full"><label for="fl-mode">Járművek</label><select id="fl-mode"><option value="auto">Az aktuális járműből annyi, amennyi kell</option><option value="jumbo">Jumbo szerelvény(ek): motorkocsi + pótkocsi</option><option value="lista">Saját járműlista</option></select></div>
+        <div id="fl-max-wrap"><label for="fl-max">Legfeljebb (jármű / szerelvény)</label><input id="fl-max" type="number" min="1" max="30" step="1" value="10"></div>
+        <div class="full" id="fl-list" hidden></div>
+        <div class="full"><label class="stack-check" for="fl-strict"><input id="fl-strict" type="checkbox"> Egy lerakó csak egy járműre kerülhet (akkor is, ha emiatt több jármű kell)</label></div>
+      </div>
+      <button class="primary-wide" id="fl-run" style="margin-top:8px">🚚 Szétosztás indítása</button>
+      <div class="progress" id="fl-progress">–</div>
+      <p class="stack-help">Az összes rakományt (várakozók és elhelyezettek) a lehető legkevesebb járműre osztja, lerakónként lehetőleg egyben, járművenként a V07 kemény szabályaival. Üzemmód és seed: az optimalizálás panel szerint. Heurisztika – nem igazolt optimum.</p>
+    </div>
+    <div class="panel">
       <h3>🛡 Sérülésmentességi szabályok</h3>
       <div class="field-grid">
         <div><label for="cfg-support">Min. alátámasztás (%)</label><input id="cfg-support" type="number" min="50" max="100" step="1" value="90" title="Több egységen átívelő alátámasztásnál a szükséges érintkezési arány. Törékeny egység alatt mindig 100%."></div>
@@ -533,6 +545,13 @@
     <div class="tbl-wrap"><table class="cmp" id="opt-table"><thead><tr><th>Terv</th><th>Kemény hiba</th><th>Átrakás</th><th>Biztonsági tartalék</th><th>Lerakodási idő</th><th>Fizikai helyigény</th><th>Tengely max.</th><th>Pánt (becsl.)</th><th>Elméleti LDM (korr.)</th><th>Össztömeg</th><th>Elhelyezett / kimaradt</th><th>Keresés</th><th>Állapot</th><th></th></tr></thead><tbody id="opt-body"></tbody></table></div>
     <ul class="issues" id="opt-issues" style="margin-top:10px"></ul>
   </div>
+  <div class="box" id="fl-box" hidden>
+    <h3>🚚 Szétosztás járművekre</h3>
+    <p class="lead" style="font-size:12px;margin:0 0 8px" id="fl-summary"></p>
+    <div class="tbl-wrap"><table class="cmp"><thead><tr><th>Jármű</th><th>Lerakók</th><th>Db</th><th>Tömeg / hasznos teher</th><th>Helyigény</th><th>Tengely max.</th><th>Kemény hiba</th><th>Pánt (becsl.)</th><th>Lerakodás</th><th>Állapot</th><th></th></tr></thead><tbody id="fl-body"></tbody></table></div>
+    <ul class="issues" id="fl-issues" style="margin-top:10px"></ul>
+    <div class="plan-bar" style="margin-top:10px"><button class="iconbtn primary" id="fl-save" type="button">＋ Mind mentése tervként</button><button class="iconbtn" id="fl-export" type="button">⇩ Exportálás tervgyűjteményként</button><button class="iconbtn" id="fl-restore" type="button">⇤ Vissza a teljes rakománylistához</button></div>
+  </div>
   <div class="disclaimer" id="disclaimer"></div>
   <div class="two">
     <div class="box"><h3>⚖ Tengelyterhelés és súlypont</h3><div class="axle-bars" id="axle-bars"></div><canvas id="diagram" aria-label="Terhelési diagram: megengedett rakománytömeg a súlypont helyének függvényében"></canvas><div class="kv" id="cog-info" style="margin-top:8px"></div></div>
@@ -611,6 +630,7 @@
 <script src="lerakodas.js"></script>
 <script src="biztonsag.js"></script>
 <script src="optimalizalo_profi.js"></script>
+<script src="flotta.js"></script>
 <script src="render3d.js"></script>
 <script>
 (() => {
@@ -1867,8 +1887,86 @@
  });
  document.addEventListener('fullscreenchange',()=>{fullButton.textContent=document.fullscreenElement?'⤢ Kilépés':'⛶ Teljes képernyő';setTimeout(requestRender,80);});
  if(window.ResizeObserver)new ResizeObserver(requestRender).observe(visual);window.addEventListener('resize',requestRender);
+ // ======================= V07: szétosztás több járműre =======================
+ const FL=window.Flotta;let lastFlotta=null,flottaForras=null,flRun=null,flMegnyitott=null;
+ (function(){const box=$('fl-list');for(const n of ['Aktuális jármű',...Object.keys(J.SABLONOK)]){const id='fl-n-'+n.replace(/[^a-z0-9]/gi,'_');box.append(el('div',{class:'field-grid',style:'grid-template-columns:1fr 70px;margin-bottom:4px'},el('label',{for:id,text:n,style:'align-self:center'}),el('input',{id,type:'number',min:'0',max:'20',step:'1',value:n==='Aktuális jármű'?'1':'0','data-jarmu':n})));}})();
+ $('fl-mode').addEventListener('change',e=>{$('fl-list').hidden=e.target.value!=='lista';$('fl-max-wrap').hidden=e.target.value==='lista';});
+ function flSpec(){
+   const mod=$('fl-mode').value,max=Math.max(1,Math.min(30,Math.round(Number($('fl-max').value)||10)));
+   const akt={...trailerCm};
+   if(mod==='jumbo')return {mod,max};
+   if(mod==='lista')return {mod,lista:[...$('fl-list').querySelectorAll('input')].map(i=>({jarmu:i.dataset.jarmu==='Aktuális jármű'?akt:i.dataset.jarmu,db:Math.max(0,Math.min(20,Math.round(Number(i.value)||0)))})).filter(s=>s.db>0)};
+   return {mod:'auto',jarmu:akt,max};
+ }
+ function startFlotta(){
+   if(flRun||optRun)return;
+   const plan=currentPlan();
+   if(!plan.boxes.length){showMessage('Nincs rakomány a szétosztáshoz.','bad');return;}
+   const spec=flSpec();if(spec.mod==='lista'&&!spec.lista.length){showMessage('Adj meg legalább egy járművet a listában.','bad');return;}
+   flottaForras=flMegnyitott!=null&&lastFlotta?flottaForras:plan;
+   const forras=flottaForras;
+   const sec=Number($('opt-time').value);
+   const beall={mod:$('opt-mode').value,seed:Math.max(1,Math.floor(Number($('opt-seed').value)||1)),cfg:CFG,lerakoEgyben:$('fl-strict').checked?'kotelezo':'elonyben',idokorlatMs:Math.min(sec>0?sec:5,5)*1000};
+   $('fl-run').disabled=true;$('opt-run').disabled=true;showMessage('Szétosztás folyamatban…','');
+   const prog=a=>{$('fl-progress').textContent=`${a.kesz?'Véglegesítés…':a.uzenet} · ${a.elhelyezett}/${a.osszes} egység elosztva · ${a.jarmu} jármű · ${a.lepes} próba · ${fmt(a.idoMs/1000,1)} s`;};
+   const done=er=>{flRun=null;$('fl-run').disabled=false;$('opt-run').disabled=false;lastFlotta=er;flMegnyitott=null;renderFlotta();
+     $('fl-progress').textContent=`Kész · ${er.jarmuDb} jármű · ${er.lepesek} próba · ${fmt(er.idoMs/1000,1)} s`;
+     showMessage(er.kimaradt.length?`Szétosztás: ${er.jarmuDb} jármű, de ${er.kimaradt.length} egység nem fért el – adj meg több vagy nagyobb járművet.`:`Szétosztás: ${er.jarmuDb} jármű (becsült alsó korlát: ${er.alsoKorlat.jarmu}). Részletek az elemzésben, járművenként megnyitható a 3D-ben.`,er.kimaradt.length?'bad':'good');
+     $('fl-box').scrollIntoView({behavior:'smooth',block:'start'});};
+   const fallback=()=>{const k=FL.szetosztInditas(forras,spec,beall);flRun={kind:'main'};const loop=()=>{const a=k.lepes(60);prog(a);if(a.kesz)done(k.eredmeny());else setTimeout(loop,0);};loop();};
+   let w=null;try{if(location.protocol!=='file:')w=new Worker('optimalizalo_worker.js');}catch{w=null;}
+   if(!w){fallback();return;}
+   flRun={kind:'worker'};
+   w.onmessage=e=>{const m=e.data;if(m.tipus==='haladas')prog(m.allapot);else if(m.tipus==='kesz'){w.terminate();done(m.eredmeny);}else if(m.tipus==='hiba'){w.terminate();flRun=null;$('fl-run').disabled=false;$('opt-run').disabled=false;showMessage('Szétosztási hiba: '+m.uzenet,'bad');}};
+   w.onerror=ev=>{ev.preventDefault();w.terminate();fallback();};
+   w.postMessage({tipus:'flotta-indit',terv:forras,spec,beall});
+ }
+ $('fl-run').addEventListener('click',startFlotta);
+ function renderFlotta(){
+   const er=lastFlotta;$('fl-box').hidden=!er;if(!er)return;
+   const body=$('fl-body');body.replaceChildren();const iss=$('fl-issues');iss.replaceChildren();
+   const kg=er.alsoKorlat;
+   $('fl-summary').textContent=`${er.jarmuDb} jármű · ${er.osszesEgyseg-er.kimaradt.length}/${er.osszesEgyseg} egység elosztva · becsült alsó korlát: ${kg.jarmu} jármű (tömeg alapján ${kg.tomegAlapjan}, alapterület / halmozás alapján ${kg.hosszAlapjan}) · ${fmt(kg.tomegKg,0)} kg összesen · ${er.lerakoEgyben==='kotelezo'?'egy lerakó egy járműre (kötelező)':'lerakók lehetőleg egyben'} · ${er.megjegyzes}`;
+   er.jarmuvek.forEach((j,i)=>{
+     const o=j.osszegzes||{},tag=j.allapot===E.ALLAPOT.ERVENYES?'ok':(j.allapot===E.ALLAPOT.ERVENYTELEN||j.allapot===E.ALLAPOT.RESZLEGES)?'bad':'warn';
+     const btn=el('button',{class:'iconbtn',type:'button',text:flMegnyitott===i?'✓ Megnyitva':'Megnyitás a 3D-ben'});btn.addEventListener('click',()=>openFlottaJarmu(i));
+     body.append(el('tr',{class:flMegnyitott===i?'sel':''},el('td',{},el('b',{text:j.nev}),el('div',{style:'color:#9fb1d2;font-size:11px',text:`${j.trailer.length}×${j.trailer.width}×${j.trailer.height} cm${j.bontottLerako?' · lerakó megosztva':''}`})),
+       el('td',{text:j.stopok.map(s=>s==null?'–':s+'.').join(', ')}),el('td',{class:'num',text:String(j.darab)}),
+       el('td',{class:'num',text:`${fmt(j.tomegKg,0)} / ${fmt(j.trailer.payloadKg,0)} kg`}),el('td',{class:'num',text:fmt(j.hosszCm/100)+' m'}),
+       el('td',{class:'num',text:o.tengelyMaxPct==null?'–':fmt(o.tengelyMaxPct,1)+' %'}),el('td',{class:'num'+(o.kemenyHiba?' bad-txt':''),text:String(o.kemenyHiba??'–')}),
+       el('td',{class:'num',text:String(o.pantDb??'–')}),el('td',{class:'num',text:fmt((o.lerakodasiIdoS||0)/60,0)+' perc'}),
+       el('td',{},el('span',{class:'tag '+tag,text:j.allapotSzoveg})),el('td',{},btn)));
+   });
+   for(const f of er.figyelmeztetesek)iss.append(li('warn','⚠ '+f));
+   for(const s of er.szerelvenyek||[])iss.append(li(s.ok?'ok':'err',`${s.ok?'✓':'⛔'} ${s.szerelveny}. Jumbo szerelvény becsült össztömege: ${fmt(s.ossztomegKg,0)} kg (max. ${fmt(s.maxKg,0)} kg).`));
+   if(!er.figyelmeztetesek.length&&!er.kimaradt.length)iss.append(li('ok','✓ Minden egység elosztva, minden lerakó egyetlen járműre került, és egyik jármű terve sem sért kemény szabályt.'));
+   $('fl-restore').disabled=flMegnyitott==null;
+ }
+ function openFlottaJarmu(i){
+   const j=lastFlotta?.jarmuvek[i];if(!j)return;
+   let res;try{res=planToState({trailer:j.trailer,boxes:j.boxes.map(b=>({...b})),elszamolas:billing});}catch(err){res={ok:false,reason:err.message};}
+   if(!res.ok){showMessage('A jármű terve nem tölthető be: '+res.reason,'bad');return;}
+   flMegnyitott=i;$('tl').value='0';
+   showMessage(`${j.nev} megnyitva a munkaterületen (${j.darab} egység). A teljes rakománylista a „Vissza a teljes rakománylistához” gombbal áll vissza.`,'good');
+   updateUI();renderFlotta();
+ }
+ $('fl-restore').addEventListener('click',()=>{
+   if(!flottaForras)return;let res;try{res=planToState(flottaForras);}catch(err){res={ok:false,reason:err.message};}
+   if(!res.ok){showMessage('Nem állítható vissza: '+res.reason,'bad');return;}
+   flMegnyitott=null;showMessage('A teljes rakománylista visszaállt a munkaterületre.','good');updateUI();renderFlotta();
+ });
+ $('fl-save').addEventListener('click',()=>{
+   if(!lastFlotta)return;let n=0;
+   for(const j of lastFlotta.jarmuvek){if(plans.length>=30)break;plans.push({key:newKey(),savedAt:new Date().toISOString(),nev:j.nev.slice(0,60),trailer:{...j.trailer},elszamolas:{...billing},boxes:j.boxes.map(b=>({...b}))});n++;}
+   persistPlans();renderPlans();showMessage(`${n} járműterv mentve az összehasonlításba${n<lastFlotta.jarmuvek.length?' (a 30-as korlát miatt nem mind)':''}.`,n?'good':'bad');
+ });
+ $('fl-export').addEventListener('click',()=>{
+   if(!lastFlotta)return;
+   downloadJson(IO.gyujtemenyMent(lastFlotta.jarmuvek.map(j=>({nev:j.nev.slice(0,60),savedAt:new Date().toISOString(),trailer:j.trailer,elszamolas:billing,boxes:j.boxes}))),'rakomanyterv-jarmuvek-v07.json');
+   showMessage(`${lastFlotta.jarmuDb} járműterv exportálva tervgyűjteményként.`,'good');
+ });
  // Tesztelési horog (csak olvasás / mérés): méretpontosság és 3D-teljesítmény ellenőrzéséhez.
- window.RakodoTeszt={terv:()=>currentPlan(),r3:()=>R3&&{meret:R3.meretTeszt(),geometria:R3.geometriaDoboz(),meres:n=>R3.meres(n),minoseg:R3.aktualisMinoseg()},profi:()=>lastProfi&&{allapot:lastProfi.allapot,hibak:lastProfi.hibak.length}};
+ window.RakodoTeszt={terv:()=>currentPlan(),r3:()=>R3&&{meret:R3.meretTeszt(),geometria:R3.geometriaDoboz(),meres:n=>R3.meres(n),minoseg:R3.aktualisMinoseg()},profi:()=>lastProfi&&{allapot:lastProfi.allapot,hibak:lastProfi.hibak.length},flotta:()=>lastFlotta};
  updateNewTotal();renderOpt();updateUI();createBoxes();
 })();
 </script>

@@ -25,7 +25,7 @@ Utolsó frissítés: 2026-11-26. Ág: `feature/v07` (a `feature/verziovalaszto` 
 
 ## Ismert korlátok / javasolt következő lépések
 
-- **Jumbo közös optimalizálás.** A két raktér továbbra is két külön terv.
+- **Több jármű (0.7.1).** A szétosztás kész, Jumbo szerelvénnyel is: a két raktér két terv, közös össztömeg-ellenőrzéssel. A két raktér közötti súlypont- és tengelyterhelés-kölcsönhatás (vonórúd) nincs modellezve. A járműszám heurisztikus, az alsó korlátot a program kiírja.
 - **Rögzítés.** Becslés leszorító lekötésre, egyenletes eloszlással. A közvetlen (diagonális) lekötés és a dőlés elleni számítás egyszerűsített: oszlopszintű borulásvédelemmel.
 - **Környezeti takarás.** Csúcsszínekkel sötétített alsó élek (érintkezési árnyék) és lágy árnyéktérkép van, képtérbeli SSAO-utófeldolgozás nincs. A three.js r149 core ezt nem tartalmazza, és az addon-fájlok helyben tárolása külön döntés lenne.
 - **Kézi ellenőrzés valódi böngészőablakban.** A teljes képernyő, a HTML5 drag & drop a várakozóból, valamint a `file://` alatti 3D és Worker-tartalék. A beépített böngészőben ezek nem ellenőrizhetők.

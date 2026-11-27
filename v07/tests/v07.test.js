@@ -258,3 +258,47 @@ test('teljesítmény: 300 egység teljes V07-ellenőrzése és gyors optimalizá
   console.log(`300 egység: gyors optimalizálás ${dt} ms, teljes ellenőrzés ${de} ms, A terv: ${er.tervek.A.elhelyezett}/300, ${er.tervek.A.ellenorzes.hibak.length} kemény hiba`);
   assert.ok(dt < 15000 && de < 3000);
 });
+
+// --- Szétosztás több járműre (flotta.js) ----------------------------------------------------------------------
+const F = require('../flotta.js');
+const raklapok = (n, o = {}, kezd = 1) => Array.from({ length: n }, (_, i) => ({ id: kezd + i, length: 120, width: 80, height: 120, weight: 500, stackMode: 'nem', maxLayers: 1, maxLoadKg: null, type: 'EUR-raklap', placed: false, x: 0, y: 0, z: 0, rot: 0, ...o }));
+const AUTO = { mod: 'auto', jarmu: 'Standard félpótkocsi', max: 10 };
+const ervenyes = (er) => er.jarmuvek.every((j) => j.hibak.length === 0 && j.boxes.every((b) => b.placed));
+test('flotta: 66 nem halmozható EUR-raklap → 2 félpótkocsi (= alsó korlát), minden jármű szabályos', () => {
+  const er = F.szetoszt({ boxes: raklapok(66) }, AUTO);
+  assert.equal(er.jarmuDb, 2); assert.equal(er.alsoKorlat.jarmu, 2); assert.equal(er.kimaradt.length, 0);
+  assert.ok(ervenyes(er));
+  const ids = er.jarmuvek.flatMap((j) => j.boxes.map((b) => b.id));
+  assert.equal(new Set(ids).size, 66, 'minden egység pontosan egyszer');
+});
+test('flotta: hasznos teher miatt 2 jármű (30 × 1000 kg)', () => {
+  const er = F.szetoszt({ boxes: raklapok(30, { weight: 1000 }) }, AUTO);
+  assert.equal(er.jarmuDb, 2);
+  assert.ok(er.jarmuvek.every((j) => j.tomegKg <= 24000));
+});
+test('flotta: lerakók – „előnyben” módban minimális járműszám megosztással, „kötelező” módban egyben', () => {
+  const boxes = [...raklapok(20, { stop: 1 }, 1), ...raklapok(20, { stop: 2 }, 21), ...raklapok(20, { stop: 3 }, 41)];
+  const e1 = F.szetoszt({ boxes }, AUTO);
+  assert.equal(e1.jarmuDb, 2);
+  assert.ok(e1.figyelmeztetesek.some((f) => /Több járműre került lerakó/.test(f)));
+  assert.ok(ervenyes(e1));
+  const e2 = F.szetoszt({ boxes }, AUTO, { lerakoEgyben: 'kotelezo' });
+  for (const j of e2.jarmuvek) for (const s of j.stopok) assert.equal(e2.jarmuvek.filter((q) => q.stopok.includes(s)).length, 1, `${s}. lerakó egy járművön`);
+  assert.equal(e2.kimaradt.length, 0);
+  assert.ok(ervenyes(e2));
+});
+test('flotta: kevés jármű → kimaradás jelzéssel; Jumbo szerelvény össztömeg-ellenőrzéssel', () => {
+  const er = F.szetoszt({ boxes: raklapok(80) }, { mod: 'lista', lista: [{ jarmu: 'Standard félpótkocsi', db: 2 }] });
+  assert.equal(er.jarmuDb, 2); assert.ok(er.kimaradt.length > 0);
+  assert.ok(er.figyelmeztetesek.some((f) => /nem fért el/.test(f)));
+  const j = F.szetoszt({ boxes: raklapok(30, { weight: 400 }) }, { mod: 'jumbo', max: 2 });
+  assert.equal(j.kimaradt.length, 0);
+  assert.equal(j.jarmuvek[0].trailer.resz, 'motorkocsi');
+  assert.ok(j.szerelvenyek.length >= 1 && j.szerelvenyek.every((s) => typeof s.ossztomegKg === 'number'));
+});
+test('flotta: üres járműbe sem férő egység kimarad, a többi tovább osztódik', () => {
+  const boxes = [...raklapok(5), { id: 99, length: 300, width: 300, height: 100, weight: 10, stackMode: 'nem', maxLayers: 1, maxLoadKg: null, placed: false, x: 0, y: 0, z: 0, rot: 0 }];
+  const er = F.szetoszt({ boxes }, AUTO);
+  assert.deepEqual(er.kimaradt, [99]);
+  assert.equal(er.jarmuDb, 1);
+});

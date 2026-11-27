@@ -6,7 +6,7 @@ Dátum: 2026-11-26. Környezet: Windows 11, Node 24.18.1, Python 3 (pytest), a C
 
 | Csomag | Eredmény |
 |---|---|
-| `node --test tests/` (V05 LDM + V06 + V07) | **85 / 85 sikeres** (ebből 23 V07-teszt) |
+| `node --test tests/` (V05 LDM + V06 + V07) | **90 / 90 sikeres** (ebből 28 V07-teszt, ebből 5 a 0.7.1-es szétosztásé) |
 | FuvarDíj 4.0-paritás (`py -m pytest tests`, `FUVARDIJ4_PATH`) | **869 / 869 sikeres** |
 
 A V06 62 tesztje a `v07/` alatt változatlanul fut. A V06-os ellenőrző és optimalizáló alapértelmezésben a V06-szabályokat adja; a V07-szabályokat a `biztonsag.js` és az `optimalizalo_profi.js` adja.
@@ -66,3 +66,13 @@ A tesztek közben két hiba derült ki, mindkettő javítva:
 - HTML5 drag & drop a várakozóból: a kód a V06-tal azonos, a 3D-célpont sugárkövetéssel jön.
 - Teljes képernyő.
 - PNG-letöltés: a képkészítés függvényét a PDF-ek használják, és ott működött; magát a letöltést nem indítottuk el.
+
+## 5. Szétosztás több járműre (0.7.1, 2026-11-27)
+
+| Ellenőrzés | Eredmény |
+|---|---|
+| Node: 66 nem halmozható EUR-raklap | 2 félpótkocsi, ami az alsó korlát; minden egység pontosan egyszer, minden jármű szabályos |
+| Node: 30 × 1000 kg | 2 jármű, egyik sem lépi túl a 24 t-t |
+| Node: 3 lerakó × 20 raklap | „Előnyben” módban 2 jármű (egy lerakó megosztva, figyelmeztetéssel); „kötelező” módban minden lerakó egyetlen járművön |
+| Node: kevés jármű / Jumbo / túlméretes egység | Kimaradás figyelmeztetéssel; Jumbo motorkocsi + pótkocsi az össztömeg kiszámításával; az önmagában sem férő egység kimarad, a többi elosztódik |
+| Böngésző: 98 egység, 4 lerakó (Web Worker) | 2 jármű (alsó korlát: 2), 0,6 s, 0 kemény hiba. Kötelező módban 2 jármű, lerakómegosztás nélkül. Jumbo módban 3 raktér, az 1. szerelvény 38,4 t ≤ 40 t. Járművenkénti 3D-megnyitás és visszaállítás működik, konzolhiba nincs. |
